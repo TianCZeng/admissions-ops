@@ -1,0 +1,38 @@
+id: ucl-msc-hci-fall-2027
+institution: University College London
+program: MSc Human-Computer Interaction
+degree_type: MSc
+department: UCL Interaction Centre
+intake: Fall 2027
+applicant_category: international
+country: United Kingdom
+official_url: https://www.ucl.ac.uk/prospective-students/graduate/taught-degrees/human-computer-interaction-msc
+application_url: https://www.ucl.ac.uk/prospective-students/graduate/taught-degrees/human-computer-interaction-msc
+retrieved_at: '2026-07-02'
+deadline:
+  value: unknown
+  type: unknown
+  timezone: Europe/London
+  source_url: >-
+    https://www.ucl.ac.uk/prospective-students/graduate/taught-degrees/human-computer-interaction-msc
+  notes: The official course page currently prints a 2026 application window for the September 2026 intake, so the Fall 2027 deadline remains unpublished and needs manual confirmation.
+document_instructions:
+  text: Prepare a concise admissions resume to foreground accessibility evaluation, HCI coursework, and design-research evidence; the official course page separately instructs applicants to pay attention to the personal statement.
+sources:
+  - url: >-
+      https://www.ucl.ac.uk/prospective-students/graduate/taught-degrees/human-computer-interaction-msc
+    retrieved_at: '2026-07-02'
+    use: Programme identity, entry requirements, deadline window, HCI context, and accessibility-related programme description
+    notes: Official UCL programme page.
+  - url: https://www.ucl.ac.uk/study/prospective-students/graduate/how-apply/english-language-requirements
+    retrieved_at: '2026-07-02'
+    use: English-language exemption and Level 4 requirement
+    notes: Official UCL English-language requirements page.
+  - url: https://www.ucl.ac.uk/study/prospective-students/graduate/how-apply/writing-your-personal-statement
+    retrieved_at: '2026-07-02'
+    use: Personal-statement guidance and length limit
+    notes: Official UCL personal-statement guidance page.
+freshness_warnings:
+  - The official course page is stale for the intended intake because it shows the September 2026 cycle rather than Fall 2027.
+  - The exact Fall 2027 application deadline is not yet published on the public course page.
+conflicts: []

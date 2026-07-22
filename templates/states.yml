@@ -1,0 +1,81 @@
+# admissions-ops canonical states
+# Status fields in programs/tracker.md must use exactly one label below.
+
+states:
+  - id: discovered
+    label: Discovered
+    aliases: [found, inbox]
+    description: Curated official link exists but has not been evaluated.
+    group: early
+
+  - id: evaluated
+    label: Evaluated
+    aliases: [reviewed]
+    description: Sourced evaluation report exists.
+    group: active
+
+  - id: shortlisted
+    label: Shortlisted
+    aliases: [priority]
+    description: Program is worth preparing further.
+    group: active
+
+  - id: preparing
+    label: Preparing
+    aliases: [drafting]
+    description: Materials or confirmations are being prepared.
+    group: active
+
+  - id: ready_for_review
+    label: Ready for Review
+    aliases: [ready]
+    description: Materials are ready for human review before submission.
+    group: active
+
+  - id: submitted
+    label: Submitted
+    aliases: [sent]
+    description: Application has been submitted by the user.
+    group: submitted
+
+  - id: interview
+    label: Interview
+    aliases: [meeting]
+    description: Interview or admissions conversation is active.
+    group: submitted
+
+  - id: admitted
+    label: Admitted
+    aliases: [conditional_admission]
+    description: Admission or conditional admission received.
+    group: outcome
+
+  - id: waitlisted
+    label: Waitlisted
+    aliases: [reserve]
+    description: Waitlist outcome received.
+    group: outcome
+
+  - id: rejected
+    label: Rejected
+    aliases: [declined]
+    description: Rejection received.
+    group: outcome
+
+  - id: withdrawn
+    label: Withdrawn
+    aliases: [not_applying]
+    description: User chose not to continue.
+    group: outcome
+
+  - id: enrolled
+    label: Enrolled
+    aliases: [accepted]
+    description: User accepted and enrolled.
+    group: outcome
+
+  - id: not_pursuing
+    label: Not Pursuing
+    aliases: [skip]
+    description: Program is not being pursued.
+    group: outcome

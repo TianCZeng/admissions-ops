@@ -1,0 +1,80 @@
+education:
+  - id: edu-pmc-bsc-cs
+    institution: "Paris Metropolitan College"
+    degree: "BSc Computer Science"
+    dates: "2023-2027"
+    status: "in_progress"
+    notes: "Fictional record for development fixtures."
+
+courses:
+  - id: course-data-structures
+    title: "Data Structures"
+    level: "undergraduate"
+    result: "A"
+  - id: course-algorithms
+    title: "Algorithms"
+    level: "upper undergraduate"
+    result: "A-"
+  - id: course-machine-learning
+    title: "Machine Learning"
+    level: "upper undergraduate"
+    result: "A"
+  - id: course-hci
+    title: "Human-Computer Interaction"
+    level: "upper undergraduate"
+    result: "A"
+  - id: course-statistics
+    title: "Applied Statistics"
+    level: "undergraduate"
+    result: "A-"
+
+research:
+  - id: research-human-feedback-thesis
+    title: "Human Feedback Interfaces for Model Evaluation"
+    role: "undergraduate thesis"
+    dates: "2026-2027"
+    status: "in_progress"
+    methods:
+      - "controlled user study"
+      - "rubric design"
+      - "Python analysis"
+    summary: "Studies how evaluators use rubric interfaces to compare AI-generated answers."
+
+projects:
+  - id: project-rubric-eval-dashboard
+    title: "Rubric Evaluation Dashboard"
+    dates: "2026"
+    summary: "Built a local dashboard for reviewing model outputs, assigning rubric scores, and exporting analysis tables."
+    tools:
+      - "Python"
+      - "SQLite"
+      - "React"
+  - id: project-course-recommender
+    title: "Course Recommender Prototype"
+    dates: "2025"
+    summary: "Built a prototype recommender using collaborative filtering and explanatory tags."
+    tools:
+      - "Python"
+      - "pandas"
+
+awards:
+  - id: award-research-poster
+    title: "Best Undergraduate Research Poster"
+    date: "2026"
+    issuer: "Paris Metropolitan College School of Computing"
+
+publications: []
+presentations:
+  - id: presentation-feedback-interfaces
+    title: "Designing Feedback Interfaces for Model Evaluation"
+    date: "2026-04"
+    venue: "Fictional Undergraduate Research Forum"
+    status: "presented"
+
+teaching:
+  - id: teaching-python-lab
+    role: "Teaching assistant"
+    course: "Introduction to Python"
+    dates: "2025"
+
+service: []

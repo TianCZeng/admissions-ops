@@ -1,0 +1,28 @@
+student:
+  name: "Maya Chen"
+  email: "maya.chen@example.edu"
+  location: "Paris, France"
+  timezone: "Europe/Paris"
+  citizenship_or_residency_context: "International applicant for UK and Canada examples."
+
+current_education:
+  institution: "Paris Metropolitan College"
+  degree: "BSc Computer Science"
+  expected_graduation: "2027-06"
+  grading_context: "Fictional local scale; do not convert without official equivalence rules."
+
+languages:
+  english:
+    status: "completed"
+    test: "IELTS Academic"
+    overall: 7.5
+    components:
+      listening: 8.0
+      reading: 8.0
+      writing: 7.0
+      speaking: 7.0
+    test_date: "2026-05-15"
+
+standardized_tests:
+  gre:
+    status: "not_taken"

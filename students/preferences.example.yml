@@ -1,0 +1,36 @@
+# Example only. Copy to students/{student-id}/preferences.yml and replace with real preferences.
+target_fields:
+  - "machine learning"
+  - "human-computer interaction"
+  - "data systems"
+
+degree_types:
+  - "MSc"
+  - "MRes"
+
+countries:
+  - "United Kingdom"
+  - "Netherlands"
+  - "Canada"
+
+intakes:
+  - "Fall 2027"
+
+research_interests:
+  - "evaluation of AI systems"
+  - "usable machine learning tools"
+  - "data-intensive applications"
+
+constraints:
+  delivery: "on-campus"
+  funding_notes: "Funding is free text in the MVP."
+  deadline_buffer_days: 21
+
+fit_weights:
+  academic_preparation: 0.20
+  research_or_subject_fit: 0.25
+  evidence_strength: 0.20
+  goal_alignment: 0.15
+  admissions_feasibility: 0.10
+  practical_constraints: 0.05
+  application_effort: 0.05

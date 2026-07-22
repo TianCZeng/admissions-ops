@@ -1,0 +1,504 @@
+students:
+  vision_ml_researcher:
+    domain: computer_vision
+    profile:
+      student:
+        name: "Ari Lim"
+        email: "ari.lim@example.edu"
+        location: "Singapore"
+        timezone: "Asia/Singapore"
+        citizenship_or_residency_context: "Synthetic international applicant."
+      current_education:
+        institution: "National Island University"
+        degree: "BComp Computer Science"
+        expected_graduation: "2027-05"
+        grading_context: "Synthetic 5.0 scale; do not convert without official rules."
+      languages:
+        english:
+          status: "medium_of_instruction"
+          test: "not_taken"
+          notes: "English-medium degree; waiver must be verified program by program."
+      standardized_tests:
+        gre:
+          status: "planned"
+    evidence:
+      education:
+        - id: edu-ari-bcomp-cs
+          institution: "National Island University"
+          degree: "BComp Computer Science"
+          dates: "2023-2027"
+          status: "in_progress"
+      courses:
+        - id: course-ari-computer-vision
+          title: "Computer Vision"
+          level: "upper undergraduate"
+          result: "A"
+        - id: course-ari-deep-learning
+          title: "Deep Learning"
+          level: "upper undergraduate"
+          result: "A"
+        - id: course-ari-algorithms
+          title: "Algorithms"
+          level: "upper undergraduate"
+          result: "A-"
+        - id: course-ari-linear-algebra
+          title: "Linear Algebra"
+          level: "undergraduate"
+          result: "A"
+      research:
+        - id: research-ari-open-vocab-detection
+          title: "Open-Vocabulary Detection for Indoor Robotics"
+          role: "undergraduate research assistant"
+          dates: "2025-2027"
+          status: "in_progress"
+          methods:
+            - "computer vision"
+            - "vision-language models"
+            - "robotics perception"
+          summary: "Evaluates open-vocabulary object detection models for indoor robot navigation."
+      projects:
+        - id: project-ari-segmentation-benchmark
+          title: "Semantic Segmentation Benchmark"
+          dates: "2026"
+          summary: "Compared segmentation architectures on a synthetic indoor-scene dataset."
+          tools:
+            - "PyTorch"
+            - "Python"
+            - "OpenCV"
+        - id: project-ari-visual-retrieval
+          title: "Visual Retrieval Demo"
+          dates: "2025"
+          summary: "Built an image retrieval prototype using contrastive embeddings."
+          tools:
+            - "Python"
+            - "FAISS"
+      awards:
+        - id: award-ari-research-grant
+          title: "Undergraduate Research Grant"
+          date: "2026"
+          issuer: "National Island University"
+      publications:
+        - id: pub-ari-workshop-preprint
+          title: "Evaluating Vision-Language Detectors for Indoor Robotics"
+          authors:
+            - "Ari Lim"
+            - "Synthetic Advisor"
+          status: "preprint"
+      presentations:
+        - id: presentation-ari-robotics-vision
+          title: "Open-Vocabulary Detection for Indoor Robotics"
+          date: "2026-09"
+          venue: "Synthetic Undergraduate Research Symposium"
+          status: "presented"
+      teaching: []
+      service: []
+    master_cv: |
+      # Ari Lim
+
+      ## Education
+
+      BComp Computer Science, National Island University, 2023-2027.
+
+      ## Research
+
+      Open-Vocabulary Detection for Indoor Robotics, undergraduate research assistant, 2025-2027.
+
+      ## Projects
+
+      Semantic Segmentation Benchmark, 2026.
+      Visual Retrieval Demo, 2025.
+
+      ## Publications
+
+      Evaluating Vision-Language Detectors for Indoor Robotics, preprint.
+
+  hci_design_researcher:
+    domain: human_computer_interaction
+    profile:
+      student:
+        name: "Noor Patel"
+        email: "noor.patel@example.edu"
+        location: "Toronto, Canada"
+        timezone: "America/Toronto"
+        citizenship_or_residency_context: "Synthetic international applicant."
+      current_education:
+        institution: "Harbor City University"
+        degree: "BA Cognitive Science"
+        expected_graduation: "2027-06"
+        grading_context: "Synthetic GPA; do not convert without official rules."
+      languages:
+        english:
+          status: "completed"
+          test: "IELTS Academic"
+          overall: 8.0
+          components:
+            listening: 8.5
+            reading: 8.0
+            writing: 7.5
+            speaking: 8.0
+      standardized_tests:
+        gre:
+          status: "not_required_in_target_cases"
+    evidence:
+      education:
+        - id: edu-noor-ba-cogsci
+          institution: "Harbor City University"
+          degree: "BA Cognitive Science"
+          dates: "2023-2027"
+          status: "in_progress"
+      courses:
+        - id: course-noor-hci
+          title: "Human-Computer Interaction"
+          level: "upper undergraduate"
+          result: "A"
+        - id: course-noor-research-methods
+          title: "Behavioral Research Methods"
+          level: "upper undergraduate"
+          result: "A"
+        - id: course-noor-statistics
+          title: "Statistics for Behavioral Science"
+          level: "undergraduate"
+          result: "A-"
+        - id: course-noor-python
+          title: "Python for Data Analysis"
+          level: "undergraduate"
+          result: "B+"
+      research:
+        - id: research-noor-accessibility-study
+          title: "Accessibility Evaluation of Mobile Learning Interfaces"
+          role: "research assistant"
+          dates: "2025-2026"
+          status: "completed"
+          methods:
+            - "usability testing"
+            - "semi-structured interviews"
+            - "thematic analysis"
+          summary: "Studied accessibility barriers in mobile learning interfaces for first-year students."
+      projects:
+        - id: project-noor-prototype
+          title: "Inclusive Onboarding Prototype"
+          dates: "2026"
+          summary: "Designed and evaluated a Figma prototype for accessible student onboarding."
+          tools:
+            - "Figma"
+            - "R"
+            - "Qualtrics"
+      awards:
+        - id: award-noor-design-prize
+          title: "Undergraduate Design Research Prize"
+          date: "2026"
+          issuer: "Harbor City University"
+      publications: []
+      presentations:
+        - id: presentation-noor-accessibility
+          title: "Accessibility Evaluation of Mobile Learning Interfaces"
+          date: "2026-03"
+          venue: "Synthetic HCI Student Conference"
+          status: "presented"
+      teaching: []
+      service:
+        - id: service-noor-ux-club
+          title: "UX Research Club workshop organizer"
+          dates: "2025-2026"
+    master_cv: |
+      # Noor Patel
+
+      BA Cognitive Science, Harbor City University, 2023-2027.
+
+      Research assistant on Accessibility Evaluation of Mobile Learning Interfaces, 2025-2026.
+
+      Inclusive Onboarding Prototype, 2026.
+
+  cyber_systems_student:
+    domain: cybersecurity
+    profile:
+      student:
+        name: "Mateo Silva"
+        email: "mateo.silva@example.edu"
+        location: "Madrid, Spain"
+        timezone: "Europe/Madrid"
+        citizenship_or_residency_context: "Synthetic EU applicant."
+      current_education:
+        institution: "Iberia Technical University"
+        degree: "BSc Computer Engineering"
+        expected_graduation: "2027-07"
+        grading_context: "Synthetic 10-point scale; do not convert without official rules."
+      languages:
+        english:
+          status: "planned"
+          test: "TOEFL iBT"
+      standardized_tests:
+        gre:
+          status: "not_taken"
+    evidence:
+      education:
+        - id: edu-mateo-bsc-ce
+          institution: "Iberia Technical University"
+          degree: "BSc Computer Engineering"
+          dates: "2023-2027"
+          status: "in_progress"
+      courses:
+        - id: course-mateo-operating-systems
+          title: "Operating Systems"
+          level: "upper undergraduate"
+          result: "9/10"
+        - id: course-mateo-networks
+          title: "Computer Networks"
+          level: "upper undergraduate"
+          result: "9/10"
+        - id: course-mateo-databases
+          title: "Databases"
+          level: "undergraduate"
+          result: "8.5/10"
+        - id: course-mateo-cryptography
+          title: "Applied Cryptography"
+          level: "upper undergraduate"
+          result: "9/10"
+      research:
+        - id: research-mateo-protocol-analysis
+          title: "Static Analysis of IoT Authentication Protocols"
+          role: "undergraduate thesis"
+          dates: "2026-2027"
+          status: "in_progress"
+          methods:
+            - "static analysis"
+            - "protocol testing"
+            - "Python scripting"
+          summary: "Tests common implementation flaws in IoT authentication protocol examples."
+      projects:
+        - id: project-mateo-ctf-toolkit
+          title: "Capture-the-Flag Analysis Toolkit"
+          dates: "2026"
+          summary: "Built scripts for packet analysis, binary triage, and reproducible exploit notes."
+          tools:
+            - "Python"
+            - "Wireshark"
+            - "Linux"
+      awards:
+        - id: award-mateo-ctf
+          title: "Regional Collegiate CTF Finalist"
+          date: "2026"
+          issuer: "Synthetic Cyber League"
+      publications: []
+      presentations: []
+      teaching: []
+      service: []
+    master_cv: |
+      # Mateo Silva
+
+      BSc Computer Engineering, Iberia Technical University, 2023-2027.
+
+      Static Analysis of IoT Authentication Protocols, undergraduate thesis, 2026-2027.
+
+  social_data_applicant:
+    domain: social_data_science
+    profile:
+      student:
+        name: "Leah Okafor"
+        email: "leah.okafor@example.edu"
+        location: "Lagos, Nigeria"
+        timezone: "Africa/Lagos"
+        citizenship_or_residency_context: "Synthetic international applicant."
+      current_education:
+        institution: "Civic Analytics College"
+        degree: "BA Economics"
+        expected_graduation: "2027-06"
+        grading_context: "Synthetic first-class/upper-second context; do not convert without official rules."
+      languages:
+        english:
+          status: "medium_of_instruction"
+          test: "not_taken"
+      standardized_tests:
+        gre:
+          status: "not_taken"
+    evidence:
+      education:
+        - id: edu-leah-ba-econ
+          institution: "Civic Analytics College"
+          degree: "BA Economics"
+          dates: "2023-2027"
+          status: "in_progress"
+      courses:
+        - id: course-leah-econometrics
+          title: "Econometrics"
+          level: "upper undergraduate"
+          result: "A"
+        - id: course-leah-statistics
+          title: "Applied Statistics"
+          level: "undergraduate"
+          result: "A"
+        - id: course-leah-python-policy
+          title: "Python for Public Policy"
+          level: "undergraduate"
+          result: "A-"
+      research:
+        - id: research-leah-election-data
+          title: "Election Data Quality and Turnout Measurement"
+          role: "undergraduate thesis"
+          dates: "2026-2027"
+          status: "in_progress"
+          methods:
+            - "regression analysis"
+            - "survey data cleaning"
+            - "Python analysis"
+          summary: "Studies how missing precinct data affects turnout estimates."
+      projects:
+        - id: project-leah-dashboard
+          title: "Public Spending Data Dashboard"
+          dates: "2026"
+          summary: "Built a dashboard for exploring local public spending and demographic indicators."
+          tools:
+            - "Python"
+            - "pandas"
+            - "Plotly"
+      awards: []
+      publications: []
+      presentations:
+        - id: presentation-leah-policy-data
+          title: "Missing Data in Local Election Turnout"
+          date: "2026-05"
+          venue: "Synthetic Policy Analytics Forum"
+          status: "presented"
+      teaching: []
+      service: []
+    master_cv: |
+      # Leah Okafor
+
+      BA Economics, Civic Analytics College, 2023-2027.
+
+      Election Data Quality and Turnout Measurement, undergraduate thesis, 2026-2027.
+
+  professional_data_applicant:
+    domain: professional_data_systems
+    profile:
+      student:
+        name: "Sam Rivera"
+        email: "sam.rivera@example.edu"
+        location: "Austin, United States"
+        timezone: "America/Chicago"
+        citizenship_or_residency_context: "Synthetic domestic US applicant."
+      current_education:
+        institution: "Lone Star State University"
+        degree: "BS Information Systems"
+        expected_graduation: "2024-05"
+        grading_context: "Synthetic US GPA; do not convert without official rules."
+      languages:
+        english:
+          status: "native_or_primary"
+          test: "not_applicable"
+      standardized_tests:
+        gre:
+          status: "not_taken"
+    evidence:
+      education:
+        - id: edu-sam-bs-is
+          institution: "Lone Star State University"
+          degree: "BS Information Systems"
+          dates: "2020-2024"
+          status: "completed"
+      courses:
+        - id: course-sam-databases
+          title: "Database Systems"
+          level: "undergraduate"
+          result: "A-"
+        - id: course-sam-data-mining
+          title: "Data Mining"
+          level: "upper undergraduate"
+          result: "B+"
+        - id: course-sam-product-analytics
+          title: "Product Analytics"
+          level: "undergraduate"
+          result: "A"
+      research:
+        - id: research-sam-retention-analysis
+          title: "Retention Analysis for Subscription Products"
+          role: "data analyst"
+          dates: "2024-2026"
+          status: "completed"
+          methods:
+            - "cohort analysis"
+            - "SQL modeling"
+            - "A/B test analysis"
+          summary: "Analyzed retention, experimentation, and data quality for a subscription product team."
+      projects:
+        - id: project-sam-metrics-pipeline
+          title: "Product Metrics Pipeline"
+          dates: "2025"
+          summary: "Built a metrics pipeline and dashboard for weekly product reviews."
+          tools:
+            - "SQL"
+            - "dbt"
+            - "Tableau"
+      awards:
+        - id: award-sam-team-impact
+          title: "Product Analytics Team Impact Award"
+          date: "2025"
+          issuer: "Synthetic Employer"
+      publications: []
+      presentations: []
+      teaching: []
+      service: []
+    master_cv: |
+      # Sam Rivera
+
+      BS Information Systems, Lone Star State University, 2020-2024.
+
+      Data analyst, Retention Analysis for Subscription Products, 2024-2026.
+
+  low_evidence_borderline:
+    domain: borderline_missing_evidence
+    profile:
+      student:
+        name: "Iris Novak"
+        email: "iris.novak@example.edu"
+        location: "Prague, Czechia"
+        timezone: "Europe/Prague"
+        citizenship_or_residency_context: "Synthetic EU applicant."
+      current_education:
+        institution: "Central City College"
+        degree: "BSc Software Engineering"
+        expected_graduation: "2027-06"
+        grading_context: "Incomplete synthetic record; do not infer grades."
+      languages:
+        english:
+          status: "unknown"
+          test: "not_recorded"
+      standardized_tests:
+        gre:
+          status: "not_taken"
+    evidence:
+      education:
+        - id: edu-iris-bsc-se
+          institution: "Central City College"
+          degree: "BSc Software Engineering"
+          dates: "2023-2027"
+          status: "in_progress"
+      courses:
+        - id: course-iris-programming
+          title: "Programming"
+          level: "undergraduate"
+          result: "recorded"
+        - id: course-iris-databases
+          title: "Databases"
+          level: "undergraduate"
+          result: "recorded"
+      research: []
+      projects:
+        - id: project-iris-course-app
+          title: "Course Scheduling App"
+          dates: "2025"
+          summary: "Built a small scheduling application for a course project."
+          tools:
+            - "JavaScript"
+            - "SQLite"
+      awards: []
+      publications: []
+      presentations: []
+      teaching: []
+      service: []
+    master_cv: |
+      # Iris Novak
+
+      BSc Software Engineering, Central City College, 2023-2027.
+
+      Course Scheduling App, 2025.

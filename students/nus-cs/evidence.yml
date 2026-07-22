@@ -1,0 +1,160 @@
+education:
+  - id: edu-nus-bcomp-cs
+    institution: "National University of Singapore"
+    degree: "Bachelor of Computing in Computer Science"
+    dates: "2023-2027"
+    status: "in_progress"
+    notes: "Synthetic live-test student record with high academic performance."
+
+courses:
+  - id: course-data-structures
+    title: "Data Structures and Algorithms"
+    level: "undergraduate"
+    result: "A+"
+  - id: course-algorithms
+    title: "Design and Analysis of Algorithms"
+    level: "upper undergraduate"
+    result: "A"
+  - id: course-machine-learning
+    title: "Machine Learning"
+    level: "upper undergraduate"
+    result: "A+"
+  - id: course-statistics
+    title: "Probability and Statistics"
+    level: "undergraduate"
+    result: "A"
+  - id: course-linear-algebra
+    title: "Linear Algebra"
+    level: "undergraduate"
+    result: "A+"
+  - id: course-computer-vision
+    title: "Computer Vision and Pattern Recognition"
+    level: "upper undergraduate"
+    result: "A+"
+  - id: course-deep-learning
+    title: "Deep Learning for Visual Recognition"
+    level: "upper undergraduate"
+    result: "A"
+  - id: course-robotics-perception
+    title: "Robotics Perception"
+    level: "upper undergraduate"
+    result: "A"
+  - id: course-optimization
+    title: "Numerical Optimization"
+    level: "upper undergraduate"
+    result: "A-"
+  - id: course-hci
+    title: "Human-Computer Interaction"
+    level: "upper undergraduate"
+    result: "A-"
+
+research:
+  - id: research-open-vocabulary-perception
+    title: "Open-Vocabulary Object Detection for Indoor Service Robots"
+    role: "undergraduate research assistant"
+    dates: "2025-2027"
+    status: "in_progress"
+    methods:
+      - "open-vocabulary object detection"
+      - "vision-language models"
+      - "robotics perception"
+      - "Python"
+      - "PyTorch"
+    summary: "Evaluates how open-vocabulary detectors transfer from web-scale image data to robot-collected indoor scenes, with emphasis on failure cases under clutter and occlusion."
+  - id: research-domain-shift-driving-scenes
+    title: "Domain Shift Analysis for Night-Time Driving Scene Segmentation"
+    role: "summer research intern"
+    dates: "2026"
+    status: "completed"
+    methods:
+      - "semantic segmentation"
+      - "domain shift evaluation"
+      - "calibration analysis"
+      - "benchmark datasets"
+    summary: "Measured segmentation degradation between daytime and night-time street scenes and summarized error patterns for small objects, glare, and low-light boundaries."
+  - id: research-capstone-visual-retrieval
+    title: "Capstone: Efficient Visual Retrieval for Museum Collections"
+    role: "capstone project lead"
+    dates: "2026-2027"
+    status: "in_progress"
+    methods:
+      - "contrastive image-text retrieval"
+      - "approximate nearest neighbor search"
+      - "evaluation metrics"
+      - "technical writing"
+    summary: "Builds a retrieval prototype for matching exhibit photos to catalog metadata while tracking precision, recall, and curator-reviewed failure modes."
+
+projects:
+  - id: project-robot-vision-benchmark
+    title: "Robot Vision Benchmark Toolkit"
+    dates: "2026"
+    summary: "Built a reproducible evaluation toolkit for object detection models on indoor robot camera frames, including dataset splits, mAP reports, and qualitative error galleries."
+    tools:
+      - "Python"
+      - "PyTorch"
+      - "OpenCV"
+      - "Weights and Biases"
+  - id: project-depth-completion
+    title: "Monocular Depth Completion for Cluttered Indoor Scenes"
+    dates: "2025"
+    summary: "Implemented a depth-completion model and ablation study for sparse depth inputs, reporting RMSE and boundary error on a small classroom benchmark."
+    tools:
+      - "Python"
+      - "PyTorch"
+      - "NumPy"
+      - "OpenCV"
+  - id: project-rubric-eval-dashboard
+    title: "Visual Model Error Review Dashboard"
+    dates: "2026"
+    summary: "Created a local dashboard for annotating computer vision model failures, comparing reviewer rubrics, and exporting disagreement summaries for research meetings."
+    tools:
+      - "React"
+      - "SQLite"
+      - "Python"
+
+awards:
+  - id: award-nus-deans-list
+    title: "Dean's List"
+    date: "2024-2026"
+    issuer: "National University of Singapore School of Computing"
+  - id: award-undergraduate-research
+    title: "Undergraduate Research Opportunities Programme Commendation"
+    date: "2026"
+    issuer: "National University of Singapore School of Computing"
+
+publications:
+  - id: publication-open-vocab-workshop
+    title: "Evaluating Open-Vocabulary Detection Under Indoor Robot Viewpoint Shift"
+    authors:
+      - "Maya Tan"
+      - "Arjun Rao"
+      - "Lina Chen"
+    status: "workshop paper under review"
+
+presentations:
+  - id: presentation-robot-vision
+    title: "Failure Modes in Open-Vocabulary Robot Perception"
+    date: "2026-04"
+    venue: "NUS Undergraduate Research Symposium"
+    status: "presented"
+  - id: presentation-night-segmentation
+    title: "Night-Time Scene Segmentation Error Analysis"
+    date: "2026-08"
+    venue: "Synthetic Computer Vision Lab Summer Seminar"
+    status: "presented"
+
+teaching:
+  - id: teaching-programming-methodology
+    role: "Teaching assistant"
+    course: "Programming Methodology"
+    dates: "2025-2026"
+  - id: teaching-computer-vision-lab
+    role: "Lab tutor"
+    course: "Computer Vision and Pattern Recognition"
+    dates: "2026"
+
+service:
+  - id: service-vision-reading-group
+    title: "Computer Vision Reading Group coordinator"
+    dates: "2025-2026"
+    notes: "Organized paper discussions on object detection, segmentation, and vision-language models."

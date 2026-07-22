@@ -1,0 +1,44 @@
+id: berkeley-mims-fall-2027
+institution: University of California Berkeley
+program: Master of Information Management and Systems
+degree_type: MIMS
+department: School of Information
+intake: Fall 2027
+applicant_category: not_applicable
+country: United States
+official_url: https://www.ischool.berkeley.edu/programs/mims/admissions
+application_url: https://www.ischool.berkeley.edu/programs/mims/admissions
+retrieved_at: '2026-07-02'
+deadline:
+  value: unknown
+  type: unknown
+  timezone: America/Los_Angeles
+  source_url: https://www.ischool.berkeley.edu/programs/mims/admissions
+  notes: Future-cycle deadline remains unknown; the current admissions page only shows the next start date, August 2027.
+document_instructions:
+  text: MIMS applicants must submit a current resume, a statement of purpose, a personal history statement, a short answer essay, two professional letters of recommendation, transcripts, TOEFL or IELTS scores if English proficiency is required, and a programming proficiency form. GRE and GMAT are no longer required.
+sources:
+  - url: https://www.ischool.berkeley.edu/programs/mims/admissions
+    retrieved_at: '2026-07-02'
+    use: Program identity, admissions overview, resume requirement, and next start date
+    notes: Official UC Berkeley School of Information admissions page for MIMS.
+  - url: https://www.ischool.berkeley.edu/programs/mims/admissions/essays
+    retrieved_at: '2026-07-02'
+    use: Statement of purpose, personal history statement, and short answer prompts
+    notes: Official Berkeley I School essays guidance page.
+  - url: https://www.ischool.berkeley.edu/programs/mims/admissions/academics
+    retrieved_at: '2026-07-02'
+    use: Transcript handling and degree-completion expectation
+    notes: Official Berkeley I School academic history guidance page.
+  - url: https://www.ischool.berkeley.edu/programs/mims/admissions/testscores
+    retrieved_at: '2026-07-02'
+    use: GRE/GMAT policy and English-language proficiency rules
+    notes: Official Berkeley I School test-scores guidance page.
+  - url: https://www.ischool.berkeley.edu/programs/mims/admissions/programming
+    retrieved_at: '2026-07-02'
+    use: Programming proficiency expectations and object-oriented language guidance
+    notes: Official Berkeley I School programming-proficiency guidance page.
+freshness_warnings:
+  - The future-cycle deadline is still unpublished on the official MIMS admissions page.
+  - The programming-proficiency page expects basic object-oriented programming skill and explicitly says SQL alone is not acceptable.
+conflicts: []

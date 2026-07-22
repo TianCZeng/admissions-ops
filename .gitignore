@@ -1,0 +1,63 @@
+# Dependencies and package-manager output
+node_modules/
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+pnpm-debug.log*
+
+# Build, coverage, and cache output
+dist/
+build/
+coverage/
+.nyc_output/
+.cache/
+.parcel-cache/
+.eslintcache
+validation-output/
+
+# Local environment and secrets
+.env
+.env.*
+!.env.example
+
+# OS and editor noise
+.DS_Store
+Thumbs.db
+*.swp
+*.swo
+*~
+.vscode/*
+!.vscode/extensions.json
+!.vscode/settings.example.json
+.idea/
+
+# Local agent/tool caches
+.codex/
+
+# User-owned admissions data and generated artifacts
+/students/*
+!/students/*.example.yml
+!/students/*.example.md
+# Public demo workspace: fully synthetic applicant (Maya Tan). Real student
+# workspaces stay ignored; only this one may be committed.
+!/students/nus-cs/
+/programs/inbox.yml
+/programs/tracker.md
+/programs/evaluations/*
+!/programs/evaluations/.gitkeep
+/programs/checklists/*
+!/programs/checklists/.gitkeep
+/reports/*
+!/reports/.gitkeep
+/output/*
+!/output/.gitkeep
+
+# Sensitive raw documents are outside the required MVP.
+/students/*/raw/
+/students/*/private/
+/students/*/documents/
+/students/*/transcripts/
+/students/*/passports/
+/students/*/financial/
+/students/*/recommendations/
+/programs/portal-exports/

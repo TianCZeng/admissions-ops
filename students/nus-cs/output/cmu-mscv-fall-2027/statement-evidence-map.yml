@@ -1,0 +1,91 @@
+program_id: cmu-mscv-fall-2027
+institution: Carnegie Mellon University
+program: Master of Science in Computer Vision
+statement_type: statement_of_purpose
+review_status: Review Required
+artifact: output/cmu-mscv-fall-2027/statement-draft.md
+sources:
+  evidence: students/nus-cs/evidence.yml
+  master_cv: students/nus-cs/master-cv.md
+  statement_brief: students/nus-cs/statement-brief.md
+generated_claims:
+  - claim_id: claim-brief-why-now
+    claim_summary: >-
+      The opening paragraph uses the student brief's explanation for why graduate study is needed
+      now and centers the essay on the shared distribution-shift problem.
+    source_type: student_brief
+    brief_section: General Direction
+  - claim_id: claim-research-driving
+    claim_summary: >-
+      The draft describes the night-time driving scene segmentation internship and its low-light
+      error analysis.
+    source_type: evidence
+    evidence_id: research-domain-shift-driving-scenes
+    protected_facts:
+      - Domain Shift Analysis for Night-Time Driving Scene Segmentation
+      - summer research intern
+      - 2026
+  - claim_id: claim-research-robot
+    claim_summary: The draft describes the open-vocabulary robot perception research and its transfer setting.
+    source_type: evidence
+    evidence_id: research-open-vocabulary-perception
+    protected_facts:
+      - Open-Vocabulary Object Detection for Indoor Service Robots
+      - undergraduate research assistant
+      - 2025-2027
+  - claim_id: claim-coursework
+    claim_summary: The draft names the key coursework that grounds the applicant's technical preparation.
+    source_type: evidence
+    evidence_id: course-machine-learning
+    protected_facts:
+      - Machine Learning
+  - claim_id: claim-coursework-vision
+    claim_summary: The draft names the vision and perception coursework that supports MSCV preparation.
+    source_type: evidence
+    evidence_id: course-computer-vision
+    protected_facts:
+      - Computer Vision and Pattern Recognition
+  - claim_id: claim-coursework-deep
+    claim_summary: The draft names the deep learning and robotics coursework that supports MSCV preparation.
+    source_type: evidence
+    evidence_id: course-deep-learning
+    protected_facts:
+      - Deep Learning for Visual Recognition
+  - claim_id: claim-coursework-robotics
+    claim_summary: The draft names the robotics perception coursework that supports MSCV preparation.
+    source_type: evidence
+    evidence_id: course-robotics-perception
+    protected_facts:
+      - Robotics Perception
+  - claim_id: claim-toolkit
+    claim_summary: The draft describes the Robot Vision Benchmark Toolkit as evidence of evaluation discipline.
+    source_type: evidence
+    evidence_id: project-robot-vision-benchmark
+    protected_facts:
+      - Robot Vision Benchmark Toolkit
+  - claim_id: claim-dashboard
+    claim_summary: >-
+      The draft describes the Visual Model Error Review Dashboard as evidence of failure analysis
+      work.
+    source_type: evidence
+    evidence_id: project-rubric-eval-dashboard
+    protected_facts:
+      - Visual Model Error Review Dashboard
+  - claim_id: claim-capstone
+    claim_summary: >-
+      The draft describes the capstone's emphasis on precision, recall, curator-reviewed failure
+      modes, and user feedback.
+    source_type: evidence
+    evidence_id: research-capstone-visual-retrieval
+    protected_facts:
+      - Efficient Visual Retrieval for Museum Collections
+  - claim_id: claim-program
+    claim_summary: >-
+      The draft identifies Carnegie Mellon MSCV as a Robotics Institute computer vision program and
+      frames the next research direction around the official program themes.
+    source_type: official_program_source
+    source_url: https://www.ri.cmu.edu/education/academic-programs/master-of-science-computer-vision/
+word_count: 420
+estimated_pages: 1
+word_limit: null
+page_limit: 2

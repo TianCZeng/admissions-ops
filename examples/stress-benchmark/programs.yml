@@ -1,0 +1,834 @@
+programs:
+  - id: cmu-mscv-fall-2027
+    report_number: 101
+    institution: Carnegie Mellon University
+    program: Master of Science in Computer Vision
+    degree_type: MS
+    department: Robotics Institute
+    intake: Fall 2027
+    applicant_category: not_applicable
+    country: United States
+    official_url: https://www.ri.cmu.edu/education/academic-programs/master-of-science-computer-vision/
+    application_url: https://www.ri.cmu.edu/education/academic-programs/master-of-science-computer-vision/
+    retrieved_at: "2026-06-27"
+    deadline:
+      value: unknown
+      type: unknown
+      timezone: unknown
+      source_url: https://www.ri.cmu.edu/education/academic-programs/master-of-science-computer-vision/
+      notes: Stress fixture keeps the future deadline unknown until the official cycle page is checked.
+    eligibility_summary: unclear
+    fit_score: 4.4
+    evidence_confidence: high
+    tailored_cv: pending
+    status: Evaluated
+    next_action: Verify Fall 2027 deadline and test requirements
+    notes: Real official source benchmark with synthetic applicant data; generated artifacts must remain Review Required.
+    sources:
+      - url: https://www.ri.cmu.edu/education/academic-programs/master-of-science-computer-vision/
+        retrieved_at: "2026-06-27"
+        use: Program identity and computer vision learning outcomes
+        notes: Official CMU Robotics Institute program page.
+    freshness_warnings:
+      - Future-cycle deadline remains unknown in this stress fixture.
+    conflicts: []
+    eligibility:
+      - requirement: Computer vision preparation
+        status: likely_met
+        evidence: "`research-ari-open-vocab-detection`, `course-ari-computer-vision`"
+        source: https://www.ri.cmu.edu/education/academic-programs/master-of-science-computer-vision/
+        notes: Synthetic evidence aligns with program topic; official admission thresholds still need checking.
+      - requirement: GRE or standardized test status
+        status: unknown
+        evidence: "`student/profile.yml` lists GRE as planned"
+        source: https://www.ri.cmu.edu/education/academic-programs/master-of-science-computer-vision/
+        notes: Confirm current test requirement for the intended cycle.
+      - requirement: English language evidence
+        status: unknown
+        evidence: "`student/profile.yml` lists English-medium instruction"
+        source: https://www.ri.cmu.edu/education/academic-programs/master-of-science-computer-vision/
+        notes: Waiver rules need official confirmation.
+    fit:
+      summary: Strong synthetic fit for a computer vision program, but unresolved testing and deadline facts keep eligibility unclear.
+      dimensions:
+        academic_preparation: Strong computer vision, deep learning, algorithms, and linear algebra evidence.
+        research_or_subject_fit: Direct match to vision-language detection, segmentation, retrieval, and robotics perception.
+        evidence_strength: Research, projects, a preprint, and presentation support the vision theme.
+        goal_alignment: Aligns with advanced applied computer vision and robotics perception goals.
+        admissions_feasibility: Ambitious; the fixture does not claim test scores or cycle-specific requirements.
+        practical_constraints: US study and Fall intake require visa and deadline planning.
+        application_effort: High until deadline, testing, and English-waiver requirements are confirmed.
+    competitiveness_gaps:
+      - Missing cycle-specific deadline.
+      - GRE and English-waiver rules are unresolved.
+    practical_constraints:
+      - International timing and test planning must be confirmed.
+    document_instructions:
+      page_limit: 2
+      text: Use a concise admissions resume for the CMU MSCV stress case.
+    cv_adaptation_plan:
+      document_type: admissions_resume
+      summary: >-
+        Build a concise admissions resume focused on computer vision evidence: lead with the
+        open-vocabulary detection research, keep segmentation and retrieval projects, and omit the
+        preprint and presentation to respect the two-page limit.
+      profile_summary: >-
+        Computer vision applicant with open-vocabulary detection research and hands-on segmentation
+        and retrieval projects.
+      evidence_priorities:
+        - edu-ari-bcomp-cs
+        - research-ari-open-vocab-detection
+        - project-ari-segmentation-benchmark
+        - project-ari-visual-retrieval
+        - course-ari-computer-vision
+        - course-ari-deep-learning
+        - award-ari-research-grant
+    action_items:
+      - item: Verify Fall 2027 deadline
+        status: Needed
+        due: unknown
+        source: https://www.ri.cmu.edu/education/academic-programs/master-of-science-computer-vision/
+        notes: Use official CMU page for the active cycle.
+      - item: Confirm GRE and English rules
+        status: Needed
+        due: unknown
+        source: https://www.ri.cmu.edu/education/academic-programs/master-of-science-computer-vision/
+        notes: Do not infer waiver or score status.
+    questions:
+      - What are the Fall 2027 CMU MSCV deadline and test requirements?
+      - Is an English test waived for an English-medium synthetic degree?
+
+  - id: ucl-msc-hci-fall-2027
+    report_number: 102
+    institution: University College London
+    program: MSc Human-Computer Interaction
+    degree_type: MSc
+    department: UCL Interaction Centre
+    intake: Fall 2027
+    applicant_category: international
+    country: United Kingdom
+    official_url: https://www.ucl.ac.uk/prospective-students/graduate/taught-degrees/human-computer-interaction-msc
+    application_url: https://www.ucl.ac.uk/prospective-students/graduate/taught-degrees/human-computer-interaction-msc
+    retrieved_at: "2026-06-27"
+    deadline:
+      value: unknown
+      type: unknown
+      timezone: Europe/London
+      source_url: https://www.ucl.ac.uk/prospective-students/graduate/taught-degrees/human-computer-interaction-msc
+      notes: Stress fixture treats the next intended intake as requiring manual confirmation.
+    eligibility_summary: likely
+    fit_score: 4.2
+    evidence_confidence: high
+    tailored_cv: pending
+    status: Evaluated
+    next_action: Confirm active-cycle application dates
+    notes: Interdisciplinary HCI benchmark using an official UCL programme page and synthetic HCI evidence.
+    sources:
+      - url: https://www.ucl.ac.uk/prospective-students/graduate/taught-degrees/human-computer-interaction-msc
+        retrieved_at: "2026-06-27"
+        use: Programme identity and interdisciplinary HCI context
+        notes: Official UCL programme page.
+    freshness_warnings:
+      - The stress fixture does not copy closed or stale dates into Fall 2027.
+    conflicts: []
+    eligibility:
+      - requirement: Relevant academic background
+        status: likely_met
+        evidence: "`edu-noor-ba-cogsci`, `course-noor-hci`, `course-noor-research-methods`"
+        source: https://www.ucl.ac.uk/prospective-students/graduate/taught-degrees/human-computer-interaction-msc
+        notes: Interdisciplinary background appears plausible; official equivalence remains manual.
+      - requirement: English language evidence
+        status: met
+        evidence: "`student/profile.yml` IELTS Academic 8.0 overall"
+        source: https://www.ucl.ac.uk/prospective-students/graduate/taught-degrees/human-computer-interaction-msc
+        notes: Component thresholds still require official comparison.
+      - requirement: Current cycle deadline
+        status: unknown
+        evidence: none
+        source: https://www.ucl.ac.uk/prospective-students/graduate/taught-degrees/human-computer-interaction-msc
+        notes: Do not reuse stale application dates.
+    fit:
+      summary: Strong HCI fit from accessibility research, user studies, and prototyping evidence.
+      dimensions:
+        academic_preparation: Cognitive science, HCI, behavioral methods, statistics, and Python support the programme.
+        research_or_subject_fit: Accessibility evaluation and usability testing map directly to HCI.
+        evidence_strength: Research, prototype, presentation, award, and service give a coherent HCI profile.
+        goal_alignment: Fits human-centered systems and accessibility goals.
+        admissions_feasibility: Realistic if grade equivalence and deadline details are confirmed.
+        practical_constraints: UK timing and international documentation remain planning items.
+        application_effort: Moderate; document and deadline instructions need cycle-specific review.
+    competitiveness_gaps:
+      - CS coursework is lighter than a pure computing applicant.
+      - Active-cycle deadline must be confirmed.
+    practical_constraints:
+      - International UK application and English evidence must be checked against current rules.
+    document_instructions:
+      text: Use an academic CV adaptation because the stress case emphasizes research and HCI evidence.
+    cv_adaptation_plan:
+      document_type: academic_cv
+      summary: >-
+        Build an academic CV foregrounding HCI research methods, accessibility, and prototyping,
+        keeping the full coursework, presentation, award, and service record visible for an
+        interdisciplinary review.
+      profile_summary: >-
+        HCI researcher focused on accessibility evaluation, usability testing, and inclusive
+        prototype design.
+      evidence_priorities:
+        - edu-noor-ba-cogsci
+        - research-noor-accessibility-study
+        - project-noor-prototype
+        - presentation-noor-accessibility
+        - course-noor-hci
+        - course-noor-research-methods
+        - course-noor-statistics
+        - course-noor-python
+        - award-noor-design-prize
+        - service-noor-ux-club
+    action_items:
+      - item: Confirm active-cycle application dates
+        status: Needed
+        due: unknown
+        source: https://www.ucl.ac.uk/prospective-students/graduate/taught-degrees/human-computer-interaction-msc
+        notes: Avoid stale deadline copying.
+    questions:
+      - Does UCL publish separate document requirements for this intake?
+
+  - id: uw-ms-hcde-fall-2027
+    report_number: 103
+    institution: University of Washington
+    program: MS Human Centered Design & Engineering
+    degree_type: MS
+    department: Human Centered Design & Engineering
+    intake: Fall 2027
+    applicant_category: not_applicable
+    country: United States
+    official_url: https://www.hcde.washington.edu/ms/admissions
+    application_url: https://www.hcde.washington.edu/ms/admissions
+    retrieved_at: "2026-06-27"
+    deadline:
+      value: unknown
+      type: unknown
+      timezone: America/Los_Angeles
+      source_url: https://www.hcde.washington.edu/ms/admissions
+      notes: Future intake deadline remains a verification task.
+    eligibility_summary: likely
+    fit_score: 4.3
+    evidence_confidence: high
+    tailored_cv: pending
+    status: Evaluated
+    next_action: Prepare resume-focused draft and verify deadline
+    notes: Resume-required HCI benchmark from the official UW HCDE admissions page.
+    sources:
+      - url: https://www.hcde.washington.edu/ms/admissions
+        retrieved_at: "2026-06-27"
+        use: Admission materials and programme requirements
+        notes: Official UW HCDE admissions page.
+    freshness_warnings:
+      - Future deadline remains unknown in this fixture.
+    conflicts: []
+    eligibility:
+      - requirement: Bachelor's degree
+        status: likely_met
+        evidence: "`edu-noor-ba-cogsci`"
+        source: https://www.hcde.washington.edu/ms/admissions
+        notes: Degree completion is in progress.
+      - requirement: Resume in application materials
+        status: met
+        evidence: "`student/master-cv.md` available as source material"
+        source: https://www.hcde.washington.edu/ms/admissions
+        notes: Generate resume draft, not a long academic CV.
+      - requirement: Current cycle deadline
+        status: unknown
+        evidence: none
+        source: https://www.hcde.washington.edu/ms/admissions
+        notes: Manual confirmation required.
+    fit:
+      summary: Strong fit for human-centered design from accessibility research and prototype evaluation.
+      dimensions:
+        academic_preparation: HCI, behavioral methods, statistics, and Python provide relevant preparation.
+        research_or_subject_fit: User research and accessibility methods map to HCDE.
+        evidence_strength: Project and presentation evidence are strong for a resume-style application.
+        goal_alignment: Aligns with inclusive design and research-driven product work.
+        admissions_feasibility: Realistic if the applicant explains the cognitive science pathway clearly.
+        practical_constraints: US application timeline and recommendations require planning.
+        application_effort: Moderate; resume, statement, and references must be coordinated.
+    competitiveness_gaps:
+      - Needs concise explanation of technical preparation.
+    practical_constraints:
+      - References and application package should be requested early.
+    document_instructions:
+      page_limit: 2
+      text: Official application materials include a resume; render a concise admissions resume.
+    cv_adaptation_plan:
+      document_type: admissions_resume
+      summary: >-
+        Build a two-page resume centered on user research and accessibility evidence; keep the
+        accessibility study, prototype, and methods coursework, and omit the presentation and
+        service entries the resume template cannot carry.
+      profile_summary: >-
+        Human-centered design applicant combining accessibility research, usability testing, and
+        inclusive prototyping.
+      evidence_priorities:
+        - edu-noor-ba-cogsci
+        - research-noor-accessibility-study
+        - project-noor-prototype
+        - course-noor-hci
+        - course-noor-research-methods
+        - course-noor-statistics
+        - award-noor-design-prize
+    action_items:
+      - item: Verify Fall 2027 deadline
+        status: Needed
+        due: unknown
+        source: https://www.hcde.washington.edu/ms/admissions
+        notes: Use current official admissions page.
+    questions:
+      - What is the Fall 2027 MS HCDE application deadline?
+
+  - id: berkeley-mims-fall-2027
+    report_number: 104
+    institution: University of California Berkeley
+    program: Master of Information Management and Systems
+    degree_type: MIMS
+    department: School of Information
+    intake: Fall 2027
+    applicant_category: not_applicable
+    country: United States
+    official_url: https://www.ischool.berkeley.edu/programs/mims/admissions
+    application_url: https://www.ischool.berkeley.edu/programs/mims/admissions
+    retrieved_at: "2026-06-27"
+    deadline:
+      value: unknown
+      type: unknown
+      timezone: America/Los_Angeles
+      source_url: https://www.ischool.berkeley.edu/programs/mims/admissions
+      notes: Future-cycle deadline remains unknown.
+    eligibility_summary: likely
+    fit_score: 4.1
+    evidence_confidence: high
+    tailored_cv: pending
+    status: Evaluated
+    next_action: Build professional resume draft
+    notes: Professional information-systems benchmark with synthetic work evidence.
+    sources:
+      - url: https://www.ischool.berkeley.edu/programs/mims/admissions
+        retrieved_at: "2026-06-27"
+        use: Official admission requirements and resume expectation
+        notes: Official UC Berkeley School of Information page.
+    freshness_warnings:
+      - Deadline is intentionally not guessed for the future intake.
+    conflicts: []
+    eligibility:
+      - requirement: Prior bachelor's degree
+        status: met
+        evidence: "`edu-sam-bs-is`"
+        source: https://www.ischool.berkeley.edu/programs/mims/admissions
+        notes: Synthetic degree is completed.
+      - requirement: Resume
+        status: met
+        evidence: "`research-sam-retention-analysis`, `project-sam-metrics-pipeline`"
+        source: https://www.ischool.berkeley.edu/programs/mims/admissions
+        notes: Professional evidence should be condensed for admissions.
+      - requirement: Current cycle deadline
+        status: unknown
+        evidence: none
+        source: https://www.ischool.berkeley.edu/programs/mims/admissions
+        notes: Confirm official deadline before real use.
+    fit:
+      summary: Plausible professional fit around product analytics, information systems, and data products.
+      dimensions:
+        academic_preparation: Information systems, databases, data mining, and product analytics provide relevant preparation.
+        research_or_subject_fit: Work evidence fits information management and applied data systems.
+        evidence_strength: Professional analytics evidence is stronger than academic research output.
+        goal_alignment: Aligns with data product, information systems, and analytics leadership goals.
+        admissions_feasibility: Realistic if the applicant explains professional trajectory and academic readiness.
+        practical_constraints: US timing and recommendation sourcing from work contexts require planning.
+        application_effort: Moderate; resume and statement need tight positioning.
+    competitiveness_gaps:
+      - Limited academic research evidence.
+    practical_constraints:
+      - Professional recommenders may need early briefing.
+    document_instructions:
+      page_limit: 2
+      text: Use a concise current resume for the professional MIMS application.
+    cv_adaptation_plan:
+      document_type: admissions_resume
+      summary: >-
+        Build a professional admissions resume focused on analytics, data systems, and product
+        impact, leading with the retention analysis role and metrics pipeline before the supporting
+        coursework.
+      profile_summary: >-
+        Information systems professional with product analytics, retention analysis, and metrics
+        pipeline experience.
+      evidence_priorities:
+        - edu-sam-bs-is
+        - research-sam-retention-analysis
+        - project-sam-metrics-pipeline
+        - course-sam-product-analytics
+        - course-sam-databases
+        - course-sam-data-mining
+        - award-sam-team-impact
+    action_items:
+      - item: Verify Fall 2027 MIMS deadline
+        status: Needed
+        due: unknown
+        source: https://www.ischool.berkeley.edu/programs/mims/admissions
+        notes: Use official admissions page.
+    questions:
+      - Does Berkeley MIMS impose a resume page limit for this cycle?
+
+  - id: epfl-eth-ms-cyber-security-fall-2027
+    report_number: 105
+    institution: EPFL and ETH Zurich
+    program: Master in Cyber Security
+    degree_type: MSc
+    department: Joint EPFL-ETH programme
+    intake: Fall 2027
+    applicant_category: international
+    country: Switzerland
+    official_url: https://www.epfl.ch/education/master/programs/cyber-security/
+    application_url: https://www.epfl.ch/education/master/programs/cyber-security/
+    retrieved_at: "2026-06-27"
+    deadline:
+      value: unknown
+      type: unknown
+      timezone: Europe/Zurich
+      source_url: https://www.epfl.ch/education/master/programs/cyber-security/
+      notes: Official cycle dates must be checked before real use.
+    eligibility_summary: likely
+    fit_score: 4.0
+    evidence_confidence: high
+    tailored_cv: pending
+    status: Evaluated
+    next_action: Verify prerequisite coverage and English test plan
+    notes: Hard-prerequisite benchmark using official EPFL cyber security programme page.
+    sources:
+      - url: https://www.epfl.ch/education/master/programs/cyber-security/
+        retrieved_at: "2026-06-27"
+        use: Programme identity and cyber security preparation
+        notes: Official EPFL page for the joint programme.
+    freshness_warnings:
+      - Deadline and language details are not guessed in this fixture.
+    conflicts: []
+    eligibility:
+      - requirement: Computer science or engineering foundation
+        status: likely_met
+        evidence: "`edu-mateo-bsc-ce`"
+        source: https://www.epfl.ch/education/master/programs/cyber-security/
+        notes: Synthetic computer engineering background appears relevant.
+      - requirement: Systems, networks, databases, programming, and cryptography preparation
+        status: likely_met
+        evidence: "`course-mateo-operating-systems`, `course-mateo-networks`, `course-mateo-databases`, `course-mateo-cryptography`"
+        source: https://www.epfl.ch/education/master/programs/cyber-security/
+        notes: Verify official prerequisite wording before final assessment.
+      - requirement: English language evidence
+        status: unknown
+        evidence: "`student/profile.yml` lists TOEFL as planned"
+        source: https://www.epfl.ch/education/master/programs/cyber-security/
+        notes: Planned test must not be treated as completed.
+    fit:
+      summary: Strong systems and cyber security fit, with English evidence and official prerequisites still requiring confirmation.
+      dimensions:
+        academic_preparation: Operating systems, networks, databases, and cryptography support prerequisite fit.
+        research_or_subject_fit: IoT authentication and protocol testing align with cyber security.
+        evidence_strength: Thesis, CTF toolkit, and CTF award support the profile.
+        goal_alignment: Aligns with systems security and protocol analysis goals.
+        admissions_feasibility: Realistic if language evidence and prerequisite equivalence are verified.
+        practical_constraints: Swiss application timing and language documentation require planning.
+        application_effort: Moderate; prerequisite mapping must be explicit.
+    competitiveness_gaps:
+      - English test is planned, not completed.
+      - Official prerequisite equivalence needs manual review.
+    practical_constraints:
+      - Swiss programme timing and language documentation should be checked early.
+    document_instructions:
+      text: Use an academic CV to preserve technical coursework, thesis, and project evidence.
+    cv_adaptation_plan:
+      document_type: academic_cv
+      summary: >-
+        Build an academic CV foregrounding systems, networks, cryptography, and protocol analysis,
+        keeping the full prerequisite coursework visible for the hard-prerequisite review.
+      profile_summary: >-
+        Systems-focused cyber security applicant with protocol analysis research and applied
+        cryptography coursework.
+      evidence_priorities:
+        - edu-mateo-bsc-ce
+        - research-mateo-protocol-analysis
+        - project-mateo-ctf-toolkit
+        - course-mateo-operating-systems
+        - course-mateo-networks
+        - course-mateo-databases
+        - course-mateo-cryptography
+        - award-mateo-ctf
+    action_items:
+      - item: Confirm English test requirement
+        status: Needed
+        due: unknown
+        source: https://www.epfl.ch/education/master/programs/cyber-security/
+        notes: Planned TOEFL cannot be counted as met.
+    questions:
+      - Which exact prerequisite categories should be mapped for this applicant?
+
+  - id: nus-master-computing-cs-fall-2027
+    report_number: 106
+    institution: National University of Singapore
+    program: Master of Computing - Computer Science Specialisation
+    degree_type: MComp
+    department: School of Computing
+    intake: Fall 2027
+    applicant_category: international
+    country: Singapore
+    official_url: https://www.comp.nus.edu.sg/programmes/pg/mcs/
+    application_url: https://www.comp.nus.edu.sg/programmes/pg/mcs/
+    retrieved_at: "2026-06-27"
+    deadline:
+      value: unknown
+      type: unknown
+      timezone: Asia/Singapore
+      source_url: https://www.comp.nus.edu.sg/programmes/pg/mcs/
+      notes: Official application cycle must be checked before real use.
+    eligibility_summary: likely
+    fit_score: 4.1
+    evidence_confidence: high
+    tailored_cv: pending
+    status: Evaluated
+    next_action: Confirm coursework/project route and document instructions
+    notes: Singapore coursework/project-route benchmark using official NUS School of Computing page.
+    sources:
+      - url: https://www.comp.nus.edu.sg/programmes/pg/mcs/
+        retrieved_at: "2026-06-27"
+        use: Programme identity and structure
+        notes: Official NUS School of Computing programme page.
+    freshness_warnings:
+      - Application dates and document rules remain current-cycle verification tasks.
+    conflicts: []
+    eligibility:
+      - requirement: Relevant computing degree
+        status: likely_met
+        evidence: "`edu-ari-bcomp-cs`"
+        source: https://www.comp.nus.edu.sg/programmes/pg/mcs/
+        notes: Synthetic CS degree appears relevant.
+      - requirement: Current cycle deadline
+        status: unknown
+        evidence: none
+        source: https://www.comp.nus.edu.sg/programmes/pg/mcs/
+        notes: Confirm official deadline.
+      - requirement: Document instructions
+        status: unknown
+        evidence: "`student/master-cv.md` available as source material"
+        source: https://www.comp.nus.edu.sg/programmes/pg/mcs/
+        notes: Confirm whether CV or resume is requested.
+    fit:
+      summary: Good CS fit; the adaptation should preserve both coursework and project/research evidence.
+      dimensions:
+        academic_preparation: Strong CS coursework in vision, deep learning, algorithms, and linear algebra.
+        research_or_subject_fit: Vision research is relevant to advanced CS electives and project work.
+        evidence_strength: Research, projects, and preprint evidence support a technical academic CV.
+        goal_alignment: Aligns with advanced computing and applied AI goals.
+        admissions_feasibility: Realistic if official document requirements and deadline are confirmed.
+        practical_constraints: Singapore location is favorable for the synthetic profile but not an eligibility claim.
+        application_effort: Moderate; document instructions and route choice need review.
+    competitiveness_gaps:
+      - Document type is not assumed from incomplete fixture evidence.
+    practical_constraints:
+      - Course/project route should be reflected in materials after confirmation.
+    document_instructions:
+      text: Use an academic CV until the official application document list is confirmed.
+    cv_adaptation_plan:
+      document_type: academic_cv
+      summary: >-
+        Build an academic CV balancing CS coursework, projects, and vision research; the canonical
+        stress student is the vision researcher, and the low-evidence case supplies its own plan.
+      profile_summary: >-
+        Computer science applicant with computer vision research, strong technical coursework, and
+        applied machine learning projects.
+      evidence_priorities:
+        - edu-ari-bcomp-cs
+        - research-ari-open-vocab-detection
+        - pub-ari-workshop-preprint
+        - presentation-ari-robotics-vision
+        - project-ari-segmentation-benchmark
+        - project-ari-visual-retrieval
+        - course-ari-computer-vision
+        - course-ari-deep-learning
+        - course-ari-algorithms
+        - course-ari-linear-algebra
+        - award-ari-research-grant
+    action_items:
+      - item: Confirm official document list
+        status: Needed
+        due: unknown
+        source: https://www.comp.nus.edu.sg/programmes/pg/mcs/
+        notes: Do not assume CV versus resume from program identity alone.
+    questions:
+      - Does NUS request a CV, resume, or portal-entered experience fields for this application?
+
+  - id: oxford-msc-social-data-science-fall-2027
+    report_number: 107
+    institution: University of Oxford
+    program: MSc Social Data Science
+    degree_type: MSc
+    department: Oxford Internet Institute
+    intake: Fall 2027
+    applicant_category: not_applicable
+    country: United Kingdom
+    official_url: https://www.ox.ac.uk/admissions/graduate/courses/msc-social-data-science
+    application_url: https://www.ox.ac.uk/admissions/graduate/courses/msc-social-data-science
+    retrieved_at: "2026-06-27"
+    deadline:
+      value: unknown
+      type: unknown
+      timezone: Europe/London
+      source_url: https://www.ox.ac.uk/admissions/graduate/courses/msc-social-data-science
+      notes: Deadline is kept unknown for the future intake.
+    eligibility_summary: likely
+    fit_score: 4.0
+    evidence_confidence: high
+    tailored_cv: pending
+    status: Evaluated
+    next_action: Prepare form-ready evidence, not a standalone CV
+    notes: "Boundary benchmark: the official Oxford page should lead to form-ready material adaptation rather than a standalone CV upload."
+    material_behavior: no_standalone_cv
+    material_behavior_reason: Official Oxford course page says CV/resume information is entered in the application form and a separate CV/resume should not be uploaded.
+    sources:
+      - url: https://www.ox.ac.uk/admissions/graduate/courses/msc-social-data-science
+        retrieved_at: "2026-06-27"
+        use: Course identity and document-submission boundary
+        notes: Official Oxford graduate course page.
+    freshness_warnings:
+      - Future-cycle deadline must be checked before real use.
+    conflicts: []
+    eligibility:
+      - requirement: Quantitative social science preparation
+        status: likely_met
+        evidence: "`edu-leah-ba-econ`, `course-leah-econometrics`, `research-leah-election-data`"
+        source: https://www.ox.ac.uk/admissions/graduate/courses/msc-social-data-science
+        notes: Synthetic economics and data evidence is plausible.
+      - requirement: Standalone CV upload
+        status: not_applicable
+        evidence: "`material_behavior: no_standalone_cv`"
+        source: https://www.ox.ac.uk/admissions/graduate/courses/msc-social-data-science
+        notes: Adapt evidence for form fields instead of rendering a CV artifact.
+      - requirement: Current cycle deadline
+        status: unknown
+        evidence: none
+        source: https://www.ox.ac.uk/admissions/graduate/courses/msc-social-data-science
+        notes: Manual confirmation required.
+    fit:
+      summary: Good social data science fit, but the material workflow must not force a standalone CV.
+      dimensions:
+        academic_preparation: Economics, econometrics, statistics, and Python support the programme.
+        research_or_subject_fit: Election data quality and turnout measurement align with social data science.
+        evidence_strength: Thesis, dashboard, and presentation provide relevant evidence.
+        goal_alignment: Aligns with computational social science and public-data analysis.
+        admissions_feasibility: Realistic if official grade and document rules are verified.
+        practical_constraints: Oxford form requirements change the adaptation target.
+        application_effort: Moderate; form-field evidence condensation is required.
+    competitiveness_gaps:
+      - The current renderer supports CV/resume artifacts, not form-ready evidence sheets.
+    practical_constraints:
+      - Avoid creating a standalone CV when official instructions prohibit upload.
+    document_instructions:
+      text: Do not render a standalone CV for this stress case; prepare form-ready evidence notes.
+    cv_adaptation_plan:
+      document_type: admissions_resume
+      summary: Boundary fixture only; do not render until form-ready material support exists.
+      evidence_priorities:
+        - Econometrics
+        - Social data thesis
+        - Python policy analysis
+    action_items:
+      - item: Prepare application-form evidence notes
+        status: Needed
+        due: unknown
+        source: https://www.ox.ac.uk/admissions/graduate/courses/msc-social-data-science
+        notes: No standalone CV artifact should be generated by the stress verifier.
+    questions:
+      - Which form fields need condensed evidence from the master CV?
+
+  - id: mit-eecs-phd-only-fall-2027
+    report_number: 108
+    institution: Massachusetts Institute of Technology
+    program: EECS Graduate Program
+    degree_type: PhD
+    department: Electrical Engineering and Computer Science
+    intake: Fall 2027
+    applicant_category: not_applicable
+    country: United States
+    official_url: https://www.eecs.mit.edu/academics/graduate-programs/admission-process/
+    application_url: https://www.eecs.mit.edu/academics/graduate-programs/admission-process/
+    retrieved_at: "2026-06-27"
+    deadline:
+      value: unknown
+      type: unknown
+      timezone: America/New_York
+      source_url: https://www.eecs.mit.edu/academics/graduate-programs/admission-process/
+      notes: Deadline is not needed for a master's-material workflow benchmark.
+    eligibility_summary: unclear
+    fit_score: 3.2
+    evidence_confidence: high
+    tailored_cv: pending
+    status: Evaluated
+    next_action: Do not treat as terminal master's workflow
+    notes: "Boundary benchmark: official MIT EECS admissions page describes doctoral admissions only, so the master's CV workflow should not be forced."
+    material_behavior: not_masters_workflow
+    material_behavior_reason: Official MIT EECS admissions page states the application is for the doctoral program only and no terminal master's degree is offered.
+    sources:
+      - url: https://www.eecs.mit.edu/academics/graduate-programs/admission-process/
+        retrieved_at: "2026-06-27"
+        use: Programme identity and terminal-master boundary
+        notes: Official MIT EECS admissions page.
+    freshness_warnings:
+      - This benchmark is a product-boundary case, not a terminal master's application case.
+    conflicts: []
+    eligibility:
+      - requirement: Terminal master's programme availability
+        status: not_met
+        evidence: "`material_behavior: not_masters_workflow`"
+        source: https://www.eecs.mit.edu/academics/graduate-programs/admission-process/
+        notes: Do not adapt materials as if this were an MS programme.
+      - requirement: Research preparation for doctoral study
+        status: likely_met
+        evidence: "`research-ari-open-vocab-detection`, `pub-ari-workshop-preprint`"
+        source: https://www.eecs.mit.edu/academics/graduate-programs/admission-process/
+        notes: Separate doctoral workflow would need statements and supervisor/lab fit.
+    fit:
+      summary: The synthetic applicant has research evidence, but the requested MVP master's-material workflow is the wrong product shape.
+      dimensions:
+        academic_preparation: Strong CS and vision preparation.
+        research_or_subject_fit: Vision research may fit some doctoral labs, but that is outside this MVP phase.
+        evidence_strength: Preprint and research evidence are useful but insufficient for this product-boundary case.
+        goal_alignment: Misaligned if the user is seeking a terminal master's programme.
+        admissions_feasibility: Unclear; doctoral admissions require a different evaluation model.
+        practical_constraints: Do not generate a master's CV/resume artifact as the main output.
+        application_effort: High and outside current MVP scope.
+    competitiveness_gaps:
+      - Terminal master's workflow does not apply.
+    practical_constraints:
+      - A later doctoral workflow would need statement and lab-fit support.
+    document_instructions:
+      text: Do not render a master's CV/resume for this boundary fixture.
+    cv_adaptation_plan:
+      document_type: academic_cv
+      summary: Boundary fixture only; no terminal master's artifact should be generated.
+      evidence_priorities:
+        - Research evidence
+        - Publications
+        - Lab fit
+    action_items:
+      - item: Reclassify as doctoral workflow or remove from master's shortlist
+        status: Needed
+        due: unknown
+        source: https://www.eecs.mit.edu/academics/graduate-programs/admission-process/
+        notes: Do not continue as a terminal master's application.
+    questions:
+      - Is the user intentionally evaluating doctoral programmes, or should this be excluded?
+
+cases:
+  - id: cmu-mscv-vision-resume
+    program_id: cmu-mscv-fall-2027
+    student_id: vision_ml_researcher
+    expected_behavior: render
+    expected_document_type: admissions_resume
+    expected_used_evidence:
+      - research-ari-open-vocab-detection
+      - project-ari-segmentation-benchmark
+    rationale: Vision programme should select vision research and produce a concise resume.
+  - id: ucl-hci-academic-cv
+    program_id: ucl-msc-hci-fall-2027
+    student_id: hci_design_researcher
+    expected_behavior: render
+    expected_document_type: academic_cv
+    expected_used_evidence:
+      - research-noor-accessibility-study
+      - project-noor-prototype
+    rationale: HCI programme should preserve research-methods evidence in an academic CV.
+  - id: uw-hcde-resume
+    program_id: uw-ms-hcde-fall-2027
+    student_id: hci_design_researcher
+    expected_behavior: render
+    expected_document_type: admissions_resume
+    expected_used_evidence:
+      - research-noor-accessibility-study
+      - project-noor-prototype
+    rationale: Resume instruction should override academic CV preference.
+  - id: berkeley-mims-professional-resume
+    program_id: berkeley-mims-fall-2027
+    student_id: professional_data_applicant
+    expected_behavior: render
+    expected_document_type: admissions_resume
+    expected_used_evidence:
+      - research-sam-retention-analysis
+      - project-sam-metrics-pipeline
+    rationale: Professional programme should condense work evidence into a resume.
+  - id: epfl-cyber-academic-cv
+    program_id: epfl-eth-ms-cyber-security-fall-2027
+    student_id: cyber_systems_student
+    expected_behavior: render
+    expected_document_type: academic_cv
+    expected_used_evidence:
+      - research-mateo-protocol-analysis
+      - project-mateo-ctf-toolkit
+    rationale: Hard-prerequisite cyber case should preserve coursework and systems evidence.
+  - id: nus-mcomp-cs-academic-cv
+    program_id: nus-master-computing-cs-fall-2027
+    student_id: vision_ml_researcher
+    expected_behavior: render
+    expected_document_type: academic_cv
+    expected_used_evidence:
+      - research-ari-open-vocab-detection
+      - course-ari-algorithms
+    rationale: Computing programme should produce an academic CV until official document type is confirmed.
+  - id: nus-mcomp-low-evidence-cv
+    program_id: nus-master-computing-cs-fall-2027
+    student_id: low_evidence_borderline
+    expected_behavior: render
+    expected_document_type: academic_cv
+    expected_used_evidence:
+      - edu-iris-bsc-se
+      - project-iris-course-app
+    rationale: Sparse evidence should still render truthfully without inventing research, grades, or tests.
+    # Evidence priorities are per-student, so this case overrides the program
+    # record's canonical (vision-researcher) plan with the borderline student's
+    # own sparse selection.
+    cv_adaptation_plan:
+      document_type: academic_cv
+      summary: >-
+        Render a truthful sparse academic CV from the borderline record: education, the two recorded
+        courses, and the scheduling app project, without inventing research, grades, or tests.
+      profile_summary: >-
+        Software engineering undergraduate with foundational programming and database coursework and
+        a small scheduling application project.
+      evidence_priorities:
+        - edu-iris-bsc-se
+        - course-iris-programming
+        - course-iris-databases
+        - project-iris-course-app
+  - id: oxford-social-data-form-boundary
+    program_id: oxford-msc-social-data-science-fall-2027
+    student_id: social_data_applicant
+    expected_behavior: no_standalone_cv
+    rationale: Official instruction boundary should prevent a standalone CV/resume render.
+  - id: mit-eecs-not-terminal-masters
+    program_id: mit-eecs-phd-only-fall-2027
+    student_id: vision_ml_researcher
+    expected_behavior: not_masters_workflow
+    rationale: Product boundary should flag a doctoral-only workflow instead of adapting as a master's application.
+
+coverage_expectations:
+  minimum_programs: 8
+  minimum_students: 6
+  required_domains:
+    - computer_vision
+    - human_computer_interaction
+    - cybersecurity
+    - social_data_science
+    - professional_data_systems
+    - borderline_missing_evidence
+  required_behaviors:
+    - render
+    - no_standalone_cv
+    - not_masters_workflow
+  required_document_types:
+    - academic_cv
+    - admissions_resume

@@ -1,0 +1,31 @@
+# Example only. Copy to inbox.yml and replace with real official program links.
+programs:
+  - id: example-northbridge-msc-ai-2027
+    institution: "Northbridge University"
+    program: "MSc Artificial Intelligence"
+    degree_type: "MSc"
+    intake: "Fall 2027"
+    applicant_category: "international"
+    country: "United Kingdom"
+    department: "School of Computing"
+    official_url: "https://example.edu/graduate/artificial-intelligence"
+    application_url: "https://apply.example.edu/"
+    enabled: true
+    source_confidence: "high"
+    retrieved_at: null
+    notes: "Fictional example. Replace with a real official URL."
+
+  - id: example-lakeside-msc-hci-2027
+    institution: "Lakeside Institute of Technology"
+    program: "MSc Human-Computer Interaction"
+    degree_type: "MSc"
+    intake: "Fall 2027"
+    applicant_category: "international"
+    country: "Canada"
+    department: "Faculty of Information"
+    official_url: "https://example.org/programs/hci-msc"
+    application_url: "https://apply.example.org/"
+    enabled: true
+    source_confidence: "high"
+    retrieved_at: null
+    notes: "Fictional example. Replace with a real official URL."

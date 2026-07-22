@@ -1,0 +1,25 @@
+student:
+  name: "Maya Tan"
+  email: "maya.tan@example.edu"
+  location: "Singapore"
+  timezone: "Asia/Singapore"
+  citizenship_or_residency_context: "Synthetic Singapore-based applicant profile for live workflow testing."
+
+current_education:
+  institution: "National University of Singapore"
+  degree: "Bachelor of Computing in Computer Science"
+  expected_graduation: "2027-05"
+  grading_context: "Synthetic NUS-style 5.0 CAP record; do not convert to another grading scale without official equivalence rules."
+  current_gpa: "4.86/5.00 CAP"
+
+languages:
+  english:
+    status: "not_applicable"
+    test: "English-medium undergraduate degree at National University of Singapore"
+    notes: "Synthetic profile. Confirm official English proficiency waiver rules for each real program."
+
+standardized_tests:
+  gre:
+    status: "planned"
+    target_test_date: "2026-08-22"
+    notes: "CMU MSCV currently lists the General GRE as required; no score is claimed in this synthetic profile."

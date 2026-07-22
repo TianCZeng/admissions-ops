@@ -1,0 +1,41 @@
+id: umich-robotics-phd-fall-2027
+institution: University of Michigan
+program: PhD in Robotics
+degree_type: PhD
+department: Department of Robotics
+intake: Fall 2027
+applicant_category: direct PhD applicant from bachelor's degree
+country: United States
+official_url: https://robotics.umich.edu/academics/graduate/admissions/
+application_url: https://robotics.umich.edu/academics/graduate/admissions/
+retrieved_at: '2026-07-06'
+deadline:
+  value: '2026-12-01'
+  type: fixed
+  timezone: unknown
+  source_url: https://robotics.umich.edu/academics/graduate/admissions/
+  notes: The accessible admissions page publishes a December 1 fall deadline but does not surface the exact portal cutoff time.
+document_instructions:
+  text: Submit a current resume. The Robotics admissions page also asks PhD applicants for an academic statement of purpose, three letters of recommendation, and transcripts through Rackham.
+sources:
+  - url: https://robotics.umich.edu/academics/graduate/admissions/
+    retrieved_at: '2026-07-06'
+    use: Program identity, PhD route from bachelor's, deadline, committee criteria, and required documents
+    notes: Official Michigan Robotics graduate admissions page.
+freshness_warnings:
+  - Fall 2027 applications are accepted for the fall term only, and the public page says the portal typically becomes available in late August.
+  - The public page does not surface an exact submission cutoff time, so the portal time should be confirmed when the application opens.
+requirements:
+  - requirement: PhD applicants should contact faculty whose research is of interest because a faculty match is required
+    source_url: https://robotics.umich.edu/academics/graduate/admissions/
+  - requirement: Academic statement of purpose
+    source_url: https://robotics.umich.edu/academics/graduate/admissions/
+  - requirement: Current resume
+    source_url: https://robotics.umich.edu/academics/graduate/admissions/
+  - requirement: Three letters of recommendation
+    source_url: https://robotics.umich.edu/academics/graduate/admissions/
+  - requirement: Transcripts
+    source_url: https://robotics.umich.edu/academics/graduate/admissions/
+  - requirement: GRE scores are not accepted for PhD applications for Fall 2023 and beyond
+    source_url: https://robotics.umich.edu/academics/graduate/admissions/
+conflicts: []

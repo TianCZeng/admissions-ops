@@ -1,0 +1,81 @@
+<!doctype html>
+<html lang="{{LANG}}">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>{{NAME}} - Academic CV</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      font-size: 11px;
+      line-height: 1.45;
+      color: #172033;
+      margin: 32px;
+    }
+    h1 {
+      font-size: 24px;
+      margin: 0 0 4px;
+    }
+    h2 {
+      font-size: 12px;
+      text-transform: uppercase;
+      border-bottom: 1px solid #9aa7b7;
+      margin: 18px 0 8px;
+      padding-bottom: 3px;
+    }
+    .contact {
+      color: #4d5b6a;
+      margin-bottom: 14px;
+    }
+    .summary {
+      margin-bottom: 12px;
+    }
+    .entry {
+      margin-bottom: 10px;
+    }
+    .entry-title {
+      font-weight: 700;
+    }
+    .meta {
+      color: #4d5b6a;
+    }
+    ul {
+      margin: 4px 0 0 18px;
+      padding: 0;
+    }
+  </style>
+</head>
+<body>
+  <h1>{{NAME}}</h1>
+  <div class="contact">{{CONTACT}}</div>
+
+  <div class="summary">{{PROGRAM_SPECIFIC_SUMMARY}}</div>
+
+  <h2>Education</h2>
+  {{EDUCATION}}
+
+  <h2>Relevant Coursework</h2>
+  {{COURSEWORK}}
+
+  <h2>Research Interests</h2>
+  {{RESEARCH_INTERESTS}}
+
+  <h2>Research Experience</h2>
+  {{RESEARCH}}
+
+  <h2>Publications And Presentations</h2>
+  {{PUBLICATIONS_PRESENTATIONS}}
+
+  <h2>Projects</h2>
+  {{PROJECTS}}
+
+  <h2>Teaching And Service</h2>
+  {{TEACHING_SERVICE}}
+
+  <h2>Awards</h2>
+  {{AWARDS}}
+
+  <h2>Methods And Tools</h2>
+  {{METHODS_TOOLS}}
+</body>
+</html>

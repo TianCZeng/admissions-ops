@@ -1,0 +1,36 @@
+id: epfl-eth-ms-cyber-security-fall-2027
+institution: EPFL and ETH Zurich
+program: Master in Cyber Security
+degree_type: MSc
+department: Joint EPFL-ETH programme
+intake: Fall 2027
+applicant_category: international
+country: Switzerland
+official_url: https://www.epfl.ch/education/master/programs/cyber-security/
+application_url: https://www.epfl.ch/education/master/programs/cyber-security/
+retrieved_at: '2026-07-02'
+deadline:
+  value: unknown
+  type: unknown
+  timezone: Europe/Zurich
+  source_url: https://www.epfl.ch/education/admission/admission-2/master-admission-criteria-application/online-application/
+  notes: Current official pages list March 31 as the closing date but do not print the year. Treat this as a Fall 2027 verification item rather than a fixed published date.
+document_instructions:
+  text: Submit a current resume. The application also requires a statement of purpose up to 1000 words, three academic referees, and complete transcripts.
+sources:
+  - url: https://www.epfl.ch/education/master/programs/cyber-security/
+    retrieved_at: '2026-07-02'
+    use: Program identity and joint EPFL-ETH course structure
+    notes: Official program page describing the joint MSc in Cyber Security.
+  - url: https://www.epfl.ch/schools/ic/education-master-cyber-security-admission-criteria/
+    retrieved_at: '2026-07-02'
+    use: Admission criteria, qualifying disciplines, language policy, and holistic review factors
+    notes: Official IC admissions page for the program.
+  - url: https://www.epfl.ch/education/admission/admission-2/master-admission-criteria-application/online-application/
+    retrieved_at: '2026-07-02'
+    use: Required documents, referee rules, application window, and statement-of-purpose limit
+    notes: Official online-application instructions page.
+freshness_warnings:
+  - The admissions pages state March 31 as the closing date, but the year is not printed on the current pages.
+  - The application window is cyclical; recheck the 2027 portal when it opens in mid-November.
+conflicts: []

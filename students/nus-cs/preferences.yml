@@ -1,0 +1,44 @@
+target_fields:
+  - computer vision
+  - machine learning
+  - robotics perception
+  - trustworthy visual recognition
+
+degree_types:
+  - MSc
+  - MS
+
+countries:
+  - United States
+  - Singapore
+  - United Kingdom
+  - Canada
+
+intakes:
+  - Fall 2027
+
+research_interests:
+  - robust visual recognition
+  - open-vocabulary perception
+  - 3D scene understanding
+  - vision-language models
+  - dataset bias and evaluation for computer vision systems
+
+goals:
+  - Build stronger research preparation for computer vision graduate study.
+  - Apply visual recognition methods to robotics and safety-critical perception.
+  - Keep CV and resume claims strictly tied to verified academic evidence.
+
+constraints:
+  - Prefer programs with substantial computer vision coursework or project work.
+  - Avoid unsupported grade conversion from NUS CAP to US GPA.
+  - Treat GRE and English-test requirements as hard verification items.
+
+fit_weights:
+  academic_preparation: 0.2
+  research_or_subject_fit: 0.25
+  evidence_strength: 0.2
+  goal_alignment: 0.15
+  admissions_feasibility: 0.1
+  practical_constraints: 0.05
+  application_effort: 0.05

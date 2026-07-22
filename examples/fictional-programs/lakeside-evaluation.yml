@@ -1,0 +1,118 @@
+id: lakeside-msc-hci-fall-2027
+report_number: 2
+institution: Lakeside Institute of Technology
+program: MSc Human-Computer Interaction
+degree_type: MSc
+department: Faculty of Information
+intake: Fall 2027
+applicant_category: international
+country: Canada
+official_url: https://example.org/programs/hci-msc
+application_url: https://apply.example.org/
+retrieved_at: "2026-06-18"
+deadline:
+  value: "2027-01-15"
+  type: fixed
+  timezone: America/Toronto
+  source_url: https://example.org/programs/hci-msc/deadlines
+  notes: Fictional deadline page with explicit Fall 2027 date and timezone.
+eligibility_summary: likely
+fit_score: 4.0
+evidence_confidence: medium
+tailored_cv: pending
+status: Evaluated
+next_action: Review admissions resume draft
+notes: Fictional fixture; funding remains free text and recommendation details need manual planning.
+document_instructions:
+  page_limit: 2
+  text: Upload a concise resume with a two-page limit.
+  source_url: https://example.org/programs/hci-msc/documents
+sources:
+  - url: https://example.org/programs/hci-msc
+    retrieved_at: "2026-06-18"
+    use: Program identity and curriculum
+    notes: Fictional official URL fixture
+  - url: https://example.org/programs/hci-msc/deadlines
+    retrieved_at: "2026-06-18"
+    use: Deadline
+    notes: Fictional official URL fixture
+  - url: https://example.org/programs/hci-msc/documents
+    retrieved_at: "2026-06-18"
+    use: Resume instruction
+    notes: Fictional official URL fixture
+freshness_warnings:
+  - No stale deadline warning in this fixture; deadline includes year and timezone.
+conflicts: []
+eligibility:
+  - requirement: Related undergraduate degree
+    status: likely_met
+    evidence: "`edu-pmc-bsc-cs`"
+    source: https://example.org/programs/hci-msc
+    notes: Computer science degree is treated as related in this fictional record.
+  - requirement: HCI or user research preparation
+    status: met
+    evidence: "`course-hci`, `research-ai-feedback`"
+    source: https://example.org/programs/hci-msc
+    notes: Coursework and research align with the fixture requirement.
+  - requirement: English language test
+    status: likely_met
+    evidence: IELTS in profile fixture
+    source: https://example.org/programs/hci-msc/language
+    notes: Confirm real component thresholds before real use.
+  - requirement: Admissions resume
+    status: met
+    evidence: "`student/master-cv.md` and structured evidence"
+    source: https://example.org/programs/hci-msc/documents
+    notes: Resume requested with a two-page limit.
+  - requirement: Fall 2027 application deadline
+    status: met
+    evidence: none
+    source: https://example.org/programs/hci-msc/deadlines
+    notes: Fictional fixed deadline preserved with explicit year and timezone.
+fit:
+  summary: The fictional student evidence aligns with HCI programs that value AI evaluation interfaces, user studies, and responsible ML tools.
+  dimensions:
+    academic_preparation: Strong CS preparation with HCI and machine learning coursework.
+    research_or_subject_fit: Strong alignment with human-centered AI evaluation and interface design.
+    evidence_strength: Thesis, poster, and dashboard project support HCI-oriented admissions materials.
+    goal_alignment: Matches stated interests in usable machine learning tools and evaluation of AI systems.
+    admissions_feasibility: Likely in this fictional record, pending real grade-equivalence rules.
+    practical_constraints: Canada, Fall 2027 intake, and on-campus delivery match fictional preferences.
+    application_effort: Moderate; resume is available, while references and statement planning remain outside MVP.
+competitiveness_gaps:
+  - Grade-equivalence wording should not be inferred beyond the fictional fixture.
+  - References and statement requirements are not modeled here.
+practical_constraints:
+  - Country, intake, and on-campus delivery match preferences.
+  - Funding remains free text in the MVP.
+cv_adaptation_plan:
+  document_type: admissions_resume
+  summary: >-
+    Use an admissions resume because the fictional document instructions impose a two-page limit;
+    keep the HCI-relevant thesis, dashboard, and coursework and omit the unrelated recommender and
+    teaching evidence for concision.
+  profile_summary: >-
+    HCI-focused applicant pairing human feedback research with usable AI evaluation tools and
+    interface design coursework.
+  evidence_priorities:
+    - edu-pmc-bsc-cs
+    - research-human-feedback-thesis
+    - project-rubric-eval-dashboard
+    - course-hci
+    - course-machine-learning
+    - course-statistics
+    - award-research-poster
+action_items:
+  - item: Review admissions resume draft
+    status: Needed
+    due: "2026-06-18"
+    source: local manual review
+    notes: Confirm the short resume preserves HCI terminology truthfully.
+  - item: Confirm recommendation and statement requirements
+    status: Needed
+    due: "2027-01-15"
+    source: https://example.org/programs/hci-msc/documents
+    notes: Required package details are not fully modeled in this fixture.
+questions:
+  - Does the real program accept a two-page resume for international applicants?
+  - Should the AI feedback thesis or dashboard project lead the resume?

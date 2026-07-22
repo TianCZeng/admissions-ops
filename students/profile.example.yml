@@ -1,0 +1,23 @@
+# Example only. Copy to students/{student-id}/profile.yml and replace with real student details.
+student:
+  name: "Example Student"
+  email: "student@example.edu"
+  location: "Paris, France"
+  timezone: "Europe/Paris"
+  citizenship_or_residency_context: "Add only when relevant to eligibility."
+
+current_education:
+  institution: "Example University"
+  degree: "BSc Computer Science"
+  expected_graduation: "2027-06"
+  grading_context: "Local scale; do not convert without explicit rules."
+
+languages:
+  english:
+    status: "test_planned"
+    test: "IELTS Academic"
+    planned_date: "2026-09"
+
+standardized_tests:
+  gre:
+    status: "not_required_for_current_targets"

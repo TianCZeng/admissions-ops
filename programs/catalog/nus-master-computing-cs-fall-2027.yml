@@ -1,0 +1,27 @@
+id: nus-master-computing-cs-fall-2027
+institution: National University of Singapore
+program: Master of Computing - Computer Science Specialisation
+degree_type: MComp
+department: School of Computing
+intake: Fall 2027
+applicant_category: international
+country: Singapore
+official_url: https://www.comp.nus.edu.sg/programmes/pg/mcs/
+application_url: https://www.comp.nus.edu.sg/programmes/pg/mcs/
+retrieved_at: '2026-06-27'
+deadline:
+  value: unknown
+  type: unknown
+  timezone: Asia/Singapore
+  source_url: https://www.comp.nus.edu.sg/programmes/pg/mcs/
+  notes: Official application cycle must be checked before real use.
+document_instructions:
+  text: Use an academic CV until the official application document list is confirmed.
+sources:
+  - url: https://www.comp.nus.edu.sg/programmes/pg/mcs/
+    retrieved_at: '2026-06-27'
+    use: Programme identity and structure
+    notes: Official NUS School of Computing programme page.
+freshness_warnings:
+  - Application dates and document rules remain current-cycle verification tasks.
+conflicts: []

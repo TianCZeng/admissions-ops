@@ -1,0 +1,292 @@
+id: cmu-mscv-fall-2027
+catalog_id: cmu-mscv-fall-2027
+report_number: 1
+institution: Carnegie Mellon University
+program: Master of Science in Computer Vision
+degree_type: MS
+department: Robotics Institute
+intake: Fall 2027
+applicant_category: not_applicable
+country: United States
+official_url: https://www.ri.cmu.edu/education/academic-programs/master-of-science-computer-vision/
+application_url: https://admissions.scs.cmu.edu/portal/apply_gr
+retrieved_at: '2026-07-19'
+catalog_freshness: >-
+  The shared catalog snapshot programs/catalog/cmu-mscv-fall-2027.yml is dated
+  2026-07-02, which predates this evaluation's 2026-07-19 retrieval of the
+  official CMU MSCV page. The catalog record is a dated demo snapshot; refresh
+  is pending, so re-verify requirements and deadlines against the live page.
+deadline:
+  value: '2026-12-09 15:00'
+  type: fixed
+  timezone: America/New_York
+  source_url: https://www.ri.cmu.edu/education/academic-programs/master-of-science-computer-vision/how-to-apply/
+  notes: Final deadline for Fall 2027 Graduate Programs; the early deadline is 2026-11-18 at 3 p.m. EST and the final deadline is 2026-12-09 at 3 p.m. EST.
+document_instructions:
+  text: Submit a Résumé, a Statement of Purpose of 1 to 2 pages, undergraduate/graduate transcripts as applicable, and 3 letters of recommendation.
+sources:
+  - url: https://www.ri.cmu.edu/education/academic-programs/master-of-science-computer-vision/
+    retrieved_at: '2026-07-19'
+    use: Program identity, duration, format, and computer vision learning outcomes
+    notes: Official CMU Robotics Institute program page describes a 16-month full-time program centered on advanced coursework and a culminating hands-on team project.
+  - url: https://www.ri.cmu.edu/education/academic-programs/master-of-science-computer-vision/how-to-apply/
+    retrieved_at: '2026-07-19'
+    use: Admission requirements, application window, and required documents
+    notes: Official MSCV application page was updated 2026-07-15 and lists the required degree, General GRE, English tests when applicable, résumé, 1-2 page SOP, transcripts, and three recommendations.
+  - url: https://www.cs.cmu.edu/education/graduate-admissions
+    retrieved_at: '2026-07-19'
+    use: Graduate admissions portal dates, GRE policy, English proficiency policy, and general application requirements
+    notes: Official SCS guidance lists the Fall 2027 opening date, final deadline, recommended test timing, English-proficiency policy, transcript timing, résumé guidance, and general SOP guidance.
+  - url: https://admissions.scs.cmu.edu/portal/apply_gr
+    retrieved_at: '2026-07-19'
+    use: Application portal, Fall 2027 opening and deadline confirmation
+    notes: Official SCS application portal states that Fall 2027 applications open 2026-09-09, with an early deadline of 2026-11-18 and final deadline of 2026-12-09 at 3 p.m. EST.
+freshness_warnings:
+  - Fall 2027 dates and hard requirements were current and consistent across the MSCV application page, SCS graduate admissions page, and SCS application portal when retrieved on 2026-07-19.
+conflicts: []
+eligibility_summary: unclear
+fit_score: 4.7
+evidence_confidence: high
+tailored_cv: "[Review Required draft](../output/cmu-mscv-fall-2027/admissions-resume.html) (Review Required)"
+statement: "[Review Required statement](../output/cmu-mscv-fall-2027/statement-draft.md) (Review Required)"
+status: Evaluated
+next_action: Review the draft résumé and SOP; resolve GRE, English-proficiency, recommender, and transcript tasks.
+notes: Review Required drafts prepared after deterministic dry-run validation; confirm recommenders and transcript handling before submission.
+eligibility:
+  - requirement: Undergraduate degree or equivalent in engineering, computer science, or applied mathematics
+    status: likely_met
+    evidence: "`edu-nus-bcomp-cs`"
+    source: https://www.ri.cmu.edu/education/academic-programs/master-of-science-computer-vision/how-to-apply/
+    notes: The student is on track for a Bachelor of Computing in Computer Science from NUS, which is directly relevant.
+  - requirement: General GRE required
+    status: unknown
+    evidence: none
+    source: https://www.ri.cmu.edu/education/academic-programs/master-of-science-computer-vision/how-to-apply/
+    notes: The profile lists a planned GRE date of 2026-08-22, but no score is yet available.
+  - requirement: English proficiency test for non-native English speakers on F-1 or J-1 plans
+    status: unknown
+    evidence: English-medium undergraduate degree at NUS
+    source: https://www.cs.cmu.edu/education/graduate-admissions
+    notes: SCS says prior English-language study outside the United States does not waive the requirement; native-language classification and any required test remain unverified.
+  - requirement: Three letters of recommendation
+    status: unknown
+    evidence: none
+    source: https://www.ri.cmu.edu/education/academic-programs/master-of-science-computer-vision/how-to-apply/
+    notes: Recommenders are not modeled in the repository state.
+  - requirement: Official transcripts uploaded before submission
+    status: unknown
+    evidence: none
+    source: https://www.ri.cmu.edu/education/academic-programs/master-of-science-computer-vision/how-to-apply/
+    notes: The portal requires transcript upload, but transcript files are not stored here.
+fit:
+  summary: MSCV is a strong subject fit for this student because the evidence base is concentrated in computer vision, open-vocabulary detection, robotics perception, and failure analysis. The only meaningful feasibility drag is the still-open GRE and English-proficiency verification, which lowers certainty but not subject alignment.
+  dimensions:
+    academic_preparation: Strong CS preparation with direct computer vision, machine learning, robotics perception, and optimization coursework.
+    research_or_subject_fit: Very strong alignment with open-vocabulary perception, domain shift, 3D scene understanding, and vision-language models.
+    evidence_strength: Strong evidence base across in-progress research, a workshop paper under review, presentations, projects, teaching, and awards.
+    goal_alignment: Matches the stated goal of building robust visual recognition systems for real deployment and deciding between PhD and research-oriented industry paths.
+    admissions_feasibility: Moderate because the academic profile is strong, but GRE and English-proficiency status remain unresolved.
+    practical_constraints: The U.S. Fall 2027 cycle, application window, and document mix are compatible, but test timing and recommenders need early coordination.
+    application_effort: Moderate to high because the package includes a tailored resume, SOP, three letters, transcript upload, and test-score planning.
+competitiveness_gaps:
+  - GRE score still needs to be earned and reported.
+  - English-proficiency requirement is still conditional on native-language classification.
+  - Three recommenders must be confirmed and asked early.
+  - Transcript upload requirements still need to be handled outside the repo.
+practical_constraints:
+  - Fall 2027 applications open on 2026-09-09; the early deadline is 2026-11-18 at 3 p.m. EST and the final deadline is 2026-12-09 at 3 p.m. EST.
+  - The SCS guidance recommends taking the GRE no later than 2026-11-25 if a retake is needed.
+  - English-proficiency testing may still be required; prior English-language study does not guarantee a waiver.
+  - Recommendation letters are requested electronically; at least two should ideally come from faculty or recent employers who can evaluate independent research.
+action_items:
+  - item: Review the draft résumé and SOP
+    status: Needed
+    due: before submission
+    source: local review
+    notes: Confirm that all claims, dates, statuses, and program-specific framing remain accurate; keep both artifacts Review Required.
+  - item: Confirm General GRE score and reporting plan
+    status: Needed
+    due: 2026-11-25 recommended; 2026-12-09 15:00 America/New_York final deadline
+    source: https://www.cs.cmu.edu/education/graduate-admissions
+    notes: The profile has a planned 2026-08-22 test date but no score; CMU recommends completing or retaking tests by 2026-11-25.
+  - item: Confirm English-proficiency test status
+    status: Needed
+    due: 2026-11-25 recommended; 2026-12-09 15:00 America/New_York final deadline
+    source: https://www.cs.cmu.edu/education/graduate-admissions
+    notes: Verify native-language classification and whether TOEFL, IELTS, or Duolingo must be submitted; English-medium study alone is not a waiver under the current SCS guidance.
+  - item: Confirm three recommenders and electronic submission plan
+    status: Needed
+    due: before 2026-12-09 15:00 America/New_York
+    source: https://www.ri.cmu.edu/education/academic-programs/master-of-science-computer-vision/how-to-apply/
+    notes: Select writers who can evaluate independent research; at least two should ideally be faculty or recent employers.
+  - item: Prepare and upload undergraduate transcript
+    status: Needed
+    due: before submission
+    source: https://www.cs.cmu.edu/education/graduate-admissions
+    notes: Upload the transcript before submitting; fall grades are not required if they are not yet present.
+  - item: Confirm the program-specific SOP prompt in the application portal
+    status: Needed
+    due: when the portal opens on 2026-09-09
+    source: https://admissions.scs.cmu.edu/portal/apply_gr
+    notes: SCS states that each program may specify additional Statement of Purpose requirements in the application.
+questions:
+  - Does the MSCV application add any program-specific SOP prompt beyond the general one- to two-page guidance?
+  - For this applicant's native-language classification, which English-proficiency test and minimum scores must be submitted, if any?
+  - Does MSCV impose a preferred résumé page length or format beyond the current résumé requirement?
+  - Are there any additional MSCV materials or portfolio requirements in the Fall 2027 portal?
+cv_adaptation_plan:
+  document_type: admissions_resume
+  summary: Use a concise admissions resume, not an academic CV, because CMU explicitly asks for a current resume. Lead with the computer-vision research thread, preserve the strongest evidence of measurement discipline, and keep the document compact by selecting only work that sharpens MSCV fit rather than reproducing the full master CV.
+  profile_summary: "Computer vision applicant with open-vocabulary detection research, domain-shift analysis of driving scenes, and robot vision benchmarking projects."
+  evidence_priorities:
+    - edu-nus-bcomp-cs
+    - research-open-vocabulary-perception
+    - research-domain-shift-driving-scenes
+    - research-capstone-visual-retrieval
+    - project-robot-vision-benchmark
+    - project-depth-completion
+    - course-computer-vision
+    - course-deep-learning
+    - course-robotics-perception
+    - course-machine-learning
+    - award-undergraduate-research
+    - award-nus-deans-list
+  unresolved_questions:
+    - Confirm whether CMU wants a one-page or two-page resume for this application, even though the page limit is not explicit.
+    - Confirm whether any MSCV-specific experience category should be foregrounded above research in the resume summary.
+  review_status: Review Required
+statement_plan:
+  statement_type: statement_of_purpose
+  prompt_source_url: https://www.cs.cmu.edu/education/graduate-admissions
+  prompt_text: "The application asks for a concise one- or two-page essay describing research interests, related experiences, and objectives for graduate study at Carnegie Mellon."
+  page_limit: 2
+  strategy_summary: "Build the statement around one truthful thesis: the student's recent work repeatedly exposes the same failure mode, namely vision systems breaking under distribution shift, and Carnegie Mellon's Master of Science in Computer Vision is the right place to deepen the technical base behind robust perception. Keep the narrative grounded in concrete projects, connect computer vision coursework to research practice, and show why CMU's Robotics Institute is the next step without overselling unfinished work."
+  core_argument: "This applicant is not asking for a generic master's degree; the application is a targeted request for deeper training in computer vision because current coursework and research have already surfaced the next technical questions. MSCV is a good fit because the student's evidence is strongest where open-vocabulary detection, domain shift, evaluation, and robotics perception overlap with real deployment problems."
+  paragraph_plan:
+    - purpose: Why graduate study now and the distribution-shift problem
+      evidence_ids:
+        - research-domain-shift-driving-scenes
+        - research-open-vocabulary-perception
+      program_sources: []
+      brief_inputs:
+        - Why graduate study now
+        - Must Include
+    - purpose: Technical preparation for MSCV
+      evidence_ids:
+        - course-machine-learning
+        - course-computer-vision
+        - course-deep-learning
+        - course-robotics-perception
+        - project-robot-vision-benchmark
+      program_sources:
+        - https://www.ri.cmu.edu/education/academic-programs/master-of-science-computer-vision/
+      brief_inputs:
+        - All programs
+    - purpose: Evaluation and human feedback
+      evidence_ids:
+        - project-rubric-eval-dashboard
+        - research-capstone-visual-retrieval
+      program_sources: []
+      brief_inputs:
+        - Must Include
+    - purpose: Program-specific fit and next research direction
+      evidence_ids:
+        - research-open-vocabulary-perception
+        - presentation-robot-vision
+      program_sources:
+        - https://www.ri.cmu.edu/education/academic-programs/master-of-science-computer-vision/
+        - https://www.cs.cmu.edu/education/graduate-admissions
+      brief_inputs:
+        - Program-Specific Notes
+  required_program_terms:
+    - computer vision
+    - Robotics Institute
+    - Carnegie Mellon
+    - research interests
+  claims_to_avoid:
+    - Do not claim a GRE score or English-proficiency waiver.
+    - Do not convert NUS CAP to a U.S. GPA scale.
+    - Do not describe the capstone as complete or published.
+    - Do not claim external submission or final readiness.
+  unresolved_questions:
+    - Confirm whether the MSCV application adds any program-specific essay prompt beyond the general SOP guidance.
+    - Confirm whether TOEFL, IELTS, or Duolingo is required once native-language classification is applied to this applicant.
+  review_status: Review Required
+  draft_markdown: |-
+    As an undergraduate research assistant from 2025-2027, I work on Open-Vocabulary Object Detection for Indoor Service Robots. That project and my summer research intern work in 2026 on Domain Shift Analysis for Night-Time Driving Scene Segmentation point to the same problem: vision systems break when the scene changes. In the driving project, I focused on how segmentation degrades around small objects, glare, and low-light boundaries; in the robot project, I am studying how open-vocabulary detectors transfer from web-scale image data to robot-collected indoor scenes with clutter and occlusion. Those experiences are why I want graduate study now: I want deeper technical training in domain adaptation, open-vocabulary models, and evaluation methods before I decide between a PhD path and research-focused industry work.
+
+    My preparation at the National University of Singapore has been deliberately technical. I have taken Machine Learning, Computer Vision and Pattern Recognition, Deep Learning for Visual Recognition, and Robotics Perception, and I have used that coursework to build projects that emphasize careful measurement: the Robot Vision Benchmark Toolkit for object detection on indoor robot camera frames, and the Visual Model Error Review Dashboard for annotating failures and comparing reviewer rubrics. I am more interested in understanding which errors matter and why than in reporting accuracy alone.
+
+    My capstone, Efficient Visual Retrieval for Museum Collections, extends that same habit of evaluation. I am building a retrieval prototype that tracks precision, recall, and curator-reviewed failure modes so that the system stays tied to real user feedback. That focus on measurement and interpretability is also visible in my research practice. I want a master's environment that keeps pushing me toward rigorous experiments, careful error analysis, and better questions about how models behave under uncertainty.
+
+    Carnegie Mellon is attractive because the Robotics Institute keeps computer vision connected to real perception problems. MSCV matches the questions I want to keep asking: open-vocabulary models, domain shift, 3D scene understanding, and vision-language models. In practice, I want to build perception systems that can handle novel objects, changing environments, and uncertain evidence without collapsing into brittle predictions. The program is a strong next step because it can deepen the technical base behind those questions while keeping the work grounded in deployment-relevant computer vision.
+
+    If I am admitted, I would bring a record of project work that links coursework, benchmarking, and research to one consistent goal: making visual systems more robust under distribution shift. That is the direction I want to carry into graduate study, whether I continue toward a PhD or move into research work in perception.
+  claim_map:
+    - claim_id: claim-brief-why-now
+      claim_summary: The opening paragraph uses the student brief's explanation for why graduate study is needed now and centers the essay on the shared distribution-shift problem.
+      source_type: student_brief
+      brief_section: General Direction
+    - claim_id: claim-research-driving
+      claim_summary: The draft describes the night-time driving scene segmentation internship and its low-light error analysis.
+      source_type: evidence
+      evidence_id: research-domain-shift-driving-scenes
+      protected_facts:
+        - Domain Shift Analysis for Night-Time Driving Scene Segmentation
+        - summer research intern
+        - 2026
+    - claim_id: claim-research-robot
+      claim_summary: The draft describes the open-vocabulary robot perception research and its transfer setting.
+      source_type: evidence
+      evidence_id: research-open-vocabulary-perception
+      protected_facts:
+        - Open-Vocabulary Object Detection for Indoor Service Robots
+        - undergraduate research assistant
+        - 2025-2027
+    - claim_id: claim-coursework
+      claim_summary: The draft names the key coursework that grounds the applicant's technical preparation.
+      source_type: evidence
+      evidence_id: course-machine-learning
+      protected_facts:
+        - Machine Learning
+      # The remaining course titles are repeated in the sentence and traced through the same coursework block in the resume package.
+    - claim_id: claim-coursework-vision
+      claim_summary: The draft names the vision and perception coursework that supports MSCV preparation.
+      source_type: evidence
+      evidence_id: course-computer-vision
+      protected_facts:
+        - Computer Vision and Pattern Recognition
+    - claim_id: claim-coursework-deep
+      claim_summary: The draft names the deep learning and robotics coursework that supports MSCV preparation.
+      source_type: evidence
+      evidence_id: course-deep-learning
+      protected_facts:
+        - Deep Learning for Visual Recognition
+    - claim_id: claim-coursework-robotics
+      claim_summary: The draft names the robotics perception coursework that supports MSCV preparation.
+      source_type: evidence
+      evidence_id: course-robotics-perception
+      protected_facts:
+        - Robotics Perception
+    - claim_id: claim-toolkit
+      claim_summary: The draft describes the Robot Vision Benchmark Toolkit as evidence of evaluation discipline.
+      source_type: evidence
+      evidence_id: project-robot-vision-benchmark
+      protected_facts:
+        - Robot Vision Benchmark Toolkit
+    - claim_id: claim-dashboard
+      claim_summary: The draft describes the Visual Model Error Review Dashboard as evidence of failure analysis work.
+      source_type: evidence
+      evidence_id: project-rubric-eval-dashboard
+      protected_facts:
+        - Visual Model Error Review Dashboard
+    - claim_id: claim-capstone
+      claim_summary: The draft describes the capstone's emphasis on precision, recall, curator-reviewed failure modes, and user feedback.
+      source_type: evidence
+      evidence_id: research-capstone-visual-retrieval
+      protected_facts:
+        - Efficient Visual Retrieval for Museum Collections
+    - claim_id: claim-program
+      claim_summary: The draft identifies Carnegie Mellon MSCV as a Robotics Institute computer vision program and frames the next research direction around the official program themes.
+      source_type: official_program_source
+      source_url: https://www.ri.cmu.edu/education/academic-programs/master-of-science-computer-vision/

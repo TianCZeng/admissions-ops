@@ -1,0 +1,49 @@
+# Example only. Copy to students/{student-id}/evidence.yml and replace with real evidence.
+education:
+  - id: edu-example-bsc
+    institution: "Example University"
+    degree: "BSc Computer Science"
+    dates: "2023-2027"
+    status: "in_progress"
+    notes: "Expected graduation June 2027."
+
+courses:
+  - id: course-algorithms
+    title: "Algorithms"
+    level: "upper undergraduate"
+    result: "A"
+  - id: course-ml
+    title: "Machine Learning"
+    level: "upper undergraduate"
+    result: "A-"
+
+research:
+  - id: research-thesis
+    title: "Evaluating Human Feedback Interfaces for AI Systems"
+    role: "undergraduate thesis"
+    dates: "2026-2027"
+    status: "planned"
+    methods:
+      - "user study design"
+      - "Python analysis"
+
+projects:
+  - id: project-eval-dashboard
+    title: "Model Evaluation Dashboard"
+    dates: "2026"
+    summary: "Built a dashboard for comparing model outputs against rubric scores."
+    tools:
+      - "Python"
+      - "SQLite"
+      - "React"
+
+awards:
+  - id: award-deans-list
+    title: "Dean's List"
+    date: "2025"
+    issuer: "Example University"
+
+publications: []
+presentations: []
+teaching: []
+service: []

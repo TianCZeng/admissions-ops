@@ -1,0 +1,44 @@
+id: cmu-mscv-fall-2027
+institution: Carnegie Mellon University
+program: Master of Science in Computer Vision
+degree_type: MS
+department: Robotics Institute
+intake: Fall 2027
+applicant_category: not_applicable
+country: United States
+official_url: https://www.ri.cmu.edu/education/academic-programs/master-of-science-computer-vision/
+application_url: https://www.ri.cmu.edu/education/academic-programs/master-of-science-computer-vision/
+retrieved_at: '2026-07-02'
+deadline:
+  value: '2026-12-09 15:00'
+  type: fixed
+  timezone: America/New_York
+  source_url: https://www.ri.cmu.edu/education/academic-programs/master-of-science-computer-vision/
+  notes: Official MSCV and SCS graduate admissions pages publish the Fall 2027 cycle deadline.
+document_instructions:
+  text: Submit a current resume. The CMU SCS admissions page also requires a one- to two-page Statement of Purpose and three letters of recommendation.
+sources:
+  - url: https://www.ri.cmu.edu/education/academic-programs/master-of-science-computer-vision/
+    retrieved_at: '2026-07-02'
+    use: Program identity and computer vision learning outcomes
+    notes: Official CMU Robotics Institute program page.
+  - url: https://www.ri.cmu.edu/education/academic-programs/master-of-science-computer-vision/how-to-apply/
+    retrieved_at: '2026-07-02'
+    use: Admission requirements, application window, and required documents
+    notes: Official MSCV application page with Fall 2027 dates.
+  - url: https://www.cs.cmu.edu/education/graduate-admissions
+    retrieved_at: '2026-07-02'
+    use: Graduate admissions portal dates, GRE policy, English proficiency policy, and general application requirements
+    notes: SCS graduate admissions page reached from the MSCV application instructions.
+freshness_warnings:
+  - Fall 2027 application cycle dates are published and consistent across MSCV and SCS graduate admissions pages.
+requirements:
+  - requirement: Undergraduate degree or equivalent in engineering, computer science, or applied mathematics
+    source_url: https://www.ri.cmu.edu/education/academic-programs/master-of-science-computer-vision/how-to-apply/
+  - requirement: General GRE required
+    source_url: https://www.ri.cmu.edu/education/academic-programs/master-of-science-computer-vision/how-to-apply/
+  - requirement: TOEFL, IELTS, or Duolingo required for non-native English speakers on F-1 or J-1 study plans; no waiver based on prior English-language education
+    source_url: https://www.cs.cmu.edu/education/graduate-admissions
+  - requirement: Current resume, one- to two-page Statement of Purpose, three letters of recommendation, and transcripts
+    source_url: https://www.ri.cmu.edu/education/academic-programs/master-of-science-computer-vision/how-to-apply/
+conflicts: []

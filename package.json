@@ -1,0 +1,48 @@
+{
+  "name": "admissions-ops",
+  "version": "0.1.0",
+  "description": "Local graduate admissions evaluation and academic CV adaptation workspace",
+  "private": true,
+  "type": "commonjs",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/TianCZeng/admissions-ops.git"
+  },
+  "bugs": {
+    "url": "https://github.com/TianCZeng/admissions-ops/issues"
+  },
+  "homepage": "https://github.com/TianCZeng/admissions-ops#readme",
+  "engines": {
+    "node": ">=20"
+  },
+  "scripts": {
+    "compare": "node scripts/cli/compare.js",
+    "cv": "node scripts/cli/cv.js",
+    "statement": "node scripts/cli/statement.js",
+    "test": "npm run verify",
+    "verify": "npm run verify:yaml && npm run verify:program && npm run verify:cv && npm run verify:live-cv && npm run verify:compare && npm run verify:stress && npm run verify:workspace && npm run verify:catalog && npm run verify:live-real && npm run verify:layout && npm run verify:statement && npm run verify:consistency && npm run verify:generated",
+    "verify:yaml": "node scripts/verify/yaml.js",
+    "verify:program": "node scripts/verify/program.js",
+    "verify:cv": "node scripts/verify/cv.js",
+    "verify:live-cv": "node scripts/verify/live-cv.js",
+    "verify:compare": "node scripts/verify/compare.js",
+    "verify:stress": "node scripts/verify/stress.js",
+    "verify:workspace": "node scripts/verify/workspace.js",
+    "verify:catalog": "node scripts/verify/catalog.js",
+    "verify:live-real": "node scripts/verify/live-real.js",
+    "verify:layout": "node scripts/verify/layout.js",
+    "verify:statement": "node scripts/verify/statement.js",
+    "verify:consistency": "node scripts/verify/consistency.js",
+    "verify:generated": "node scripts/verify/generated.js"
+  },
+  "keywords": [
+    "graduate-admissions",
+    "academic-cv",
+    "program-evaluation",
+    "local-first"
+  ],
+  "license": "MIT",
+  "dependencies": {
+    "js-yaml": "^4.1.1"
+  }
+}

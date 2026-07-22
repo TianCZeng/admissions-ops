@@ -1,0 +1,66 @@
+<!doctype html>
+<html lang="{{LANG}}">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>{{NAME}} - Admissions Resume</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      font-size: 10.5px;
+      line-height: 1.38;
+      color: #172033;
+      margin: 28px;
+    }
+    h1 {
+      font-size: 22px;
+      margin: 0 0 4px;
+    }
+    h2 {
+      font-size: 11px;
+      text-transform: uppercase;
+      border-bottom: 1px solid #9aa7b7;
+      margin: 14px 0 7px;
+      padding-bottom: 3px;
+    }
+    .contact {
+      color: #4d5b6a;
+      margin-bottom: 10px;
+    }
+    .summary {
+      margin-bottom: 10px;
+    }
+    .entry {
+      margin-bottom: 8px;
+    }
+    .entry-title {
+      font-weight: 700;
+    }
+    ul {
+      margin: 3px 0 0 18px;
+      padding: 0;
+    }
+  </style>
+</head>
+<body>
+  <h1>{{NAME}}</h1>
+  <div class="contact">{{CONTACT}}</div>
+
+  <div class="summary">{{PROGRAM_SPECIFIC_SUMMARY}}</div>
+
+  <h2>Education</h2>
+  {{EDUCATION}}
+
+  <h2>Selected Research And Projects</h2>
+  {{SELECTED_RESEARCH_PROJECTS}}
+
+  <h2>Relevant Coursework</h2>
+  {{COURSEWORK}}
+
+  <h2>Awards</h2>
+  {{AWARDS}}
+
+  <h2>Skills</h2>
+  {{SKILLS}}
+</body>
+</html>

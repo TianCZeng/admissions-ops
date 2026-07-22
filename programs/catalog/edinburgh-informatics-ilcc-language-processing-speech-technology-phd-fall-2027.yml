@@ -1,0 +1,58 @@
+id: edinburgh-informatics-ilcc-language-processing-speech-technology-phd-fall-2027
+institution: University of Edinburgh
+program: "PhD in Informatics: ILCC: Language Processing, Speech Technology, Information Retrieval, Cognition"
+degree_type: PhD
+department: School of Informatics
+intake: Fall 2027
+applicant_category: not applicable
+country: United Kingdom
+official_url: https://study.ed.ac.uk/programmes/postgraduate-research/491-informatics-ilcc-language-processing-speech-technology
+application_url: https://study.ed.ac.uk/programmes/postgraduate-research/491-informatics-ilcc-language-processing-speech-technology
+retrieved_at: '2026-07-06'
+deadline:
+  value: '2027-06-01'
+  type: fixed
+  timezone: unknown
+  source_url: https://study.ed.ac.uk/programmes/postgraduate-research/491-informatics-ilcc-language-processing-speech-technology
+  notes: The public page says non-funding applications must arrive at least three months before the desired entry date. For a September 2027 start, this evaluates to 2027-06-01, but the 2027-28 cycle has not yet published a fixed deadline.
+document_instructions:
+  text: As part of the online application, applicants must provide a personal statement, relevant knowledge or training skills, the name of a proposed supervisor, a CV, a research proposal of three to five pages unless a specific project gives different guidelines, degree certificates and official transcripts for all completed and in-progress degrees, and contact details for two academic references. There is no application fee.
+sources:
+  - url: https://study.ed.ac.uk/programmes/postgraduate-research/491-informatics-ilcc-language-processing-speech-technology
+    retrieved_at: '2026-07-06'
+    use: Program identity, PhD route, entry requirements, year-of-entry notice, and application materials
+    notes: Official University of Edinburgh programme page.
+  - url: https://informatics.ed.ac.uk/study-with-us/our-degrees/postgraduate-research-and-cdts/application-guidance-postgraduate-research-1
+    retrieved_at: '2026-07-06'
+    use: Supervisor-identification prerequisite and guidance for contacting potential supervisors
+    notes: Official School of Informatics guidance page for finding a supervisor.
+  - url: https://informatics.ed.ac.uk/study-with-us/our-degrees/postgraduate-research-programmes-and-centres-doctoral-training/postgraduate-research-funding-opportunities-0
+    retrieved_at: '2026-07-06'
+    use: School funding deadlines and funding-eligibility rules
+    notes: Official School of Informatics funding page.
+  - url: https://informatics.ed.ac.uk/people/academic.html
+    retrieved_at: '2026-07-06'
+    use: Official academic staff directory for identifying potential NLP and speech-technology supervisors
+    notes: Official School of Informatics academic staff directory.
+freshness_warnings:
+  - The programme page is currently on the 2026-27 cycle and says 2027-28 entry requirements will be published on 1 Oct 2026.
+  - The public page does not yet publish a fixed 2027 intake deadline.
+  - The School of Informatics says applicants should identify a supervisor or advertised project before applying.
+requirements:
+  - requirement: UK 2:1 honours degree or international equivalent in informatics or related subject, typically with programming experience
+    source_url: https://study.ed.ac.uk/programmes/postgraduate-research/491-informatics-ilcc-language-processing-speech-technology
+  - requirement: Identify an advertised project or a supervisor before applying
+    source_url: https://informatics.ed.ac.uk/study-with-us/our-degrees/postgraduate-research-and-cdts/application-guidance-postgraduate-research-1
+  - requirement: Personal statement
+    source_url: https://study.ed.ac.uk/programmes/postgraduate-research/491-informatics-ilcc-language-processing-speech-technology
+  - requirement: Current CV
+    source_url: https://study.ed.ac.uk/programmes/postgraduate-research/491-informatics-ilcc-language-processing-speech-technology
+  - requirement: Research proposal
+    source_url: https://study.ed.ac.uk/programmes/postgraduate-research/491-informatics-ilcc-language-processing-speech-technology
+  - requirement: Degree certificates and official transcripts for completed and in-progress degrees
+    source_url: https://study.ed.ac.uk/programmes/postgraduate-research/491-informatics-ilcc-language-processing-speech-technology
+  - requirement: Two academic references
+    source_url: https://study.ed.ac.uk/programmes/postgraduate-research/491-informatics-ilcc-language-processing-speech-technology
+  - requirement: English language proof at the published programme threshold or via an accepted degree route
+    source_url: https://study.ed.ac.uk/programmes/postgraduate-research/491-informatics-ilcc-language-processing-speech-technology
+conflicts: []

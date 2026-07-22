@@ -1,0 +1,117 @@
+id: northbridge-msc-ai-fall-2027
+report_number: 1
+institution: Northbridge University
+program: MSc Artificial Intelligence
+degree_type: MSc
+department: School of Computing
+intake: Fall 2027
+applicant_category: international
+country: United Kingdom
+official_url: https://example.edu/graduate/artificial-intelligence
+application_url: https://apply.example.edu/
+retrieved_at: "2026-06-18"
+deadline:
+  value: unknown
+  type: unknown
+  timezone: unknown
+  source_url: pending official deadline page
+  notes: Deadline page not included in fixture.
+eligibility_summary: unclear
+fit_score: 4.2
+evidence_confidence: medium
+tailored_cv: pending
+status: Evaluated
+next_action: Confirm Fall 2027 deadline
+notes: Fictional fixture; deadline, language thresholds, and CV page limit need manual verification.
+sources:
+  - url: https://example.edu/graduate/artificial-intelligence
+    retrieved_at: "2026-06-18"
+    use: Program identity and curriculum
+    notes: Fictional official URL fixture
+  - url: pending official deadline page
+    retrieved_at: pending
+    use: Deadline
+    notes: Manual verification needed
+freshness_warnings:
+  - Deadline page not included in fixture; deadline remains unknown.
+conflicts: []
+eligibility:
+  - requirement: Related undergraduate degree
+    status: likely_met
+    evidence: "`edu-pmc-bsc-cs`"
+    source: https://example.edu/graduate/artificial-intelligence
+    notes: Exact subject wording needs confirmation.
+  - requirement: Machine learning preparation
+    status: met
+    evidence: "`course-machine-learning`"
+    source: https://example.edu/graduate/artificial-intelligence
+    notes: Fictional fixture.
+  - requirement: English language test
+    status: likely_met
+    evidence: IELTS in profile fixture
+    source: pending official language page
+    notes: Confirm component thresholds.
+  - requirement: Deadline for Fall 2027
+    status: unknown
+    evidence: none
+    source: pending official deadline page
+    notes: Create checklist task.
+fit:
+  summary: The fictional student evidence is strongest around AI evaluation, human feedback interfaces, Python analysis, and HCI.
+  dimensions:
+    academic_preparation: Strong CS and machine learning preparation in fixture evidence.
+    research_or_subject_fit: Strong if the program has AI evaluation or human-centered AI modules.
+    evidence_strength: Projects, thesis, and poster evidence support the program theme.
+    goal_alignment: Aligns with AI evaluation and HCI-adjacent graduate goals.
+    admissions_feasibility: Unclear until grade-equivalence and deadline details are verified.
+    practical_constraints: Country, intake, and delivery match fictional preferences.
+    application_effort: Moderate; deadline, language thresholds, and CV instructions remain open.
+competitiveness_gaps:
+  - Missing official deadline evidence.
+  - Missing grade-equivalence rules.
+  - Unknown page-limit instructions for the CV or resume.
+practical_constraints:
+  - Country, intake, and on-campus delivery match preferences.
+  - Funding remains free text in the MVP.
+cv_adaptation_plan:
+  document_type: academic_cv
+  summary: >-
+    Use an academic CV unless official instructions require a resume or page limit; lead with the
+    human-feedback thesis and evaluation dashboard, keep coursework and teaching visible, and omit
+    nothing because the fictional record is small.
+  profile_summary: >-
+    Human-centered AI applicant focused on evaluation interfaces, rubric design, and Python-based
+    analysis of model feedback.
+  evidence_priorities:
+    - edu-pmc-bsc-cs
+    - research-human-feedback-thesis
+    - presentation-feedback-interfaces
+    - project-rubric-eval-dashboard
+    - project-course-recommender
+    - course-machine-learning
+    - course-hci
+    - course-statistics
+    - course-data-structures
+    - course-algorithms
+    - teaching-python-lab
+    - award-research-poster
+action_items:
+  - item: Confirm Fall 2027 deadline
+    status: Needed
+    due: unknown
+    source: pending official deadline page
+    notes: Manual verification
+  - item: Confirm language thresholds
+    status: Needed
+    due: unknown
+    source: pending official language page
+    notes: Check official language page
+  - item: Confirm CV page limit
+    status: Needed
+    due: unknown
+    source: pending official document page
+    notes: Check document instructions
+questions:
+  - Does the program publish Fall 2027 international deadlines separately?
+  - Are IELTS component thresholds required for this program?
+  - Is an academic CV preferred over a concise resume?

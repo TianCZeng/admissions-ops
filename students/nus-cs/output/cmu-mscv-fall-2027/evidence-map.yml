@@ -1,0 +1,102 @@
+program_id: cmu-mscv-fall-2027
+institution: Carnegie Mellon University
+program: Master of Science in Computer Vision
+document_type: admissions_resume
+review_status: Review Required
+artifact: output/cmu-mscv-fall-2027/admissions-resume.html
+sources:
+  profile: students/nus-cs/profile.yml for identity and contact only
+  evidence: students/nus-cs/evidence.yml
+  master_cv: students/nus-cs/master-cv.md
+generated_claims:
+  - evidence_id: edu-nus-bcomp-cs
+    protected_facts:
+      - Bachelor of Computing in Computer Science
+      - National University of Singapore
+      - 2023-2027
+      - in_progress
+  - evidence_id: research-open-vocabulary-perception
+    protected_facts:
+      - Open-Vocabulary Object Detection for Indoor Service Robots
+      - undergraduate research assistant
+      - 2025-2027
+      - in_progress
+  - evidence_id: research-domain-shift-driving-scenes
+    protected_facts:
+      - Domain Shift Analysis for Night-Time Driving Scene Segmentation
+      - summer research intern
+      - '2026'
+      - completed
+  - evidence_id: research-capstone-visual-retrieval
+    protected_facts:
+      - 'Capstone: Efficient Visual Retrieval for Museum Collections'
+      - capstone project lead
+      - 2026-2027
+      - in_progress
+  - evidence_id: project-robot-vision-benchmark
+    protected_facts:
+      - Robot Vision Benchmark Toolkit
+      - '2026'
+  - evidence_id: project-depth-completion
+    protected_facts:
+      - Monocular Depth Completion for Cluttered Indoor Scenes
+      - '2025'
+  - evidence_id: course-computer-vision
+    protected_facts:
+      - Computer Vision and Pattern Recognition
+      - A+
+  - evidence_id: course-deep-learning
+    protected_facts:
+      - Deep Learning for Visual Recognition
+      - A
+  - evidence_id: course-robotics-perception
+    protected_facts:
+      - Robotics Perception
+      - A
+  - evidence_id: course-machine-learning
+    protected_facts:
+      - Machine Learning
+      - A+
+  - evidence_id: award-undergraduate-research
+    protected_facts:
+      - Undergraduate Research Opportunities Programme Commendation
+      - National University of Singapore School of Computing
+      - '2026'
+  - evidence_id: award-nus-deans-list
+    protected_facts:
+      - Dean's List
+      - National University of Singapore School of Computing
+      - 2024-2026
+  - evidence_id: research-open-vocabulary-perception
+    protected_facts:
+      - open-vocabulary object detection
+      - vision-language models
+      - robotics perception
+      - Python
+      - PyTorch
+  - evidence_id: research-domain-shift-driving-scenes
+    protected_facts:
+      - semantic segmentation
+      - domain shift evaluation
+      - calibration analysis
+      - benchmark datasets
+  - evidence_id: research-capstone-visual-retrieval
+    protected_facts:
+      - contrastive image-text retrieval
+      - approximate nearest neighbor search
+      - evaluation metrics
+      - technical writing
+  - evidence_id: project-robot-vision-benchmark
+    protected_facts:
+      - Python
+      - PyTorch
+      - OpenCV
+      - Weights and Biases
+  - evidence_id: project-depth-completion
+    protected_facts:
+      - Python
+      - PyTorch
+      - NumPy
+      - OpenCV
+estimated_pages: 1
+page_limit: null

@@ -1,0 +1,5 @@
+blank_issues_enabled: true
+contact_links:
+  - name: Security or accidental data exposure (private)
+    url: https://github.com/TianCZeng/admissions-ops/security/advisories/new
+    about: Report vulnerabilities or exposed personal data privately. Never post applicant data in a public issue — see SECURITY.md.

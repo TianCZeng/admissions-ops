@@ -1,0 +1,33 @@
+target_fields:
+  - "machine learning"
+  - "human-computer interaction"
+  - "AI evaluation"
+
+degree_types:
+  - "MSc"
+
+countries:
+  - "United Kingdom"
+  - "Canada"
+
+intakes:
+  - "Fall 2027"
+
+research_interests:
+  - "human feedback for AI systems"
+  - "evaluation workflows"
+  - "usable data tools"
+
+constraints:
+  delivery: "on-campus"
+  funding_notes: "Needs scholarship options, but structured funding is not modeled in MVP."
+  deadline_buffer_days: 28
+
+fit_weights:
+  academic_preparation: 0.20
+  research_or_subject_fit: 0.30
+  evidence_strength: 0.20
+  goal_alignment: 0.15
+  admissions_feasibility: 0.05
+  practical_constraints: 0.05
+  application_effort: 0.05

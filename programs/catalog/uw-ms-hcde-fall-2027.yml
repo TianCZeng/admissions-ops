@@ -1,0 +1,41 @@
+id: uw-ms-hcde-fall-2027
+institution: University of Washington
+program: MS Human Centered Design & Engineering
+degree_type: MS
+department: Human Centered Design & Engineering
+intake: Fall 2027
+applicant_category: not_applicable
+country: United States
+official_url: https://www.hcde.washington.edu/ms/admissions
+application_url: https://www.hcde.washington.edu/ms/admissions
+retrieved_at: '2026-07-02'
+deadline:
+  value: January 2027
+  type: month_year
+  timezone: America/Los_Angeles
+  source_url: https://www.hcde.washington.edu/ms/admissions
+  notes: The current HCDE pages show January 2027 for the Fall 2027 intake, but they do not print the exact day yet.
+document_instructions:
+  page_limit: 2
+  text: Official application materials include a resume or CV, a statement of purpose with two prompts capped at 600 words each, three letters of recommendation, and unofficial transcripts. HCDE does not accept portfolios or GRE scores.
+sources:
+  - url: https://www.hcde.washington.edu/ms/admissions
+    retrieved_at: '2026-07-02'
+    use: Program identity, bachelor-degree expectation, no-GRE policy, autumn-only intake, deadline window
+    notes: Official HCDE admissions page.
+  - url: https://www.hcde.washington.edu/ms/application/materials
+    retrieved_at: '2026-07-02'
+    use: Resume/CV requirement, statement prompts, recommendation letters, transcripts, and portfolio policy
+    notes: Official HCDE application materials page.
+  - url: https://www.hcde.washington.edu/ms/admissions-international-students
+    retrieved_at: '2026-07-02'
+    use: English-language thresholds and international-applicant guidance
+    notes: Official HCDE international-student admissions page.
+  - url: https://grad.uw.edu/policies/3-2-graduate-school-english-language-proficiency-requirements/
+    retrieved_at: '2026-07-02'
+    use: Graduate School English-language proficiency policy for Autumn 2027-cycle applicants
+    notes: Official UW Graduate School policy page.
+freshness_warnings:
+  - The HCDE admissions page shows "January 2027" for the Fall 2027 intake but does not print the exact day.
+  - English-proficiency handling depends on whether the applicant can satisfy the Graduate School policy through degree documentation or a test-score route.
+conflicts: []
