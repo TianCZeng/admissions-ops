@@ -1,0 +1,163 @@
+program_id: cmu-mscv-fall-2027
+institution: Carnegie Mellon University
+program: Master of Science in Computer Vision
+statement_type: statement_of_purpose
+review_status: Review Required
+artifact: output/cmu-mscv-fall-2027/statement-draft.md
+sources:
+  evidence: students/tsinghua-automation/evidence.yml
+  master_cv: students/tsinghua-automation/master-cv.md
+  statement_brief: students/tsinghua-automation/statement-brief.md
+generated_claims:
+  - claim_id: claim-brief-why-now
+    claim_summary: >-
+      The opening paragraph uses the student brief's stated reason for pursuing graduate study now
+      and its instruction to make the localization thread the spine of the statement.
+    source_type: student_brief
+    brief_section: General Direction
+  - claim_id: claim-brief-spine
+    claim_summary: >-
+      The pairing of the graduation project with the loop-closure work as the statement's organizing
+      argument comes from the brief's required content.
+    source_type: student_brief
+    brief_section: Must Include
+  - claim_id: claim-research-graduation
+    claim_summary: >-
+      The draft describes the graduation project's comparison of visual odometry front ends, its
+      sequence types, and its June 2026 defence, and treats it as finished rather than ongoing.
+    source_type: evidence
+    evidence_id: research-graduation-project
+    protected_facts:
+      - Vision-Based Localization Methods for Mobile Robots
+      - corridor, lobby, and laboratory sequences
+  - claim_id: claim-research-loop-closure
+    claim_summary: >-
+      The draft describes the current research-assistant work on loop-closure robustness, its
+      repetitive-corridor setting, its descriptor and geometric-verification variables, and its
+      in-progress status.
+    source_type: evidence
+    evidence_id: research-loop-closure-robustness
+    protected_facts:
+      - Loop-Closure Robustness for Visual SLAM in Repetitive Indoor Corridors
+      - research assistant
+      - descriptor choice and geometric verification thresholds
+  - claim_id: claim-project-harness
+    claim_summary: >-
+      The draft describes the SLAM evaluation harness and the specific error metrics it reports as
+      evidence of measurement discipline.
+    source_type: evidence
+    evidence_id: project-slam-evaluation-harness
+    protected_facts:
+      - Indoor Visual SLAM Evaluation Harness
+      - absolute trajectory error, relative pose error
+  - claim_id: claim-project-calibration
+    claim_summary: >-
+      The draft describes the camera-IMU calibration toolkit and its re-calibration check after a
+      hardware change.
+    source_type: evidence
+    evidence_id: project-camera-imu-calibration
+    protected_facts:
+      - Camera-IMU Calibration Toolkit for a Differential-Drive Robot
+  - claim_id: claim-research-depth
+    claim_summary: >-
+      The draft describes the uncertainty-calibration project, its indoor-scene setting, and the
+      calibration curves before and after temperature scaling.
+    source_type: evidence
+    evidence_id: research-depth-calibration
+    protected_facts:
+      - Uncertainty Calibration for Monocular Depth Estimation
+      - temperature scaling
+  - claim_id: claim-education
+    claim_summary: >-
+      The draft names the awarding institution and department and reports the overall result on the
+      published percentage scale.
+    source_type: evidence
+    evidence_id: edu-tsinghua-beng-automation
+    protected_facts:
+      - Tsinghua University
+      - Department of Automation
+      - 89.7/100
+  - claim_id: claim-course-computer-vision
+    claim_summary: The draft cites the Computer Vision course and its recorded mark.
+    source_type: evidence
+    evidence_id: course-computer-vision
+    protected_facts:
+      - Computer Vision
+      - 95/100
+  - claim_id: claim-course-pattern-recognition
+    claim_summary: The draft cites the Pattern Recognition course and its recorded mark.
+    source_type: evidence
+    evidence_id: course-pattern-recognition
+    protected_facts:
+      - Pattern Recognition
+      - 93/100
+  - claim_id: claim-course-linear-algebra
+    claim_summary: The draft cites the Linear Algebra course and its recorded mark.
+    source_type: evidence
+    evidence_id: course-linear-algebra
+    protected_facts:
+      - Linear Algebra
+      - 92/100
+  - claim_id: claim-course-probability
+    claim_summary: The draft cites the probability and statistics course and its recorded mark.
+    source_type: evidence
+    evidence_id: course-probability-statistics
+    protected_facts:
+      - Probability Theory and Mathematical Statistics
+      - 91/100
+  - claim_id: claim-course-optimal-control
+    claim_summary: >-
+      The draft cites Optimal Control Theory and its recorded mark as the applicant's first
+      sustained optimization coursework.
+    source_type: evidence
+    evidence_id: course-optimal-control
+    protected_facts:
+      - Optimal Control Theory
+      - 88/100
+  - claim_id: claim-brief-percentage-scale
+    claim_summary: >-
+      The draft reports the percentage result as published and does not convert it, following the
+      brief's explicit instruction.
+    source_type: student_brief
+    brief_section: Avoid
+  - claim_id: claim-program-learning-outcomes
+    claim_summary: >-
+      The draft quotes the official MSCV learning outcomes on geometry, optimization, and statistics
+      and on experimental analysis with standard metrics and benchmark datasets, and describes the
+      program as coursework-first over sixteen months with a hands-on team project as its
+      culminating experience.
+    source_type: official_program_source
+    source_url: https://www.ri.cmu.edu/education/academic-programs/master-of-science-computer-vision/
+  - claim_id: claim-program-skill-set
+    claim_summary: >-
+      The draft states that its working toolchain matches the program's published recommended skill
+      set.
+    source_type: official_program_source
+    source_url: >-
+      https://www.ri.cmu.edu/education/academic-programs/master-of-science-computer-vision/recommended-skill-set/
+  - claim_id: claim-program-curriculum
+    claim_summary: >-
+      The draft cites the curriculum's description of recognition and geometry as the two main
+      areas, the placement of multi-view reconstruction and SLAM under geometry, the core option
+      pairing 16-822 with 16-833, and the required computer-vision-relevant summer internship.
+    source_type: official_program_source
+    source_url: >-
+      https://www.ri.cmu.edu/education/academic-programs/master-of-science-computer-vision/curriculum/
+  - claim_id: claim-brief-program-notes
+    claim_summary: >-
+      The decision to lead with the localization thread, name the geometry, optimization, and
+      statistics gaps explicitly, and use the evaluation harness as proof of experimental discipline
+      follows the brief's guidance for programs with a geometry and optimization core.
+    source_type: student_brief
+    brief_section: Program-Specific Notes
+  - claim_id: claim-brief-transcript-language
+    claim_summary: >-
+      The closing note that the degree and transcript are issued in Chinese, and that English
+      documentation will be supplied through the official channel, uses the one personal-context
+      item the brief permits.
+    source_type: student_brief
+    brief_section: Personal Background Allowed For Use
+word_count: 881
+estimated_pages: 2
+word_limit: null
+page_limit: 2

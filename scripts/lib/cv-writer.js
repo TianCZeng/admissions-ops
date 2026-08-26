@@ -1,6 +1,7 @@
 const fs = require("fs");
 const path = require("path");
 const yaml = require("js-yaml");
+const { findNonEnglishScriptDeep, nonEnglishScriptReason } = require("./language");
 const { slugify } = require("./program-writer");
 
 const DOCUMENT_TYPES = new Set(["academic_cv", "admissions_resume"]);
@@ -23,6 +24,23 @@ const EVIDENCE_CATEGORIES = [
 // The admissions resume template only has sections for these categories; the
 // preflight rejects plans that select evidence a resume cannot render.
 const RESUME_CATEGORIES = new Set(["education", "courses", "research", "projects", "awards"]);
+// Exactly the evidence fields the model builders read, per category. Generated
+// documents are English (AGENTS.md -> Language), so these are script-gated
+// before rendering. Anything absent from this list -- `education.notes`,
+// `service.notes`, `courses.level`, or an added `original_title` -- never
+// reaches a document and may hold the original non-English string for a
+// reviewer. Keep this in step with buildAcademicCvModel / buildResumeModel.
+const RENDERED_EVIDENCE_FIELDS = {
+  education: ["degree", "institution", "dates", "status"],
+  courses: ["title", "result"],
+  research: ["title", "methods", "role", "dates", "status", "summary"],
+  projects: ["title", "dates", "summary", "tools"],
+  awards: ["title", "issuer", "date"],
+  publications: ["title", "authors", "status"],
+  presentations: ["title", "venue", "date", "status"],
+  teaching: ["role", "course", "dates"],
+  service: ["title", "role", "dates"],
+};
 const PLAN_PREFLIGHT_HINT =
   "Run `$admissions-ops cv` or the full `$admissions-ops program for student <student-id>` pipeline before `npm run cv`.";
 
@@ -89,6 +107,7 @@ function assertDocumentType(documentType) {
 function renderCvAdaptation(rootDir, input) {
   const cliOverride = input.documentTypeOverride ? assertDocumentType(input.documentTypeOverride) : null;
   validateCvAdaptationPlan(input.evaluation, input.documentInstructions, input.evidence, { cliOverride });
+  validateRenderedLanguage(input);
   const plan = input.evaluation.cv_adaptation_plan;
   const documentType = resolveDocumentType(plan, cliOverride);
   const derivedType = instructionDerivedDocumentType(input.documentInstructions);
@@ -263,6 +282,39 @@ function validateCvAdaptationPlan(evaluation, documentInstructions = {}, evidenc
 
 function failPlanPreflight(programLabel, reason) {
   throw new Error(`CV adaptation plan preflight failed for ${programLabel}: ${reason}. ${PLAN_PREFLIGHT_HINT}`);
+}
+
+// Refuses to render a document containing script the templates cannot display.
+// Scoped to what actually reaches the page: the planned evidence entries' rendered
+// fields, the three profile values in commonPlaceholders, and the agent-authored
+// plan prose. The remedy is chat-assisted intake, not a font stack -- see
+// modes/_shared.md -> Evidence Language At Rest.
+function validateRenderedLanguage(input) {
+  const evaluation = input.evaluation || {};
+  const programLabel = evaluation.id ? evaluation.id : "evaluation";
+  const plan = evaluation.cv_adaptation_plan || {};
+  const priorities = new Set((plan.evidence_priorities || []).map((id) => String(id || "").trim()));
+
+  for (const category of EVIDENCE_CATEGORIES) {
+    for (const entry of ((input.evidence || {})[category]) || []) {
+      if (!entry || !priorities.has(entry.id)) continue;
+      for (const field of RENDERED_EVIDENCE_FIELDS[category] || []) {
+        const hit = findNonEnglishScriptDeep(entry[field], `evidence.${category}[${entry.id}].${field}`);
+        if (hit) failPlanPreflight(programLabel, nonEnglishScriptReason(hit));
+      }
+    }
+  }
+
+  const student = (input.profile || {}).student || {};
+  for (const field of ["name", "email", "location"]) {
+    const hit = findNonEnglishScriptDeep(student[field], `profile.student.${field}`);
+    if (hit) failPlanPreflight(programLabel, nonEnglishScriptReason(hit));
+  }
+
+  for (const field of ["profile_summary", "summary"]) {
+    const hit = findNonEnglishScriptDeep(plan[field], `cv_adaptation_plan.${field}`);
+    if (hit) failPlanPreflight(programLabel, nonEnglishScriptReason(hit));
+  }
 }
 
 // Maps evidence ID -> category name for every known evidence category.
@@ -570,6 +622,9 @@ function protectedFacts(item, keys) {
 
 function commonPlaceholders(profile, values) {
   return {
+    // Deliberately hardcoded, not a missing setting: generated documents are
+    // always English (AGENTS.md -> Language). Do not parameterize this; a
+    // verify:layout assertion pins it to the literal "en".
     LANG: "en",
     NAME: escapeHtml(profile.student.name),
     CONTACT: escapeHtml([profile.student.email, profile.student.location].filter(Boolean).join(" | ")),

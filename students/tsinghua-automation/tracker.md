@@ -1,0 +1,5 @@
+# Programs Tracker
+
+| # | Institution | Program | Degree | Intake | Deadline | Eligibility | Fit | Status | CV | Statement | Report | Next Action | Notes |
+| --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- |
+| 1 | Carnegie Mellon University | Master of Science in Computer Vision | MS | Fall 2027 | 2026-12-09 15:00 America/New_York | likely | 4.2/5 | Evaluated | [Review Required draft](output/cmu-mscv-fall-2027/admissions-resume.html) (Review Required) | [Review Required statement](output/cmu-mscv-fall-2027/statement-draft.md) (Review Required) | [Report](reports/001-carnegie-mellon-university-2026-08-24.md) | Review the draft resume and statement of purpose, then resolve the recommender, transcript-documentation, and TOEFL component-minimum tasks and decide how to state the long-term goal given CMU's stated position on PhD preparation. | Review Required drafts prepared for a self-funded professional master's with no financial aid; goal alignment is the weakest fit dimension and is recorded as an open decision. |

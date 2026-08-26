@@ -14,13 +14,14 @@ plain local files in your own private repository — no account, no server, no
 telemetry. What your AI agent sends to its model provider is covered in
 [Integrity & Disclaimers](#integrity--disclaimers).
 
-![Demo: one prompt produces a sourced report, an eligibility matrix whose unknowns become verification tasks, a tailored admissions resume, and a statement draft that stays Review Required](docs/media/demo.gif)
+![Demo: one prompt, and minutes of real agent run time later, a sourced report, an eligibility matrix whose unknowns become verification tasks, a tailored admissions resume, and a statement draft that stays Review Required](docs/media/demo.gif)
 
-<p align="center"><em><a href="docs/media/demo.mp4">▶ Watch the full-quality MP4 (~55s)</a></em></p>
+<p align="center"><em><a href="docs/media/demo.mp4">▶ Watch the full-quality MP4 (~44s)</a></em></p>
 
 <p align="center">
-  <img src="docs/media/report-eligibility.png" alt="Report section C: formal eligibility matrix with sourced unknown rows" width="49%">
-  <img src="docs/media/resume.png" alt="Rendered admissions resume for the synthetic demo applicant Maya Tan" width="49%">
+  <img src="docs/media/report-eligibility.png" alt="Report section C: formal eligibility matrix with sourced unknown rows" width="32%">
+  <img src="docs/media/resume.png" alt="Rendered admissions resume for the synthetic demo applicant Maya Tan" width="32%">
+  <img src="docs/media/statement-review-required.png" alt="Opening of the statement draft: the review status reads Review Required, the state every draft keeps until a human reviews it" width="32%">
 </p>
 
 Give the agent one official program page and your evidence files, and one
@@ -45,7 +46,11 @@ prompt produces:
 A complete worked example lives in [`students/nus-cs/`](students/nus-cs/): a
 fully synthetic applicant ("Maya Tan") evaluated against a real official
 program page, including the sourced report, evaluation record, rendered
-resume, and statement draft.
+resume, and statement draft. A second fully synthetic workspace,
+[`students/tsinghua-automation/`](students/tsinghua-automation/), was produced
+from a Chinese-language chat against a Chinese percentage transcript — the
+conversation is Chinese, every generated artifact is English, and the
+percentage marks are reported as published rather than converted.
 
 ## Why It Looks Like This
 
@@ -149,9 +154,10 @@ must-include points, avoid points, program notes, and allowed personal
 background.
 
 Flat files under `students/*.example.*` show the setup shape. Files under
-`examples/` are fictional fixtures for workflow development. The committed
-demo workspace `students/nus-cs/` is fully synthetic — browse it to see what
-one full run produces; never treat it as a real person's data.
+`examples/` are fictional fixtures for workflow development. The two committed
+demo workspaces, `students/nus-cs/` and `students/tsinghua-automation/`, are
+fully synthetic — browse them to see what one full run produces; never treat
+them as a real person's data.
 
 ## Full One-Program Pipeline
 
@@ -375,9 +381,17 @@ Dry-runs write under `validation-output/dry-run/compare/{student-id}/`.
   packager rejects claims that trace to nothing; and every draft stays
   `Review Required` until a human reviews it. Treat drafts as a structured
   starting point to rewrite in your own voice, not a submission.
-- **Synthetic demo data.** The demo applicant ("Maya Tan" under
-  `students/nus-cs/`) and all fixtures under `examples/` are fully synthetic.
-  No real student data is included in this repository.
+- **Synthetic demo data.** Both demo applicants ("Maya Tan" under
+  `students/nus-cs/` and "Chen Shuhan" under
+  `students/tsinghua-automation/`) and all fixtures under `examples/` are
+  fully synthetic. No real student data is included in this repository.
+- **Language.** You can talk to the agent in any language. Everything it
+  writes is English — reports, checklists, tracker cells, CV and resume prose,
+  statement drafts, and the evidence records behind them — because the
+  programs these documents are submitted to require English. There is no
+  setting for this. Accented Latin (`Saarbrücken`, `Kovač`) is fine; a
+  non-English source transcript is translated with you in chat, and the
+  translated proper nouns become verification tasks rather than settled facts.
 - **No admissions predictions.** Eligibility is a documented hard-gate
   check; fit is a separate planning judgement. Nothing in this tool
   estimates your probability of admission.

@@ -4,6 +4,35 @@ This file contains reusable policy for admissions modes. User-specific academic
 history and preferences belong in the selected `students/{student-id}/`
 workspace, not here.
 
+## Output Language
+
+Two rules. Both are fixed: there is no configuration key for either, and there
+is no way for a user to request a non-English artifact from this repository.
+
+**Artifacts are English.** Reports, checklists, tracker cells, CV/resume prose,
+statement drafts, and summaries. The chat language never reaches an artifact.
+
+**Chat is the user's language.** If the user writes to you in Chinese, every
+word you address to them is Chinese from your first sentence onward — progress
+narration, preambles, `I'll start by…` lines, descriptions of what you are
+about to read or run, plans, findings, and questions included. A mixed-language
+turn follows the user's own prose, not the command scaffold, the flags, or the
+URL: `/admissions-ops program --write-drafts for student x:` followed by one
+Chinese sentence is a Chinese turn. Never open in English and switch later.
+
+- **Subagents.** Prepend both rules verbatim to every subagent prompt. A
+  worker does not inherit the parent's rule.
+- **Program conflict.** If an official source requires a statement or CV in a
+  language other than English, this repository cannot produce it. Record the
+  conflict in the report and say so. Never switch the artifact language.
+- **Diagnostics.** Machine output from `npm run *` stays English in logs and in
+  quoted error text. Restate it in the user's language when explaining it in
+  chat; do not translate the error string itself.
+
+"English" here means script, not ASCII. `Saarbrücken`, `Kovač`, and `naïve` are
+valid English-document content. The deterministic guards reject Chinese,
+Japanese, and Korean script only.
+
 ## Required Sources
 
 Before evaluating a real program, load only:
@@ -150,3 +179,32 @@ packages and validates them. Do not invent personal background, motivation,
 hardship, supervisors, labs, courses, career goals, or program reasons. Every
 nontrivial statement claim must trace to an evidence ID, official source, or
 statement-brief note.
+
+## Evidence Language At Rest
+
+`students/{student-id}/evidence.yml` holds English. This is a refinement of the
+Document Integrity rule above: a translated course title *is* a changed title,
+and a free translation of an award name is an unsourced factual claim about a
+transcript the reviewer may hold in the original.
+
+1. The agent may draft the English strings in chat — that is what chat is for —
+   but never writes a self-translated proper noun into a stored record on its
+   own authority. Propose the wording, let the user commit it.
+2. Where the institution publishes an official English name, use that name and
+   cite the source. This is the same official-source rule the repository already
+   applies to program facts.
+3. Never translate a grade, a scale, or a credential level. The NUS CAP
+   no-conversion rule in `students/nus-cs/preferences.yml` extends to a Chinese
+   percentage scale or a 学士/硕士 credential. Record the local scale as
+   published and let the program apply its own equivalence rules.
+4. A user-supplied translation of a proper noun is a verification task in the
+   program checklist, not a settled fact. The checklist is rendered from the
+   evaluation's `action_items`, so the task belongs there; an
+   `unresolved_questions` entry in a CV or statement plan does not reach the
+   checklist. When intake happens before any program is evaluated, carry the
+   task into the first evaluation's `action_items`.
+
+The original may be preserved next to the English string in a field the renderer
+never reads — `original_title`, `original_name`, `original_issuer` — so a
+reviewer can check the translation. The CV preflight gates only the fields that
+reach a generated document, so those keys are safe.

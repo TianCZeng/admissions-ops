@@ -1,0 +1,45 @@
+target_fields:
+  - computer vision
+  - robot perception and localization
+  - state estimation
+  - optimization for perception
+
+degree_types:
+  - MS
+  - MSc
+
+countries:
+  - United States
+  - Switzerland
+  - Singapore
+  - Germany
+
+intakes:
+  - Fall 2027
+
+research_interests:
+  - visual simultaneous localization and mapping
+  - loop closure and place recognition
+  - multi-view geometry
+  - uncertainty and calibration in visual perception
+  - evaluation of perception systems on real robot data
+
+goals:
+  - Build deeper technical training in the geometry, optimization, and statistics behind visual perception.
+  - Move from single-session localization experiments toward perception that stays reliable across sessions and environments.
+  - Keep every CV and statement claim tied to the official transcript and to verified evidence.
+
+constraints:
+  - Prefer programs with substantial computer vision, geometry, and optimization coursework.
+  - Never convert the Tsinghua percentage scale to a 4.0 GPA; record the local scale as published and let each program apply its own equivalence rules.
+  - Treat English-test component minimums and standardized-test reporting as hard verification items.
+  - Every English rendering of a Chinese course title, degree title, or award name stays a verification task until it is checked against the official transcript.
+
+fit_weights:
+  academic_preparation: 0.2
+  research_or_subject_fit: 0.25
+  evidence_strength: 0.2
+  goal_alignment: 0.15
+  admissions_feasibility: 0.1
+  practical_constraints: 0.05
+  application_effort: 0.05

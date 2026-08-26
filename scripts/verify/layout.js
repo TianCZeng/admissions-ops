@@ -10,6 +10,7 @@ function main() {
   validatePackageScripts();
   validatePipelineContracts();
   validatePublicReadmeContract();
+  validateLanguageContract();
   validateGithubMeta();
   validateSeedArchive();
   validateValidationOutputReferences();
@@ -17,6 +18,72 @@ function main() {
   validateStudentExamplesAndRootPlaceholders();
   validateLiveStudentWorkspace();
   console.log("Runtime, fixture, and validation layout verifies");
+}
+
+function validateLanguageContract() {
+  // Phase 7.0: chat may be any language, every artifact is English, and there is
+  // no configuration key for either. These are structural checks -- reflowing the
+  // prose is fine, removing a clause or parameterizing the renderer is not.
+  const cvWriter = fs.readFileSync(path.join(repoRoot, "scripts", "lib", "cv-writer.js"), "utf8");
+  const langAssignments = cvWriter.match(/LANG:\s*[^,\n]+/g) || [];
+  assert(
+    langAssignments.length === 1 && langAssignments[0] === 'LANG: "en"',
+    'cv-writer.js must set LANG to the literal "en"; generated documents are English and this is not a setting'
+  );
+
+  for (const template of ["academic-cv-template.html", "admissions-resume-template.html"]) {
+    const text = fs.readFileSync(path.join(repoRoot, "templates", template), "utf8");
+    assert(text.includes('<html lang="{{LANG}}">'), `${template} must render the document language from {{LANG}}`);
+    assert(text.includes("font-family: Arial, sans-serif;"), `${template} must keep the Arial-only font stack`);
+    assert(
+      !/Noto Sans (SC|TC|JP|KR|CJK)|Source Han|Microsoft YaHei|PingFang|SimSun|SimHei|Hiragino|Meiryo|Malgun|Yu Gothic|WenQuanYi/i.test(text),
+      `${template} must not add a CJK font stack: documents are English by script, not by ASCII, so Arial's accented-Latin coverage is required and its lack of CJK glyphs is deliberate`
+    );
+  }
+
+  const router = fs.readFileSync(path.join(repoRoot, ".agents", "skills", "admissions-ops", "SKILL.md"), "utf8");
+  const sharedMode = fs.readFileSync(path.join(repoRoot, "modes", "_shared.md"), "utf8");
+  const agents = fs.readFileSync(path.join(repoRoot, "AGENTS.md"), "utf8");
+  for (const [label, text] of Object.entries({ router, sharedMode })) {
+    assert(text.includes("## Output Language"), `${label} missing the output-language directive`);
+    assert(/subagent prompt/i.test(text), `${label} language directive missing the subagent clause`);
+    assert(/never switch the artifact language/i.test(text), `${label} language directive missing the program-conflict clause`);
+    assert(/do not translate the error string/i.test(text), `${label} language directive missing the diagnostics clause`);
+    assert(/script, not ASCII/.test(text), `${label} language directive must state that English means script, not ASCII`);
+  }
+  assert(agents.includes("## Language"), "AGENTS.md missing the language policy section");
+  assert(sharedMode.includes("## Evidence Language At Rest"), "modes/_shared.md missing the evidence-intake language section");
+  assert(
+    /self-translated proper noun/.test(sharedMode) && /self-translated proper noun/.test(agents),
+    "The never-self-translate rule must appear in both AGENTS.md and modes/_shared.md"
+  );
+
+  // No language configuration key anywhere in the system layer. `languages:` in
+  // profile.example.yml is English-test status and must keep working, so the
+  // pattern is deliberately singular.
+  const configFiles = [
+    ...fs.readdirSync(path.join(repoRoot, "students")).filter((f) => f.endsWith(".example.yml")).map((f) => `students/${f}`),
+    ...fs.readdirSync(path.join(repoRoot, "programs")).filter((f) => f.endsWith(".example.yml")).map((f) => `programs/${f}`),
+    "templates/states.yml",
+    ...walk(path.join(repoRoot, "examples")).filter((f) => f.endsWith(".yml")).map(rel),
+  ];
+  for (const file of configFiles) {
+    const text = fs.readFileSync(path.join(repoRoot, file), "utf8");
+    assert(
+      !/^\s*(document_language|chat_language|output_language|artifact_language|language)\s*:/m.test(text),
+      `${file} introduces a language configuration key; artifact language is fixed and must not become configurable`
+    );
+  }
+
+  // One shared word counter. The ASCII-only duplicate is what made Saarbrücken
+  // count as two words in one place and not the other.
+  const counterDefinitions = walk(path.join(repoRoot, "scripts"))
+    .filter((file) => file.endsWith(".js"))
+    .filter((file) => /function countWords\s*\(/.test(fs.readFileSync(file, "utf8")));
+  assert(
+    counterDefinitions.length === 1 && rel(counterDefinitions[0]) === "scripts/lib/language.js",
+    `countWords must be defined once, in scripts/lib/language.js; found: ${counterDefinitions.map(rel).join(", ") || "none"}`
+  );
 }
 
 function validatePipelineContracts() {
@@ -96,7 +163,8 @@ function validatePublicReadmeContract() {
   assert(zhReadme.includes("[English](README.md)"), "zh-CN README must link back to the English README");
   assert(zhReadme.includes("Review Required"), "zh-CN README must keep the Review Required state name");
   assert(zhReadme.includes("core.symlinks"), "zh-CN README must keep the Windows symlink setup note");
-  assert(/docs\/media\/demo\.(gif|mp4)/.test(zhReadme), "zh-CN README missing the launch demo embed");
+  assert(/docs\/media\/demo\.zh-CN\.(gif|mp4)/.test(zhReadme), "zh-CN README missing the Chinese launch demo embed");
+  assert(zhReadme.includes("students/tsinghua-automation/"), "zh-CN README must keep the Chinese-transcript worked example");
   assert(zhReadme.includes("模型供应商"), "zh-CN README must disclose the model-provider data flow");
   assert(zhReadme.includes("SECURITY.md"), "zh-CN README must point to SECURITY.md");
 }
@@ -121,7 +189,7 @@ function validateGithubMeta() {
 
 function validateScriptLayout() {
   assertDirFiles("scripts/cli", ["compare.js", "cv.js", "statement.js"]);
-  assertDirFiles("scripts/lib", ["consistency.js", "cv-writer.js", "program-writer.js", "statement-writer.js", "workspace.js"]);
+  assertDirFiles("scripts/lib", ["consistency.js", "cv-writer.js", "language.js", "program-writer.js", "statement-writer.js", "workspace.js"]);
   assertDirFiles("scripts/verify", [
     "catalog.js",
     "compare.js",

@@ -15,13 +15,14 @@
 不设账号、服务器或遥测。你的 AI 智能体会向其模型供应商发送哪些内容，详见
 [诚信与免责声明](#诚信与免责声明)。
 
-![演示：一条指令即可产出有出处的报告、把 unknown 转化为核实任务的资格矩阵、定制的申请简历，以及始终保持 Review Required 状态的文书草稿](docs/media/demo.gif)
+![演示：用中文提出一条指令，经过二十多分钟的真实运行，即可产出有出处的报告、逐条给出处并把未核实的点转成核实任务的资格矩阵、定制的申请简历，以及始终保持 Review Required 的文书草稿；百分制成绩按原样保留](docs/media/demo.zh-CN.gif)
 
-<p align="center"><em><a href="docs/media/demo.mp4">▶ 观看完整高清 MP4（约 55 秒）</a></em></p>
+<p align="center"><em><a href="docs/media/demo.zh-CN.mp4">▶ 观看完整高清 MP4（约 44 秒）</a></em></p>
 
 <p align="center">
-  <img src="docs/media/report-eligibility.png" alt="报告 C 部分：带出处的正式资格矩阵，unknown 行会转化为核实任务" width="49%">
-  <img src="docs/media/resume.png" alt="为虚构示例申请人 Maya Tan 渲染出的申请简历" width="49%">
+  <img src="docs/media/report-eligibility.zh-CN.png" alt="报告 C 部分：带出处的正式资格矩阵；学位与 TOEFL 两行判为 likely_met 而非 met，未核实的点转化为核实任务" width="32%">
+  <img src="docs/media/resume.zh-CN.png" alt="为虚构示例申请人陈书涵渲染出的申请简历" width="32%">
+  <img src="docs/media/statement-review-required.zh-CN.png" alt="文书草稿的开头：状态为 Review Required，正文中的百分制成绩按 95/100 原样引用，未做任何换算" width="32%">
 </p>
 
 给智能体一个官方项目页面和你的证据文件，一条指令即可产出：
@@ -37,9 +38,12 @@
   文书简报，并保持 `Review Required` 状态直到你亲自审阅；
 - 一行**追踪表记录**，外加**每个项目的清单**，确保未决问题不会被遗漏。
 
-一个完整的示例见 [`students/nus-cs/`](students/nus-cs/)：一位完全虚构的申请人
-（“Maya Tan”）针对真实官方项目页面完成评估，包含有出处的报告、评估记录、渲染
-出的简历和文书草稿。
+一个完整的示例见 [`students/tsinghua-automation/`](students/tsinghua-automation/)：
+完全虚构的申请人「陈书涵」，清华自动化本科、百分制成绩单，针对真实的 CMU MSCV
+官方页面完成评估——这也是上面演示视频里那一次运行的产物，包含有出处的报告、
+评估记录、渲染出的简历和文书草稿。另一个例子见
+[`students/nus-cs/`](students/nus-cs/)：同样完全虚构的申请人「Maya Tan」，
+英文成绩单、4.0 制。
 
 ## 为什么是这样的设计
 
@@ -129,8 +133,10 @@ students/{student-id}/tracker.md
 使用的个人背景。
 
 `students/*.example.*` 平铺文件展示了配置的格式。`examples/` 下是用于工作流
-开发的虚构 fixture。已提交的演示工作区 `students/nus-cs/` 完全是虚构的——
-可以浏览它了解一次完整运行的产出；切勿把它当作真实个人数据。
+开发的虚构 fixture。两个已提交的演示工作区
+`students/tsinghua-automation/`（中文对话、百分制成绩）和 `students/nus-cs/`
+都完全是虚构的——可以浏览它们了解一次完整运行的产出；切勿把它们当作真实个人
+数据。
 
 ## 完整的单项目流水线
 
@@ -157,14 +163,20 @@ Run the full one-program admissions pipeline for the intended intake
 <term/year>.
 ```
 
-例如：
+例如——这就是演示视频里输入的那一条指令，一字未改：
 
 ```text
-$admissions-ops program --write-drafts for student nus-cs:
+/admissions-ops program --write-drafts 学生 tsinghua-automation:
+你好，我要申请 2027 年秋季入学，请把下面这个项目从头到尾跑完：
 https://www.ri.cmu.edu/education/academic-programs/master-of-science-computer-vision/
 
-Run the full one-program admissions pipeline for the intended intake Fall 2027.
+我要评估报告、改好的申请简历和文书草稿；还差哪些没核实的信息，一并列出来。
 ```
+
+参数部分照旧：`program` 必须排在最前（路由按这一行匹配），`--write-drafts` 是
+写入授权，学生 id 原样保留；只有 `for student` 换成了中文的「学生」。指令用
+中文说的是范围和交付物，而不是要求“给出处”“别换算成绩”“保持 Review
+Required”——那些是产品本身的承诺，不需要你在指令里讨。
 
 ## 流水线做什么
 
@@ -330,9 +342,15 @@ npm run compare -- --student <student-id> --program <program-id> --program <prog
   背景、导师、课程、职业目标和选校理由绝不虚构；打包器会拒绝任何无出处
   的陈述；每份草稿都保持 `Review Required` 直到人工审阅。请把草稿当作
   供你用自己的声音重写的结构化起点，而不是可直接提交的成品。
-- **虚构演示数据。** 演示申请人（`students/nus-cs/` 下的 “Maya Tan”）和
-  `examples/` 下的所有 fixture 均为完全虚构。本仓库不包含任何真实学生
-  数据。
+- **虚构演示数据。** 两位演示申请人（`students/tsinghua-automation/` 下的
+  「陈书涵」和 `students/nus-cs/` 下的 “Maya Tan”）以及 `examples/` 下的所有
+  fixture 均为完全虚构。本仓库不包含任何真实学生数据。
+- **语言。** 你可以用任何语言与智能体对话。但它写出的一切都是英文——
+  报告、清单、跟踪表单元格、CV/简历正文、文书草稿，以及它们背后的证据
+  记录——因为这些文件要提交给的项目本身要求英文。这一点没有配置项。
+  带变音符号的拉丁字母（`Saarbrücken`、`Kovač`）完全正常；非英文的成绩单
+  由你和智能体在对话中一起翻译，译出的专有名词会作为待核实事项记录，而
+  不是被当成既定事实写死。
 - **不做录取预测。** 资格判定是有据可查的硬性核对；契合度则是独立的规划性
   判断。本工具中没有任何功能会估算你的录取概率。
 

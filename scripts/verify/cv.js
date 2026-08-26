@@ -51,6 +51,7 @@ function main() {
   validateDocumentTypeOverride(validationRoot, evaluation, profile, evidence, masterCv);
   validateArtifactExclusivity(validationRoot, evaluation, profile, evidence, masterCv);
   validatePlanPreflightFailures(validationRoot, evaluation, profile, evidence, masterCv);
+  validateRenderedLanguageGate(validationRoot, evaluation, profile, evidence, masterCv);
   validateUnsupportedEvidenceFailure(validationRoot, cvResult, evidence);
 
   console.log(`CV adaptation fixture verifies in ${path.relative(process.cwd(), validationRoot)}`);
@@ -322,6 +323,59 @@ function validatePlanPreflightFailures(rootDir, evaluation, profile, evidence, m
     /overrides the official document instructions.*record cv_adaptation_plan.document_type_rationale/,
     "An override without a recorded rationale should fail before rendering"
   );
+}
+
+// Documents are English by script, not by ASCII, and the gate covers only the
+// fields the renderer actually reads -- so an original kept in `original_title`
+// is legal and `Saarbrücken` in a rendered field must still render.
+function validateRenderedLanguageGate(rootDir, evaluation, profile, evidence, masterCv) {
+  const withEvidence = (id, mutate) => {
+    const copy = JSON.parse(JSON.stringify(evidence));
+    mutate(copy);
+    return {
+      profile,
+      evidence: copy,
+      masterCv,
+      documentInstructions: {},
+      evaluation: { ...evaluation, id: `${evaluation.id}-${id}` },
+    };
+  };
+
+  assertRenderFails(
+    rootDir,
+    withEvidence("cjk-award", (copy) => {
+      copy.awards[0].title = "\u4f18\u79c0\u6bd5\u4e1a\u751f";
+    }),
+    /evidence\.awards\[award-research-poster\]\.title contains Han .* characters/,
+    "CJK in a rendered evidence field should fail before rendering"
+  );
+
+  assertRenderFails(
+    rootDir,
+    { profile, evidence, masterCv, documentInstructions: {}, evaluation: {
+      ...evaluation,
+      id: `${evaluation.id}-cjk-summary`,
+      cv_adaptation_plan: { ...evaluation.cv_adaptation_plan, profile_summary: "\u4eba\u673a\u4ea4\u4e92\u4e0e\u6a21\u578b\u8bc4\u4f30\u65b9\u5411\u7684\u7533\u8bf7\u4eba\uff0c\u4e13\u6ce8\u4e8e\u53cd\u9988\u754c\u9762\u3001\u8bc4\u5206\u91cf\u8868\u8bbe\u8ba1\uff0c\u4ee5\u53ca\u57fa\u4e8e Python \u7684\u6a21\u578b\u53cd\u9988\u5206\u6790\u4e0e\u53ef\u89c6\u5316\u5de5\u4f5c\u3002" },
+    } },
+    /cv_adaptation_plan\.profile_summary contains Han .* characters/,
+    "CJK in agent-authored plan prose should fail before rendering"
+  );
+
+  // Preserved original in a field the renderer never reads: must pass.
+  renderCvAdaptation(rootDir, withEvidence("original-title", (copy) => {
+    copy.awards[0].original_title = "\u4f18\u79c0\u6bd5\u4e1a\u751f";
+  }));
+
+  // Accented Latin in a rendered field: must pass. Script, not ASCII.
+  const accented = renderCvAdaptation(rootDir, withEvidence("accented-latin", (copy) => {
+    copy.education[0].institution = "Universit\u00e4t des Saarlandes, Saarbr\u00fccken";
+  }));
+  const accentedHtml = fs.readFileSync(
+    path.join(rootDir, "output", `${evaluation.id}-accented-latin`, "academic-cv.html"),
+    "utf8"
+  );
+  assert(accentedHtml.includes("Saarbr\u00fccken"), "Accented Latin must survive rendering unchanged");
+  assert(accented.documentType === "academic_cv", "Accented-Latin fixture should render the academic CV path");
 }
 
 function assertRenderFails(rootDir, input, pattern, message) {

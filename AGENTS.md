@@ -112,6 +112,47 @@ program reasons. Every nontrivial statement claim must trace to an evidence ID,
 official source, or statement-brief note. Statements must remain marked
 `Review Required` until human review.
 
+## Language
+
+Two rules. Both are fixed and neither has a configuration key.
+
+**Chat is the user's language.** Conversation follows the language the user
+writes in, from your first sentence onward — progress narration, preambles,
+descriptions of what you are about to read or run, plans, findings, and
+questions included. A turn that mixes an English command scaffold, flags, or a
+URL with one sentence of the user's own prose follows that prose. Never open in
+English and switch later.
+
+**Every generated artifact and every stored student record is English**:
+reports, checklists, tracker cells, CV and resume prose, statement drafts,
+summaries, and the contents of `students/*/evidence.yml`. The chat language
+never reaches an artifact.
+
+"English" here means script, not ASCII. `Saarbrücken`, `Kovač`, and `naïve` are
+valid English-document content and must keep working end to end; the
+deterministic guards reject Chinese, Japanese, and Korean script only. The CV
+renderer sets the document language to `en` and the templates ship no CJK font
+stack, so CJK that reached a document would render as unreadable boxes rather
+than pass review.
+
+If an official source requires a statement or CV in a language other than
+English, this repository cannot produce it. Record the conflict in the report;
+never switch the artifact language.
+
+Non-English source evidence is handled at intake, not at render time:
+
+- The agent may draft English strings in chat, but never writes a
+  self-translated proper noun into a stored record on its own authority.
+- Where the institution publishes an official English name, use it and cite the
+  source.
+- Never translate a grade, a scale, or a credential level. The NUS CAP
+  no-conversion rule extends to a Chinese percentage scale or a 学士/硕士
+  credential.
+- A user-supplied translation of a proper noun is a verification task in the
+  checklist, not a settled fact. It is recorded in the evaluation's
+  `action_items`, which is what the checklist is rendered from. The original may
+  be kept in a field the renderer never reads, such as `original_title`.
+
 ## Agent Authorship And Deterministic Guards
 
 Substantive judgement is authored by the agent, not by scripts. This includes

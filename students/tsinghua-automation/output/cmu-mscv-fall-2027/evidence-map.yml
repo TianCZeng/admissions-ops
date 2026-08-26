@@ -1,0 +1,133 @@
+program_id: cmu-mscv-fall-2027
+institution: Carnegie Mellon University
+program: Master of Science in Computer Vision
+document_type: admissions_resume
+review_status: Review Required
+artifact: output/cmu-mscv-fall-2027/admissions-resume.html
+sources:
+  profile: students/tsinghua-automation/profile.yml for identity and contact only
+  evidence: students/tsinghua-automation/evidence.yml
+  master_cv: students/tsinghua-automation/master-cv.md
+generated_claims:
+  - evidence_id: edu-tsinghua-beng-automation
+    protected_facts:
+      - Bachelor of Engineering in Automation
+      - Tsinghua University
+      - 2022-2026
+      - completed
+  - evidence_id: research-loop-closure-robustness
+    protected_facts:
+      - Loop-Closure Robustness for Visual SLAM in Repetitive Indoor Corridors
+      - research assistant
+      - 2026-2027
+      - in_progress
+  - evidence_id: research-graduation-project
+    protected_facts:
+      - Vision-Based Localization Methods for Mobile Robots
+      - undergraduate graduation project author
+      - 2025-2026
+      - submitted
+  - evidence_id: research-depth-calibration
+    protected_facts:
+      - Uncertainty Calibration for Monocular Depth Estimation
+      - course research project author
+      - '2025'
+      - completed
+  - evidence_id: project-slam-evaluation-harness
+    protected_facts:
+      - Indoor Visual SLAM Evaluation Harness
+      - '2026'
+  - evidence_id: project-camera-imu-calibration
+    protected_facts:
+      - Camera-IMU Calibration Toolkit for a Differential-Drive Robot
+      - '2025'
+  - evidence_id: project-warehouse-robot
+    protected_facts:
+      - Autonomous Warehouse Robot for the University Robotics Competition
+      - '2024'
+  - evidence_id: course-computer-vision
+    protected_facts:
+      - Computer Vision
+      - 95/100
+  - evidence_id: course-machine-learning
+    protected_facts:
+      - Machine Learning
+      - 94/100
+  - evidence_id: course-pattern-recognition
+    protected_facts:
+      - Pattern Recognition
+      - 93/100
+  - evidence_id: course-robotics
+    protected_facts:
+      - Introduction to Robotics
+      - 92/100
+  - evidence_id: course-linear-algebra
+    protected_facts:
+      - Linear Algebra
+      - 92/100
+  - evidence_id: course-probability-statistics
+    protected_facts:
+      - Probability Theory and Mathematical Statistics
+      - 91/100
+  - evidence_id: course-data-structures
+    protected_facts:
+      - Data Structures and Algorithms
+      - 89/100
+  - evidence_id: course-optimal-control
+    protected_facts:
+      - Optimal Control Theory
+      - 88/100
+  - evidence_id: course-digital-signal-processing
+    protected_facts:
+      - Digital Signal Processing
+      - 87/100
+  - evidence_id: award-outstanding-graduate
+    protected_facts:
+      - Outstanding Graduate
+      - Tsinghua University
+      - '2026'
+  - evidence_id: award-academic-excellence-scholarship
+    protected_facts:
+      - Academic Excellence Scholarship
+      - Tsinghua University Department of Automation
+      - 2024, 2025
+  - evidence_id: research-loop-closure-robustness
+    protected_facts:
+      - visual simultaneous localization and mapping
+      - place recognition
+      - false-positive loop-closure analysis
+      - PyTorch
+      - ROS 2
+  - evidence_id: research-graduation-project
+    protected_facts:
+      - visual odometry
+      - multi-view geometry
+      - pose graph optimization
+      - Python
+      - C++
+  - evidence_id: research-depth-calibration
+    protected_facts:
+      - monocular depth estimation
+      - uncertainty calibration
+      - reliability diagrams
+      - NumPy
+  - evidence_id: project-slam-evaluation-harness
+    protected_facts:
+      - Python
+      - C++
+      - ROS 2
+      - Open3D
+  - evidence_id: project-camera-imu-calibration
+    protected_facts:
+      - Python
+      - OpenCV
+      - Kalibr
+      - MATLAB
+  - evidence_id: project-warehouse-robot
+    protected_facts:
+      - C++
+      - ROS
+      - OpenCV
+      - Gazebo
+estimated_pages: 2
+page_limit: null

@@ -1,0 +1,40 @@
+student:
+  name: "Chen Shuhan"
+  email: "chen.shuhan@example.edu"
+  location: "Beijing, China"
+  timezone: "Asia/Shanghai"
+  citizenship_or_residency_context: "Fully synthetic Beijing-based applicant profile. Used as this repository's Chinese-language demo workspace; not a real person."
+
+current_education:
+  institution: "Tsinghua University"
+  degree: "Bachelor of Engineering in Automation"
+  department: "Department of Automation"
+  expected_graduation: "2026-06"
+  grading_context: "Percentage scale; maximum 100; no conversion applied. The official transcript reports percentage marks only, so no 4.0-scale GPA is claimed anywhere in this workspace."
+  current_gpa: "89.7/100 (percentage scale, no conversion applied)"
+  english_name_sources:
+    - url: "https://www.au.tsinghua.edu.cn/en/"
+      retrieved_at: "2026-08-21"
+      use: "Official English names of the university and the department"
+      notes: "The department's official English site publishes 'Department of Automation' and 'Tsinghua University'. It does not publish an English title for the undergraduate degree, so the degree name in this workspace is a user-committed translation pending confirmation against the official transcript."
+
+current_position:
+  role: "Research assistant"
+  organization: "Tsinghua University, Department of Automation"
+  dates: "2026-2027"
+  notes: "Post-graduation research year before the Fall 2027 intake."
+
+languages:
+  english:
+    status: "test_taken"
+    test: "TOEFL iBT"
+    test_date: "2026-05-16"
+    score: "104 (Reading 28, Listening 27, Speaking 23, Writing 26)"
+    notes: "Synthetic score. Program-specific minimums, including any component minimums, must be verified per program."
+
+standardized_tests:
+  gre:
+    status: "test_taken"
+    test_date: "2026-06-06"
+    score: "Verbal 158, Quantitative 168, Analytical Writing 4.0"
+    notes: "Synthetic score. Reporting plan and any program-specific minimums must be verified per program."

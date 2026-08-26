@@ -1,0 +1,398 @@
+id: cmu-mscv-fall-2027
+catalog_id: cmu-mscv-fall-2027
+report_number: 1
+institution: Carnegie Mellon University
+program: Master of Science in Computer Vision
+degree_type: MS
+department: Robotics Institute
+intake: Fall 2027
+applicant_category: not_applicable
+country: United States
+official_url: https://www.ri.cmu.edu/education/academic-programs/master-of-science-computer-vision/
+application_url: https://admissions.scs.cmu.edu/portal/apply_gr
+retrieved_at: '2026-08-24'
+catalog_freshness: >-
+  The shared catalog snapshot programs/catalog/cmu-mscv-fall-2027.yml is dated
+  2026-07-02, which predates this evaluation's 2026-08-24 retrieval of the
+  official CMU MSCV and SCS pages. Section B records the 2026-08-24 retrievals
+  this evaluation relies on; the shared snapshot refresh is pending.
+deadline:
+  value: '2026-12-09 15:00'
+  type: fixed
+  timezone: America/New_York
+  source_url: https://www.ri.cmu.edu/education/academic-programs/master-of-science-computer-vision/how-to-apply/
+  notes: Final deadline for Fall 2027 enrollment; the early deadline is 2026-11-18 at 3 p.m. EST and carries a lower application fee. The SCS portal is open 2026-09-09 through 2026-12-09.
+document_instructions:
+  text: 'Application Materials: Résumé; Statement of Purpose (1 to 2 pages); Undergraduate/Graduate (as applicable) Transcripts; Letters of Recommendation (3 REQUIRED). The SCS graduate admissions instructions add: "You will be asked to submit your current resume. It should outline your education, research experience, work experience, publications, scholarships awarded, prizes and honors received, society memberships and any other extracurricular activities."'
+sources:
+  - url: https://www.ri.cmu.edu/education/academic-programs/master-of-science-computer-vision/
+    retrieved_at: '2026-08-24'
+    use: Program identity, duration, format, and computer vision learning outcomes
+    notes: Official Robotics Institute program page. A 16-month full-time program in which the courses are the focus, complemented by a culminating hands-on team project. Learning outcomes include conducting experimental analysis consistent with current practice including standard metrics and benchmark datasets, and applying mathematical and machine learning tools such as geometry, optimization, and statistics to computer vision applications.
+  - url: https://www.ri.cmu.edu/education/academic-programs/master-of-science-computer-vision/how-to-apply/
+    retrieved_at: '2026-08-24'
+    use: Admission requirements, application window, required documents, and score reporting codes
+    notes: Official MSCV application page, page timestamp 2026-07-15. Requires an undergraduate degree in engineering, computer science, or applied mathematics; the General GRE (institution 2074, department 0402); TOEFL, IELTS, or Duolingo for applicants whose native language is not English (institution 4256, department 78); and a resume, a 1-to-2-page Statement of Purpose, transcripts, and three letters of recommendation. The portal is open September 9 to December 9, 2026 for a Fall 2027 start.
+  - url: https://www.ri.cmu.edu/education/academic-programs/master-of-science-computer-vision/curriculum/
+    retrieved_at: '2026-08-24'
+    use: Curriculum structure, the geometry core option, and the required summer internship
+    notes: Official MSCV curriculum page, page timestamp 2025-12-03. 111 units across three semesters and one summer. The core is designed to address the two main areas of current computer vision systems, recognition and geometry, the latter including multi-view reconstruction, Web-scale reconstruction, and SLAM. One core option pairs 16-822 Geometry-based Methods in Vision with 16-833 Robot Localization and Mapping. Three units of computer-vision-relevant summer internship are required for graduation.
+  - url: https://www.ri.cmu.edu/education/academic-programs/master-of-science-computer-vision/recommended-skill-set/
+    retrieved_at: '2026-08-24'
+    use: Recommended incoming mathematics, programming, and software preparation
+    notes: Official MSCV recommended skill set page, page timestamp 2018-03-06. Names linear algebra, probability and statistics, Fourier analysis, optimization including convex and sparse optimization and Levenberg-Marquardt, data structures, Matlab/C/C++/Python, OpenCV, and LaTeX.
+  - url: https://www.ri.cmu.edu/education/academic-programs/master-of-science-computer-vision/faq/
+    retrieved_at: '2026-08-24'
+    use: Program character, admissions-committee expectations, funding policy, and PhD positioning
+    notes: Official MSCV frequently asked questions. MSCV is a professional master's degree that should not be viewed as a preparatory degree program for earning a PhD; it is not research-based and offers no master's thesis. No financial aid or scholarship funding is offered and accepted students are expected to be fully self-supported. The committee expects undergraduate project experience beyond class work, states that it is challenging for applicants with only classwork experience to rise to the top, and seeks evidence of working on an English-speaking team and of well-written English documents. Successful international applicants consistently score high marks on the TOEFL.
+  - url: https://www.ri.cmu.edu/education/academic-programs/master-of-science-computer-vision/tuition-information/
+    retrieved_at: '2026-08-24'
+    use: Published tuition and fee context for self-funding planning
+    notes: Official MSCV tuition page, page timestamp 2026-01-26. Tuition for the 2026-27 academic year is $67,000 plus mandatory fees, and students are not assessed tuition for the summer internship. No 2027-28 figure is published yet.
+  - url: https://www.cs.cmu.edu/education/graduate-admissions
+    retrieved_at: '2026-08-24'
+    use: Deadlines, fees, GRE and English-test policy and validity windows, transcripts, resume content, and statement guidance
+    notes: Official SCS graduate admissions instructions. GRE scores may not be more than five years old. English tests are required for non-native speakers studying on F-1 or J-1 visas, with no waivers issued on any grounds including prior English-language study outside the United States; an applicant without a U.S. bachelor's degree needs a score no older than two years and scores taken before 2024-09-01 are not accepted. Most admitted applicants submitted TOEFL iBT 105-114. Any test should be taken no later than 2026-11-25 because reportable scores can take two weeks. Transcripts must be uploaded before submission and fall grades are not required. The statement should be a concise one- or two-page essay describing research interests, related experiences, and objectives.
+  - url: https://admissions.scs.cmu.edu/portal/apply_gr
+    retrieved_at: '2026-08-24'
+    use: Application portal, Fall 2027 opening date, deadlines, and fees
+    notes: Official SCS application portal. Opens 2026-09-09 for Fall 2027 admission. Early deadline 2026-11-18 at 3 p.m. EST with an $80 fee per program; final deadline 2026-12-09 at 3 p.m. EST with a $100 fee per program.
+freshness_warnings:
+  - Fall 2027 dates and hard requirements were current and consistent across the MSCV application page, the SCS graduate admissions instructions, and the SCS application portal when retrieved on 2026-08-24.
+  - The MSCV recommended skill set page carries a 2018-03-06 page timestamp; it is treated here as long-standing preparation guidance rather than a Fall 2027 statement.
+  - Published tuition covers the 2026-27 academic year only. No figure is published for the 2027-28 year in which a Fall 2027 entrant would begin, so the self-funding estimate is provisional.
+  - The program page sidebar links to a Frequently Asked Questions path that returns 404; the live FAQ used here is served at the /faq/ path recorded in the sources.
+  - No published minimum TOEFL total or component score was found on either the MSCV or the SCS pages, only a reported 105-114 total range among admitted applicants. The absence of a stated minimum is itself an unverified point rather than a confirmed waiver of one.
+conflicts: []
+eligibility_summary: likely
+fit_score: 4.2
+evidence_confidence: high
+tailored_cv: "[Review Required draft](../output/cmu-mscv-fall-2027/admissions-resume.html) (Review Required)"
+statement: "[Review Required statement](../output/cmu-mscv-fall-2027/statement-draft.md) (Review Required)"
+status: Evaluated
+next_action: Review the draft resume and statement of purpose, then resolve the recommender, transcript-documentation, and TOEFL component-minimum tasks and decide how to state the long-term goal given CMU's stated position on PhD preparation.
+notes: Review Required drafts prepared for a self-funded professional master's with no financial aid; goal alignment is the weakest fit dimension and is recorded as an open decision.
+eligibility:
+  - requirement: Undergraduate degree (B.S. or equivalent) in engineering, computer science, or applied mathematics
+    status: likely_met
+    evidence: "`edu-tsinghua-beng-automation`"
+    source: https://www.ri.cmu.edu/education/academic-programs/master-of-science-computer-vision/how-to-apply/
+    notes: A completed Bachelor of Engineering in Automation from the Tsinghua University Department of Automation is an engineering degree in the required family. It stays likely_met rather than met because the English degree title is a user-committed translation of the Chinese transcript and because the equivalence judgement is CMU's to make.
+  - requirement: General GRE required; institution code 2074, department code 0402; scores no more than five years old
+    status: met
+    evidence: "GRE General taken 2026-06-06: Verbal 158, Quantitative 168, Analytical Writing 4.0"
+    source: https://www.cs.cmu.edu/education/graduate-admissions
+    notes: A General GRE result exists and is well inside the five-year validity window at the 2026-12-09 deadline. Neither the MSCV nor the SCS page publishes a minimum score, so no component gate applies. Score reporting through ETS is tracked as an action item rather than an eligibility gate.
+  - requirement: TOEFL, IELTS, or Duolingo required for applicants whose native language is not English studying on an F-1 or J-1 visa; no waivers issued
+    status: likely_met
+    evidence: "TOEFL iBT 104 taken 2026-05-16 (Reading 28, Listening 27, Speaking 23, Writing 26)"
+    source: https://www.cs.cmu.edu/education/graduate-admissions
+    notes: A valid TOEFL iBT result exists and the 2026-05-16 test date satisfies the two-year window that applies to applicants without a U.S. bachelor's degree. It stays likely_met because no published total or component minimum was found for MSCV, so the sufficiency of the 104 total and the Speaking 23 sub-score is unverified. SCS reports that most admitted applicants submitted 105-114.
+fit:
+  summary: >-
+    MSCV is close to the best available subject match for this applicant. The student's entire evidence base sits on visual localization, loop closure, multi-view geometry, and pose graph optimization, and the MSCV curriculum treats geometry and SLAM as one of the two areas its core is built to address, with a core option that pairs Geometry-based Methods in Vision with Robot Localization and Mapping. The mathematics the program recommends on entry is almost exactly the mathematics this transcript covers. Two dimensions pull the score down and neither is about subject fit. Goal alignment is genuinely partial: the student's brief frames graduate study as a step before deciding on a PhD, while CMU states that MSCV should not be viewed as a preparatory degree for a PhD and offers no thesis or guaranteed research. And the program offers no financial aid of any kind, which makes a fully self-funded 16 months the practical precondition for applying at all.
+  dimensions:
+    academic_preparation: Very strong and unusually well matched. Computer Vision 95/100, Machine Learning 94/100, Pattern Recognition 93/100, Introduction to Robotics 92/100, Linear Algebra 92/100, Probability Theory and Mathematical Statistics 91/100, Optimal Control Theory 88/100, and Digital Signal Processing 87/100 cover linear algebra, probability and statistics, optimization, Fourier analysis, and data structures, which is most of the MSCV recommended skill set. The toolchain in evidence (C++, Python, MATLAB, OpenCV, LaTeX) is the one that page names.
+    research_or_subject_fit: The strongest dimension. Visual odometry, multi-view geometry, pose graph optimization, place recognition, and loop-closure failure analysis map directly onto the geometry half of the MSCV core, including the 16-822 and 16-833 core option and the program's own listing of SLAM under multi-view reconstruction.
+    evidence_strength: Three research items, three hands-on projects, a workshop paper under review, two delivered presentations, two teaching roles, and two university awards. The MSCV committee explicitly asks for project experience beyond class work and this profile has it. Weakened only by the loop-closure work being in progress and the workshop paper being unpublished.
+    goal_alignment: >-
+      The weakest dimension and the one real finding of this evaluation. The student's stated long-term goal, localization that survives revisits across lighting, clutter, and season, fits a professional computer vision master's well. The framing around it does not: the brief treats a coursework-heavy master's as the step before committing to a PhD, and the MSCV FAQ states the program should not be viewed as a preparatory degree program for earning a PhD, is not research-based, and offers no master's thesis. Roughly 4 percent of alumni are in a PhD program. This is a positioning decision the applicant must make, not a defect in the record.
+    admissions_feasibility: Moderate. The technical case is strong, but three things cut against it. The TOEFL total of 104 sits just below the 105-114 range SCS reports for admitted applicants, and the FAQ says successful international applicants consistently score high marks. The committee looks for evidence of working on an English-speaking team, particularly in an internship, and this profile has no internship or industry experience. GRE Verbal 158 is unremarkable in a competitive pool, though Quantitative 168 is strong.
+    practical_constraints: >-
+      The weakest practical picture in this evaluation. MSCV offers no financial aid or scholarship funding and expects accepted students to be fully self-supported; published tuition is $67,000 plus mandatory fees for 2026-27, with no 2027-28 figure yet. All three coursework semesters must be spent on the Pittsburgh campus, and a computer-vision-relevant summer internship is required for graduation. Timing is otherwise clean: the research-assistant year runs 2026-2027 and ends before a Fall 2027 start.
+    application_effort: Moderate to high. The package is a resume, a 1-to-2-page statement, three electronic recommendations, transcripts uploaded before submission, and reporting of both GRE and TOEFL scores. The transcript is in Chinese, so English documentation has to be arranged outside this repository, and every English rendering of a Chinese course, degree, or award title has to be reconciled across documents.
+competitiveness_gaps:
+  - TOEFL iBT 104 is just below the 105-114 total range SCS reports for admitted applicants, and the MSCV FAQ states that successful international applicants consistently score high marks on the TOEFL. A retake before the recommended 2026-11-25 test date is the only mitigation available, and the Speaking 23 sub-score is the component most likely to be questioned.
+  - The MSCV committee explicitly seeks evidence of working on an English-speaking team, particularly as part of an internship, and of creating well-written English documents. This profile has no internship or industry experience. The available mitigation is to foreground the English-language workshop paper under review, the reading-group organizing role, and the two delivered presentations, none of which the resume document type can render.
+  - Goal alignment is a positioning risk rather than an evidence gap. The statement must not present MSCV as preparation for a PhD, because CMU states it should not be viewed that way; the applicant needs to decide what long-term framing to use instead.
+  - The loop-closure research is in progress and the workshop paper is under review. Neither may be described as a finding or as published, which limits how much weight the strongest recent work can carry.
+  - Funding is unaddressed in the student's preferences. A program with no aid and roughly $67,000 in annual tuition needs a self-funding plan before the application is worth submitting.
+practical_constraints:
+  - The Fall 2027 portal opens 2026-09-09. The early deadline is 2026-11-18 at 3 p.m. EST with an $80 fee per program; the final deadline is 2026-12-09 at 3 p.m. EST with a $100 fee per program.
+  - SCS recommends taking or retaking the GRE or any English test no later than 2026-11-25 because reportable scores can take two weeks to process.
+  - MSCV offers no financial aid or scholarship funding; accepted students are expected to be fully self-supported. Published tuition is $67,000 plus mandatory fees for 2026-27 and no 2027-28 figure exists yet.
+  - The program is full-time only, with no distance learning, and requires presence on the Pittsburgh campus for all three coursework semesters. Three units of computer-vision-relevant summer internship are required for graduation.
+  - The transcript and degree are issued in Chinese. Transcripts must be uploaded before submission, so English documentation has to be arranged well before the deadline; fall-semester grades are not required.
+  - The student's research-assistant year is recorded as 2026-2027, which ends before a Fall 2027 start and creates no overlap conflict.
+action_items:
+  - item: Review the draft resume and statement of purpose
+    status: Needed
+    due: before submission
+    source: local review
+    notes: Confirm every date, grade, status, and title, and confirm that the statement's program-specific claims still match the official pages. Both artifacts stay Review Required until a human signs off.
+  - item: Decide how to state the long-term goal given CMU's position on PhD preparation
+    status: Needed
+    due: before the statement is treated as settled
+    source: https://www.ri.cmu.edu/education/academic-programs/master-of-science-computer-vision/faq/
+    notes: The brief frames a coursework-heavy master's as the step before committing to a PhD. The official FAQ states MSCV should not be viewed as a preparatory degree program for earning a PhD and offers no thesis. The current draft omits the PhD framing and closes on the applicant's own localization goal instead; confirm that this is the intended positioning.
+  - item: Confirm whether MSCV applies any TOEFL total or component minimum, and decide on a retake
+    status: Needed
+    due: 2026-11-25 recommended; 2026-12-09 15:00 America/New_York final deadline
+    source: https://www.cs.cmu.edu/education/graduate-admissions
+    notes: No published minimum was found on the MSCV or SCS pages. The recorded total of 104 sits below the 105-114 range SCS reports for admitted applicants and the Speaking sub-score is 23. Ask ms-cv@ri.cmu.edu directly and decide on a retake before the recommended test date.
+  - item: Report GRE and TOEFL scores to the correct CMU codes
+    status: Needed
+    due: 2026-11-25 recommended; 2026-12-09 15:00 America/New_York final deadline
+    source: https://www.ri.cmu.edu/education/academic-programs/master-of-science-computer-vision/how-to-apply/
+    notes: GRE institution 2074 and department 0402; TOEFL institution 4256 and department 78. Both existing scores are inside their validity windows, so this is a reporting action rather than a testing one.
+  - item: Confirm three recommenders and the electronic submission plan
+    status: Needed
+    due: before 2026-12-09 15:00 America/New_York
+    source: https://www.cs.cmu.edu/education/graduate-admissions
+    notes: Three letters are required and up to five are accepted. At least two should come from faculty or recent employers, and SCS wants writers who can speak to independent research. Recommenders are not modeled in this repository, so the list has to be built outside it.
+  - item: Arrange English documentation of the Chinese transcript and degree
+    status: Needed
+    due: before submission, ahead of 2026-12-09 15:00 America/New_York
+    source: https://www.cs.cmu.edu/education/graduate-admissions
+    notes: Transcripts must be uploaded before the application is submitted. Confirm with the program what form of English documentation is accepted for a Chinese-language transcript, and never convert the percentage scale to a 4.0 GPA.
+  - item: Confirm the English titles of the degree, courses, graduation project, and awards against the official transcript
+    status: Needed
+    due: before any document is treated as settled
+    source: https://www.au.tsinghua.edu.cn/en/
+    notes: Tsinghua publishes official English names for the university and the Department of Automation but not for the undergraduate degree, the individual courses, the graduation project, or the awards. Those English strings are user-committed translations and must be reconciled with the transcript and kept identical across the resume, the statement, and the portal forms.
+  - item: Decide how to present the workshop paper and the two presentations, which the resume document type cannot render
+    status: Needed
+    due: before submission
+    source: https://www.cs.cmu.edu/education/graduate-admissions
+    notes: The SCS resume guidance says the resume should outline publications and honors, and the MSCV committee looks for well-written English documents. The admissions-resume renderer cannot carry publications, presentations, teaching, or service, so the workshop paper under review, the two delivered presentations, the two teaching roles, and the reading-group role are absent from the generated artifact and need a manual decision.
+  - item: Build a self-funding plan for a program with no financial aid
+    status: Needed
+    due: before submitting the application
+    source: https://www.ri.cmu.edu/education/academic-programs/master-of-science-computer-vision/faq/
+    notes: MSCV offers no aid or scholarships and expects students to be fully self-supported. Published tuition is $67,000 plus fees for 2026-27 with no 2027-28 figure yet. Funding is not addressed in the student's preferences file.
+  - item: Confirm any program-specific statement prompt when the portal opens
+    status: Needed
+    due: from 2026-09-09
+    source: https://admissions.scs.cmu.edu/portal/apply_gr
+    notes: SCS states that each program has specific statement requirements detailed on the application, so the 1-to-2-page guidance may be refined once the Fall 2027 portal is open.
+questions:
+  - Does MSCV apply any minimum TOEFL total or component score, and would a total of 104 with a Speaking sub-score of 23 be reviewed without prejudice?
+  - What form of English documentation does MSCV accept for a Chinese-language undergraduate transcript and degree certificate, and is a university-issued English transcript sufficient?
+  - Does the Fall 2027 application add a program-specific statement prompt beyond the general one- to two-page guidance?
+  - Does MSCV state a preferred resume page length, and does the committee want publications listed on the resume itself?
+  - Given that MSCV is described as a professional degree that should not be viewed as PhD preparation, how does the committee read applicants whose recent work is research-flavoured but whose stated aim is industry perception work?
+  - Is the required three-unit summer internship arranged by the student, and does the program place any restriction on internships taken outside the United States?
+cv_adaptation_plan:
+  document_type: admissions_resume
+  summary: >-
+    Render a concise admissions resume rather than an academic CV, because both the MSCV application page and the SCS instructions ask for a resume and the program is an industry-facing professional degree that states publications are not required. Order the document so the visual-localization thread reads first, since the MSCV core treats geometry and SLAM as one of its two areas: the in-progress loop-closure research, then the defended graduation project, then the uncertainty-calibration work, then the three hands-on projects that show measurement and calibration discipline. Follow with the coursework that maps onto the program's own recommended skill set, then the two university awards. Coursework selection is deliberate rather than exhaustive: each course answers something the recommended skill set names.
+  profile_summary: "Computer vision applicant working on visual SLAM loop-closure robustness, with a defended visual-localization graduation project, an indoor SLAM evaluation harness, and camera-IMU calibration work on laboratory robots."
+  evidence_priorities:
+    - edu-tsinghua-beng-automation
+    - research-loop-closure-robustness
+    - research-graduation-project
+    - research-depth-calibration
+    - project-slam-evaluation-harness
+    - project-camera-imu-calibration
+    - project-warehouse-robot
+    - course-computer-vision
+    - course-machine-learning
+    - course-pattern-recognition
+    - course-robotics
+    - course-linear-algebra
+    - course-probability-statistics
+    - course-data-structures
+    - course-optimal-control
+    - course-digital-signal-processing
+    - award-outstanding-graduate
+    - award-academic-excellence-scholarship
+  unresolved_questions:
+    - The admissions-resume document type cannot render publications, presentations, teaching, or service, so the workshop paper under review, the two delivered presentations, the Automatic Control Theory laboratory and Introduction to Robotics teaching roles, and the reading-group organizing role do not appear in the generated artifact. The SCS resume guidance names publications and honors as resume content, so decide whether to add them manually before submission.
+    - Automatic Control Theory 90/100 is omitted from the coursework block as the least relevant of the upper-undergraduate courses; confirm that omission is acceptable given the applicant's automation background.
+    - No resume page length is published. The rendered document is expected to run to roughly two pages; confirm that is acceptable or trim the coursework block.
+    - Every English course, degree, award, and project title in the artifact is a user-committed translation of the Chinese transcript and is not yet reconciled against it.
+  review_status: Review Required
+statement_plan:
+  statement_type: statement_of_purpose
+  prompt_source_url: https://www.ri.cmu.edu/education/academic-programs/master-of-science-computer-vision/how-to-apply/
+  prompt_text: 'The MSCV application materials list a "Statement of Purpose (1 to 2 pages)". The SCS graduate admissions instructions add that each program has specific requirements detailed on the application, and that generally applicants should "prepare a concise one- or two-page essay that describes your research interests, related experiences and objectives in pursuing a graduate degree at Carnegie Mellon", that the essay should be specific about why those interests are important and why the applicant is well-suited to pursue them, and that it should describe any relevant education, research, commercial, government or teaching experience.'
+  word_limit: null
+  page_limit: 2
+  strategy_summary: "Build the statement on one truthful thesis the record already supports: two consecutive projects attacked the same localization failure from opposite ends, and the gaps they exposed are geometry, optimization, and the statistics of deciding whether two images are the same place, which is exactly what the core of the Robotics Institute's Master of Science in Computer Vision teaches. Lead with the localization thread as the student's brief directs for geometry-and-optimization programs, use the evaluation harness as the proof of experimental discipline, and cite the program's own curriculum language rather than generic praise. Keep the long-term goal in the applicant's own words from the brief and omit the PhD framing entirely, because CMU states MSCV should not be viewed as a preparatory degree for a PhD; that omission is recorded as an open decision rather than a silent edit. Report the percentage scale as published and keep the in-progress work and the paper under review in their actual status."
+  core_argument: "This applicant does not need a general master's degree; the record shows a specific technical debt. The graduation project measured where visual localization drifts and the current research-assistant work is measuring when the loop-closure correction itself is wrong, and neither question can be closed without multi-view geometry beyond the undergraduate treatment, optimization on pose graphs, and a formal treatment of place-recognition decisions. MSCV is the right program because its core is built around geometry and SLAM alongside recognition, one core option pairs Geometry-based Methods in Vision with Robot Localization and Mapping, and the mathematics it recommends on entry is the mathematics this transcript already covers."
+  paragraph_plan:
+    - purpose: The localization thread and the specific question graduate study has to answer
+      evidence_ids:
+        - research-graduation-project
+        - research-loop-closure-robustness
+      program_sources: []
+      brief_inputs:
+        - General Direction
+        - Must Include
+    - purpose: Measurement and calibration discipline as the applicant's working method
+      evidence_ids:
+        - project-slam-evaluation-harness
+        - project-camera-imu-calibration
+        - research-depth-calibration
+      program_sources: []
+      brief_inputs:
+        - Must Include
+    - purpose: Mathematical and tooling preparation measured against the program's stated foundations
+      evidence_ids:
+        - edu-tsinghua-beng-automation
+        - course-computer-vision
+        - course-pattern-recognition
+        - course-linear-algebra
+        - course-probability-statistics
+        - course-optimal-control
+      program_sources:
+        - https://www.ri.cmu.edu/education/academic-programs/master-of-science-computer-vision/
+        - https://www.ri.cmu.edu/education/academic-programs/master-of-science-computer-vision/recommended-skill-set/
+      brief_inputs:
+        - Avoid
+    - purpose: Program-specific fit against the MSCV curriculum, team project, and internship
+      evidence_ids: []
+      program_sources:
+        - https://www.ri.cmu.edu/education/academic-programs/master-of-science-computer-vision/curriculum/
+        - https://www.ri.cmu.edu/education/academic-programs/master-of-science-computer-vision/
+      brief_inputs:
+        - Program-Specific Notes
+    - purpose: Long-term goal in the applicant's own terms and the transcript-language note
+      evidence_ids: []
+      program_sources: []
+      brief_inputs:
+        - General Direction
+        - Personal Background Allowed For Use
+  required_program_terms:
+    - Master of Science in Computer Vision
+    - Robotics Institute
+    - Carnegie Mellon
+    - multi-view geometry
+    - pose graph optimization
+    - place recognition
+  claims_to_avoid:
+    - Do not present MSCV as preparation for a PhD; the official FAQ states it should not be viewed as a preparatory degree program for earning a PhD.
+    - Do not convert the Tsinghua percentage scale to a 4.0 GPA or restate 89.7/100 in another scale.
+    - Do not describe the workshop paper as published or accepted; it is under review.
+    - Do not describe the graduation project as continuing work; it was defended in June 2026.
+    - Do not report any loop-closure result as a finding; that work is in progress.
+    - Do not imply deployment experience on production robots; all work is on laboratory hardware and recorded sequences.
+    - Do not name a faculty member or laboratory; no official MSCV page was used as a source for any individual name.
+    - Do not claim a TOEFL or GRE minimum has been met, since none is published.
+  unresolved_questions:
+    - The draft omits the brief's PhD framing because the official FAQ contradicts it. Confirm the intended long-term positioning before the statement is treated as settled.
+    - Confirm whether the Fall 2027 portal adds a program-specific statement prompt beyond the general one- to two-page guidance.
+    - The draft names 16-822 Geometry-based Methods in Vision and 16-833 Robot Localization and Mapping from the official curriculum page. Confirm both are still offered in the Fall 2027 catalogue before submission.
+    - Every English title in the draft is a user-committed translation of the Chinese transcript and must match the resume and the portal forms exactly.
+  review_status: Review Required
+  draft_markdown: |-
+    My undergraduate graduation project, Vision-Based Localization Methods for Mobile Robots, compared feature-based and direct visual odometry front ends on an indoor mobile robot across corridor, lobby, and laboratory sequences, and reported where each one lost tracking, how far the trajectory drifted before it did, and what happened when it tried to recover. I defended it in June 2026. It answered the question I had asked and immediately posed a harder one: I could say where localization degraded, but not how to correct it without making things worse. That is the question I have worked on since, as a research assistant on Loop-Closure Robustness for Visual SLAM in Repetitive Indoor Corridors. Corridors are a good adversary because their visual structure repeats, so appearance-based place recognition proposes closures that are geometrically impossible, and the pose graph accepts them. I am measuring how often that happens as a function of descriptor choice and geometric verification thresholds. The work is in progress and I am not yet willing to state a result. The pairing is what matters to me: the first project measured where localization drifts, and the second is measuring when the correction itself is wrong.
+
+    I have learned to build the measurement before the method. The Indoor Visual SLAM Evaluation Harness exists because I could not trust the numbers I had; it replays recorded robot sequences through several front ends and reports absolute trajectory error, relative pose error, and tracking-loss counts broken down per sequence, so a claim about one front end can be checked on the same data as any other. The Camera-IMU Calibration Toolkit for a Differential-Drive Robot came out of the same instinct after a hardware change quietly invalidated an earlier calibration and I had no way to detect it except by rerunning everything. Earlier still, in Uncertainty Calibration for Monocular Depth Estimation, I measured how badly a depth network's predicted confidence tracked its actual error on indoor scenes and reported calibration curves before and after temperature scaling. At the time I treated that as a side interest. It was the same question in another form: whether a model's confidence means anything is the question I now ask about whether a loop-closure score means anything.
+
+    The Robotics Institute lists, among the learning outcomes for the Master of Science in Computer Vision, applying mathematical and machine learning tools such as geometry, optimization, and statistics to computer vision applications, and conducting experimental analysis consistent with current practice, including standard metrics and benchmark datasets. That is a fair description of where my preparation is strong and where it stops. At Tsinghua University's Department of Automation I took Computer Vision (95/100), Pattern Recognition (93/100), Linear Algebra (92/100), and Probability Theory and Mathematical Statistics (91/100), and Optimal Control Theory (88/100) was my first sustained work on optimization as a subject rather than as a single algorithm. My overall result was 89.7/100 on Tsinghua's percentage scale, which I report as published rather than converted. The tools I work in daily, C++, Python, OpenCV, MATLAB, and LaTeX, are the ones the program's recommended skill set names. What I do not have is the depth these courses only gestured at: multi-view geometry past the undergraduate treatment, optimization on pose graphs rather than on textbook problems, and a real treatment of place recognition as a decision under uncertainty with an asymmetric cost.
+
+    That is why I am applying to MSCV in particular rather than to computer vision programs generally. The curriculum describes the core as addressing the two main areas of current computer vision systems, recognition and geometry, and places multi-view reconstruction and SLAM under the second; one of its core options pairs 16-822 Geometry-based Methods in Vision with 16-833 Robot Localization and Mapping. Those two courses are the syllabus for the gaps I just described, and I would take both if the schedule allowed. The shape of the program suits me as well as its content does. It is coursework-first over sixteen months with a hands-on team project as the culminating experience, and it requires a summer internship relevant to computer vision. Everything I have built so far has run on laboratory hardware and recorded sequences, chosen by me and evaluated against benchmarks I wrote. A two-semester team project and an industry internship are how I would find out which of those habits hold up when the system belongs to somebody else and the failure has a cost I did not define.
+
+    What I want from the next ten years is narrow and I would rather state it plainly: localization that stays reliable when a robot returns to a place it has already mapped and the place has changed, under different lighting, clutter, or season. The interesting version of that problem is perception for machines that work in the same building for years, not for one recorded sequence, and it is an engineering problem before it is a research one. Carnegie Mellon's MSCV is a professional degree pointed at exactly that kind of practice, which is what I am asking for. One practical note: my degree and transcript are issued in Chinese, and reconciling that official record with English application materials has been careful work in its own right. I will supply certified English documentation through whichever channel Carnegie Mellon specifies.
+  claim_map:
+    - claim_id: claim-brief-why-now
+      claim_summary: The opening paragraph uses the student brief's stated reason for pursuing graduate study now and its instruction to make the localization thread the spine of the statement.
+      source_type: student_brief
+      brief_section: General Direction
+    - claim_id: claim-brief-spine
+      claim_summary: The pairing of the graduation project with the loop-closure work as the statement's organizing argument comes from the brief's required content.
+      source_type: student_brief
+      brief_section: Must Include
+    - claim_id: claim-research-graduation
+      claim_summary: The draft describes the graduation project's comparison of visual odometry front ends, its sequence types, and its June 2026 defence, and treats it as finished rather than ongoing.
+      source_type: evidence
+      evidence_id: research-graduation-project
+      protected_facts:
+        - Vision-Based Localization Methods for Mobile Robots
+        - corridor, lobby, and laboratory sequences
+    - claim_id: claim-research-loop-closure
+      claim_summary: The draft describes the current research-assistant work on loop-closure robustness, its repetitive-corridor setting, its descriptor and geometric-verification variables, and its in-progress status.
+      source_type: evidence
+      evidence_id: research-loop-closure-robustness
+      protected_facts:
+        - Loop-Closure Robustness for Visual SLAM in Repetitive Indoor Corridors
+        - research assistant
+        - descriptor choice and geometric verification thresholds
+    - claim_id: claim-project-harness
+      claim_summary: The draft describes the SLAM evaluation harness and the specific error metrics it reports as evidence of measurement discipline.
+      source_type: evidence
+      evidence_id: project-slam-evaluation-harness
+      protected_facts:
+        - Indoor Visual SLAM Evaluation Harness
+        - absolute trajectory error, relative pose error
+    - claim_id: claim-project-calibration
+      claim_summary: The draft describes the camera-IMU calibration toolkit and its re-calibration check after a hardware change.
+      source_type: evidence
+      evidence_id: project-camera-imu-calibration
+      protected_facts:
+        - Camera-IMU Calibration Toolkit for a Differential-Drive Robot
+    - claim_id: claim-research-depth
+      claim_summary: The draft describes the uncertainty-calibration project, its indoor-scene setting, and the calibration curves before and after temperature scaling.
+      source_type: evidence
+      evidence_id: research-depth-calibration
+      protected_facts:
+        - Uncertainty Calibration for Monocular Depth Estimation
+        - temperature scaling
+    - claim_id: claim-education
+      claim_summary: The draft names the awarding institution and department and reports the overall result on the published percentage scale.
+      source_type: evidence
+      evidence_id: edu-tsinghua-beng-automation
+      protected_facts:
+        - Tsinghua University
+        - Department of Automation
+        - 89.7/100
+    - claim_id: claim-course-computer-vision
+      claim_summary: The draft cites the Computer Vision course and its recorded mark.
+      source_type: evidence
+      evidence_id: course-computer-vision
+      protected_facts:
+        - Computer Vision
+        - 95/100
+    - claim_id: claim-course-pattern-recognition
+      claim_summary: The draft cites the Pattern Recognition course and its recorded mark.
+      source_type: evidence
+      evidence_id: course-pattern-recognition
+      protected_facts:
+        - Pattern Recognition
+        - 93/100
+    - claim_id: claim-course-linear-algebra
+      claim_summary: The draft cites the Linear Algebra course and its recorded mark.
+      source_type: evidence
+      evidence_id: course-linear-algebra
+      protected_facts:
+        - Linear Algebra
+        - 92/100
+    - claim_id: claim-course-probability
+      claim_summary: The draft cites the probability and statistics course and its recorded mark.
+      source_type: evidence
+      evidence_id: course-probability-statistics
+      protected_facts:
+        - Probability Theory and Mathematical Statistics
+        - 91/100
+    - claim_id: claim-course-optimal-control
+      claim_summary: The draft cites Optimal Control Theory and its recorded mark as the applicant's first sustained optimization coursework.
+      source_type: evidence
+      evidence_id: course-optimal-control
+      protected_facts:
+        - Optimal Control Theory
+        - 88/100
+    - claim_id: claim-brief-percentage-scale
+      claim_summary: The draft reports the percentage result as published and does not convert it, following the brief's explicit instruction.
+      source_type: student_brief
+      brief_section: Avoid
+    - claim_id: claim-program-learning-outcomes
+      claim_summary: The draft quotes the official MSCV learning outcomes on geometry, optimization, and statistics and on experimental analysis with standard metrics and benchmark datasets, and describes the program as coursework-first over sixteen months with a hands-on team project as its culminating experience.
+      source_type: official_program_source
+      source_url: https://www.ri.cmu.edu/education/academic-programs/master-of-science-computer-vision/
+    - claim_id: claim-program-skill-set
+      claim_summary: The draft states that its working toolchain matches the program's published recommended skill set.
+      source_type: official_program_source
+      source_url: https://www.ri.cmu.edu/education/academic-programs/master-of-science-computer-vision/recommended-skill-set/
+    - claim_id: claim-program-curriculum
+      claim_summary: The draft cites the curriculum's description of recognition and geometry as the two main areas, the placement of multi-view reconstruction and SLAM under geometry, the core option pairing 16-822 with 16-833, and the required computer-vision-relevant summer internship.
+      source_type: official_program_source
+      source_url: https://www.ri.cmu.edu/education/academic-programs/master-of-science-computer-vision/curriculum/
+    - claim_id: claim-brief-program-notes
+      claim_summary: The decision to lead with the localization thread, name the geometry, optimization, and statistics gaps explicitly, and use the evaluation harness as proof of experimental discipline follows the brief's guidance for programs with a geometry and optimization core.
+      source_type: student_brief
+      brief_section: Program-Specific Notes
+    - claim_id: claim-brief-transcript-language
+      claim_summary: The closing note that the degree and transcript are issued in Chinese, and that English documentation will be supplied through the official channel, uses the one personal-context item the brief permits.
+      source_type: student_brief
+      brief_section: Personal Background Allowed For Use

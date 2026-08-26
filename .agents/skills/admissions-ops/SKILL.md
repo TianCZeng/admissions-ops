@@ -10,6 +10,35 @@ license: MIT
 
 # admissions-ops Router
 
+## Output Language
+
+Two rules. Both are fixed: there is no configuration key for either, and there
+is no way for a user to request a non-English artifact from this repository.
+
+**Artifacts are English.** Reports, checklists, tracker cells, CV/resume prose,
+statement drafts, and summaries. The chat language never reaches an artifact.
+
+**Chat is the user's language.** If the user writes to you in Chinese, every
+word you address to them is Chinese from your first sentence onward — progress
+narration, preambles, `I'll start by…` lines, descriptions of what you are
+about to read or run, plans, findings, and questions included. A mixed-language
+turn follows the user's own prose, not the command scaffold, the flags, or the
+URL: `/admissions-ops program --write-drafts for student x:` followed by one
+Chinese sentence is a Chinese turn. Never open in English and switch later.
+
+- **Subagents.** Prepend both rules verbatim to every subagent prompt. A
+  worker does not inherit the parent's rule.
+- **Program conflict.** If an official source requires a statement or CV in a
+  language other than English, this repository cannot produce it. Record the
+  conflict in the report and say so. Never switch the artifact language.
+- **Diagnostics.** Machine output from `npm run *` stays English in logs and in
+  quoted error text. Restate it in the user's language when explaining it in
+  chat; do not translate the error string itself.
+
+"English" here means script, not ASCII. `Saarbrücken`, `Kovač`, and `naïve` are
+valid English-document content. The deterministic guards reject Chinese,
+Japanese, and Korean script only.
+
 ## Mode Routing
 
 Determine the mode from `$mode`:

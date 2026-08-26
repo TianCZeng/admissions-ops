@@ -3,6 +3,7 @@ const fs = require("fs");
 const path = require("path");
 const yaml = require("js-yaml");
 const { flattenEvidence } = require("../lib/cv-writer");
+const { countWords } = require("../lib/language");
 const {
   REVIEW_STATUS,
   estimateStatementPages,
@@ -34,6 +35,7 @@ const sourceFiles = [
 function main() {
   resetValidationRoot();
   validateTypeSelection();
+  validateWordCounting();
   const evaluation = setupSourceWorkspace(sourceRoot, "statement_of_purpose");
   const beforeDryRun = hashFiles(sourceRoot, sourceFiles);
   const dryRun = runLiveStatement({
@@ -58,6 +60,17 @@ function resetValidationRoot() {
   assert(validationRoot.startsWith(path.join(repoRoot, "validation-output")), `Refusing reset outside validation-output: ${validationRoot}`);
   fs.rmSync(validationRoot, { recursive: true, force: true });
   fs.mkdirSync(validationRoot, { recursive: true });
+}
+
+function validateWordCounting() {
+  // The counter is Unicode-aware but must stay byte-equivalent to the old
+  // ASCII-only regex for ASCII input, or every committed word_count drifts.
+  assert(countWords("Saarbrücken") === 1, "Accented Latin must count as one word");
+  assert(countWords("naïve café résumé") === 3, "Accented Latin words must not split");
+  assert(countWords("state-of-the-art") === 1, "Hyphenated compounds must count as one word");
+  assert(countWords("don't") === 1, "Apostrophes must not split a word");
+  assert(countWords("U.S.") === 2, "Sentence punctuation must still split tokens");
+  assert(countWords("") === 0 && countWords(null) === 0, "Empty input must count as zero");
 }
 
 function validateTypeSelection() {
@@ -413,6 +426,14 @@ function validateFailures() {
     });
   }, /claims final, ready, submitted, or externally safe status/, "Unsafe readiness language should fail");
 
+  assertRunFails("cjk-draft", (root) => {
+    setupSourceWorkspace(root, "statement_of_purpose", {
+      statement_plan: {
+        draft_markdown: "\u6211\u7684\u7814\u7a76\u65b9\u5411\u662f\u8ba1\u7b97\u795e\u7ecf\u79d1\u5b66\u3002\n\n" + agentDraftMarkdown("statement_of_purpose"),
+      },
+    });
+  }, /statement_plan\.draft_markdown contains Han .* characters/, "A CJK statement draft should be refused, not counted");
+
   assertRunFails("legacy-renderer-phrase", (root) => {
     setupSourceWorkspace(root, "statement_of_purpose", {
       statement_plan: {
@@ -597,11 +618,6 @@ function assertHashes(root, files, expected, message) {
 
 function hashFile(file) {
   return crypto.createHash("sha256").update(fs.readFileSync(file)).digest("hex");
-}
-
-function countWords(value) {
-  const words = String(value || "").match(/\b[\w'-]+\b/g);
-  return words ? words.length : 0;
 }
 
 function resolveMarkdownLink(baseFile, markdownLink, rootDir) {

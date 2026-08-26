@@ -2,6 +2,7 @@ const fs = require("fs");
 const path = require("path");
 const yaml = require("js-yaml");
 const { flattenEvidence, REVIEW_STATUS } = require("./cv-writer");
+const { countWords, findNonEnglishScriptDeep, nonEnglishScriptReason } = require("./language");
 const { slugify } = require("./program-writer");
 
 const STATEMENT_TYPES = new Set(["statement_of_purpose", "personal_statement"]);
@@ -18,6 +19,23 @@ const LEGACY_RENDERER_PATTERNS = [
 ];
 const UNSAFE_READINESS_PATTERN =
   /\b(final|ready for submission|submitted|externally safe|safe for submission)\b|status:\s*(final|ready|submitted)/i;
+// Statement artifacts are English (AGENTS.md -> Language). Every field listed
+// here is agent-authored prose that renderPlan, the draft, or the evidence map
+// serializes into a generated artifact, so a CJK/Kana/Hangul draft is refused
+// rather than counted -- countWords would otherwise report a handful of tokens
+// for a 3,000-character draft and pass any word_limit.
+const GATED_PLAN_FIELDS = [
+  "prompt_text",
+  "prompt_summary",
+  "strategy_summary",
+  "core_argument",
+  "paragraph_plan",
+  "required_program_terms",
+  "claims_to_avoid",
+  "unresolved_questions",
+  "draft_markdown",
+  "claim_map",
+];
 const PLAN_PREFLIGHT_HINT =
   "Run `$admissions-ops statement` or the full `$admissions-ops program for student <student-id>` pipeline before `npm run statement`.";
 
@@ -139,7 +157,17 @@ function validateStatementPlan(evaluation, evidence, statementBrief, documentIns
       }
     }
   }
+  // Language before content: a Chinese draft should say so, not fail later on a
+  // protected-fact mismatch the user cannot act on.
+  validateStatementLanguage(plan, programLabel);
   validateDraftAndClaimMap(plan, evaluation, evidence, statementBrief, programLabel);
+}
+
+function validateStatementLanguage(plan, programLabel) {
+  for (const field of GATED_PLAN_FIELDS) {
+    const hit = findNonEnglishScriptDeep(plan[field], `statement_plan.${field}`);
+    if (hit) failPlanPreflight(programLabel, nonEnglishScriptReason(hit));
+  }
 }
 
 function assertEvaluatedRecord(evaluation, programLabel) {
@@ -456,11 +484,6 @@ function parseBrief(markdown) {
 
 function normalizeBriefHeading(value) {
   return String(value || "").toLowerCase().replace(/[^a-z0-9]+/g, " ").trim();
-}
-
-function countWords(value) {
-  const words = String(value || "").match(/\b[\w'-]+\b/g);
-  return words ? words.length : 0;
 }
 
 function estimateStatementPages(wordCount) {

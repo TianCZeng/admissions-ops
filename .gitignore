@@ -38,9 +38,12 @@ Thumbs.db
 /students/*
 !/students/*.example.yml
 !/students/*.example.md
-# Public demo workspace: fully synthetic applicant (Maya Tan). Real student
-# workspaces stay ignored; only this one may be committed.
+# Public demo workspaces: fully synthetic applicants. `nus-cs` (Maya Tan) is the
+# English-chat demo; `tsinghua-automation` (Chen Shuhan) is the Chinese-chat demo
+# whose Chinese transcript strings live only in `original_*` evidence fields.
+# Real student workspaces stay ignored; only these two may be committed.
 !/students/nus-cs/
+!/students/tsinghua-automation/
 /programs/inbox.yml
 /programs/tracker.md
 /programs/evaluations/*

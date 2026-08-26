@@ -1,0 +1,200 @@
+# Stored records are English (AGENTS.md -> Language). The `original_*` keys keep
+# the transcript's Chinese wording next to the English string so a reviewer can
+# check the translation; the CV renderer never reads them. Every English rendering
+# below that Tsinghua does not itself publish is a verification task in the
+# evaluation's `action_items`, not a settled fact.
+
+education:
+  - id: edu-tsinghua-beng-automation
+    institution: "Tsinghua University"
+    original_institution: "清华大学"
+    department: "Department of Automation"
+    original_department: "自动化系"
+    degree: "Bachelor of Engineering in Automation"
+    original_degree: "工学学士（自动化）"
+    dates: "2022-2026"
+    status: "completed"
+    result: "89.7/100"
+    grading_context: "Percentage scale; maximum 100; no conversion applied."
+    notes: "The English names of the university and the department are published by Tsinghua University at https://www.au.tsinghua.edu.cn/en/ (retrieved 2026-08-21). That site does not publish an English title for the undergraduate degree, so the degree name here is a user-committed translation awaiting confirmation against the official transcript."
+
+courses:
+  - id: course-computer-vision
+    title: "Computer Vision"
+    original_title: "计算机视觉"
+    level: "upper undergraduate"
+    result: "95/100"
+    grading_context: "Percentage scale; maximum 100; no conversion applied."
+  - id: course-machine-learning
+    title: "Machine Learning"
+    original_title: "机器学习"
+    level: "upper undergraduate"
+    result: "94/100"
+    grading_context: "Percentage scale; maximum 100; no conversion applied."
+  - id: course-pattern-recognition
+    title: "Pattern Recognition"
+    original_title: "模式识别"
+    level: "upper undergraduate"
+    result: "93/100"
+    grading_context: "Percentage scale; maximum 100; no conversion applied."
+  - id: course-robotics
+    title: "Introduction to Robotics"
+    original_title: "机器人学导论"
+    level: "upper undergraduate"
+    result: "92/100"
+    grading_context: "Percentage scale; maximum 100; no conversion applied."
+  - id: course-linear-algebra
+    title: "Linear Algebra"
+    original_title: "线性代数"
+    level: "undergraduate"
+    result: "92/100"
+    grading_context: "Percentage scale; maximum 100; no conversion applied."
+  - id: course-probability-statistics
+    title: "Probability Theory and Mathematical Statistics"
+    original_title: "概率论与数理统计"
+    level: "undergraduate"
+    result: "91/100"
+    grading_context: "Percentage scale; maximum 100; no conversion applied."
+  - id: course-automatic-control
+    title: "Automatic Control Theory"
+    original_title: "自动控制理论"
+    level: "upper undergraduate"
+    result: "90/100"
+    grading_context: "Percentage scale; maximum 100; no conversion applied."
+  - id: course-data-structures
+    title: "Data Structures and Algorithms"
+    original_title: "数据结构与算法"
+    level: "undergraduate"
+    result: "89/100"
+    grading_context: "Percentage scale; maximum 100; no conversion applied."
+  - id: course-optimal-control
+    title: "Optimal Control Theory"
+    original_title: "最优控制理论"
+    level: "upper undergraduate"
+    result: "88/100"
+    grading_context: "Percentage scale; maximum 100; no conversion applied."
+  - id: course-digital-signal-processing
+    title: "Digital Signal Processing"
+    original_title: "数字信号处理"
+    level: "undergraduate"
+    result: "87/100"
+    grading_context: "Percentage scale; maximum 100; no conversion applied."
+
+research:
+  - id: research-graduation-project
+    title: "Vision-Based Localization Methods for Mobile Robots"
+    original_title: "基于视觉的移动机器人定位方法研究"
+    role: "undergraduate graduation project author"
+    dates: "2025-2026"
+    status: "submitted"
+    methods:
+      - "visual odometry"
+      - "multi-view geometry"
+      - "pose graph optimization"
+      - "Python"
+      - "C++"
+    summary: "Compared feature-based and direct visual odometry front ends on an indoor mobile robot and reported trajectory drift, tracking losses, and recovery behaviour across corridor, lobby, and laboratory sequences."
+    notes: "Undergraduate graduation project, submitted 2026-05 and defended 2026-06. The English title is a user-committed translation of the transcript title."
+  - id: research-loop-closure-robustness
+    title: "Loop-Closure Robustness for Visual SLAM in Repetitive Indoor Corridors"
+    role: "research assistant"
+    dates: "2026-2027"
+    status: "in_progress"
+    methods:
+      - "visual simultaneous localization and mapping"
+      - "place recognition"
+      - "false-positive loop-closure analysis"
+      - "PyTorch"
+      - "ROS 2"
+    summary: "Studies why appearance-based loop closure fails in corridors whose visual structure repeats, and measures how often false positives corrupt the pose graph relative to descriptor choice and geometric verification thresholds."
+  - id: research-depth-calibration
+    title: "Uncertainty Calibration for Monocular Depth Estimation"
+    role: "course research project author"
+    dates: "2025"
+    status: "completed"
+    methods:
+      - "monocular depth estimation"
+      - "uncertainty calibration"
+      - "reliability diagrams"
+      - "NumPy"
+    summary: "Measured how poorly a monocular depth network's predicted confidence matched its actual error on indoor scenes, and reported calibration curves before and after temperature scaling."
+
+projects:
+  - id: project-slam-evaluation-harness
+    title: "Indoor Visual SLAM Evaluation Harness"
+    dates: "2026"
+    summary: "Built a reproducible harness that replays recorded robot sequences through several SLAM front ends and reports absolute trajectory error, relative pose error, and tracking-loss counts with per-sequence breakdowns."
+    tools:
+      - "Python"
+      - "C++"
+      - "ROS 2"
+      - "Open3D"
+  - id: project-camera-imu-calibration
+    title: "Camera-IMU Calibration Toolkit for a Differential-Drive Robot"
+    dates: "2025"
+    summary: "Implemented and documented a calibration workflow for a camera and inertial unit on a laboratory robot, including target capture guidance, residual plots, and a re-calibration check after hardware changes."
+    tools:
+      - "Python"
+      - "OpenCV"
+      - "Kalibr"
+      - "MATLAB"
+  - id: project-warehouse-robot
+    title: "Autonomous Warehouse Robot for the University Robotics Competition"
+    dates: "2024"
+    summary: "Led the perception subsystem of a four-person team robot that located and retrieved marked packages, contributing marker detection, pose estimation, and a fallback behaviour for detection dropouts."
+    tools:
+      - "C++"
+      - "ROS"
+      - "OpenCV"
+      - "Gazebo"
+
+awards:
+  - id: award-outstanding-graduate
+    title: "Outstanding Graduate"
+    original_name: "优秀毕业生"
+    date: "2026"
+    issuer: "Tsinghua University"
+    notes: "University-level award. The English name is a user-committed translation; Tsinghua does not publish an official English name for this award on the department's English site."
+  - id: award-academic-excellence-scholarship
+    title: "Academic Excellence Scholarship"
+    original_name: "学业优秀奖学金"
+    date: "2024, 2025"
+    issuer: "Tsinghua University Department of Automation"
+    notes: "Awarded in two academic years. The English name is a user-committed translation."
+
+publications:
+  - id: publication-loop-closure-workshop
+    title: "When Corridors Look Alike: Failure Cases for Appearance-Based Loop Closure"
+    authors:
+      - "Chen Shuhan"
+      - "Wang Yiran"
+      - "Zhao Minghao"
+    status: "workshop paper under review"
+
+presentations:
+  - id: presentation-graduation-defense
+    title: "Vision-Based Localization Methods for Mobile Robots"
+    date: "2026-06"
+    venue: "Tsinghua University Department of Automation undergraduate graduation project defence"
+    status: "presented"
+  - id: presentation-lab-seminar
+    title: "Why Loop Closure Fails in Repetitive Indoor Scenes"
+    date: "2026-07"
+    venue: "Synthetic robot perception laboratory seminar"
+    status: "presented"
+
+teaching:
+  - id: teaching-control-theory-lab
+    role: "Teaching assistant"
+    course: "Automatic Control Theory laboratory"
+    dates: "2025-2026"
+  - id: teaching-robotics-tutorial
+    role: "Tutorial assistant"
+    course: "Introduction to Robotics"
+    dates: "2026"
+
+service:
+  - id: service-robotics-reading-group
+    title: "Robot perception reading group organizer"
+    dates: "2025-2026"
+    notes: "Organized weekly discussions on visual SLAM, place recognition, and state estimation papers."
