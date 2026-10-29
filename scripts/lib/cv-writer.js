@@ -41,6 +41,8 @@ const RENDERED_EVIDENCE_FIELDS = {
   teaching: ["role", "course", "dates"],
   service: ["title", "role", "dates"],
 };
+// The `profile.student` values commonPlaceholders puts on the page.
+const RENDERED_PROFILE_FIELDS = ["name", "email", "location"];
 const PLAN_PREFLIGHT_HINT =
   "Run `$admissions-ops cv` or the full `$admissions-ops program for student <student-id>` pipeline before `npm run cv`.";
 
@@ -306,7 +308,7 @@ function validateRenderedLanguage(input) {
   }
 
   const student = (input.profile || {}).student || {};
-  for (const field of ["name", "email", "location"]) {
+  for (const field of RENDERED_PROFILE_FIELDS) {
     const hit = findNonEnglishScriptDeep(student[field], `profile.student.${field}`);
     if (hit) failPlanPreflight(programLabel, nonEnglishScriptReason(hit));
   }
@@ -744,6 +746,8 @@ function escapeHtml(value) {
 module.exports = {
   CLI_OVERRIDE_RATIONALE,
   DOCUMENT_TYPES,
+  RENDERED_EVIDENCE_FIELDS,
+  RENDERED_PROFILE_FIELDS,
   REQUIRED_SECTIONS,
   REVIEW_STATUS,
   attachCvArtifactsToEvaluation,

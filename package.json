@@ -16,8 +16,10 @@
     "node": ">=20"
   },
   "scripts": {
+    "check": "node scripts/cli/check.js",
     "compare": "node scripts/cli/compare.js",
     "cv": "node scripts/cli/cv.js",
+    "init": "node scripts/cli/init.js",
     "statement": "node scripts/cli/statement.js",
     "test": "npm run verify",
     "verify": "npm run verify:yaml && npm run verify:program && npm run verify:cv && npm run verify:live-cv && npm run verify:compare && npm run verify:stress && npm run verify:workspace && npm run verify:catalog && npm run verify:live-real && npm run verify:layout && npm run verify:statement && npm run verify:consistency && npm run verify:generated",

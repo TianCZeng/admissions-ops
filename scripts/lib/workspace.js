@@ -3,6 +3,19 @@ const path = require("path");
 
 const REPO_ROOT = path.resolve(__dirname, "..", "..");
 
+// The four canonical inputs of a student workspace, each with the shipped
+// example `npm run init` copies into it; `npm run check` reads the same list to
+// catch an example that was never replaced. The tracker is not listed because
+// init writes the program writer's own empty tracker. statement-brief.md is not
+// listed because its existence is what turns statement drafting on, so an empty
+// template must never appear on its own.
+const STUDENT_INPUT_EXAMPLES = {
+  "profile.yml": "students/profile.example.yml",
+  "preferences.yml": "students/preferences.example.yml",
+  "evidence.yml": "students/evidence.example.yml",
+  "master-cv.md": "students/master-cv.example.md",
+};
+
 function resolveInsideRepoOrValidation(value, label) {
   const resolved = path.resolve(value);
   const validationRoot = path.join(REPO_ROOT, "validation-output");
@@ -181,6 +194,7 @@ function isInsideOrEqual(value, root) {
 
 module.exports = {
   REPO_ROOT,
+  STUDENT_INPUT_EXAMPLES,
   assertDryRunRootSafe,
   dryRunRoot,
   evaluationPath,

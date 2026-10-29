@@ -1,7 +1,6 @@
 # Tracker Mode
 
-Use this mode to inspect or update `students/{student-id}/tracker.md` and
-per-program checklists in `students/{student-id}/checklists/`.
+Use this mode to inspect or update `students/{student-id}/tracker.md` and per-program checklists in `students/{student-id}/checklists/`.
 
 ## Tracker Columns
 

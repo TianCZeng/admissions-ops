@@ -1,8 +1,6 @@
 # Student Profile Notes Template
 
-Use this file as a human-readable companion to structured student files. Copy
-it to a user-owned note only if a future workflow needs prose preferences that
-do not fit cleanly in YAML.
+Use this file as a human-readable companion to structured student files. Copy it to a user-owned note only if a future workflow needs prose preferences that do not fit cleanly in YAML.
 
 ## Academic Positioning
 

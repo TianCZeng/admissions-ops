@@ -110,6 +110,8 @@ function validatePipelineContracts() {
   assert(cvMode.includes("## Adaptation Plan Contract"), "CV mode missing adaptation plan contract");
   assert(cvMode.includes("fails before output generation"), "CV mode must describe pre-render failure");
   assert(router.includes("`statement` | `statement`"), "Router missing statement mode route");
+  assert(/^\|[^|\n]*`setup`[^|\n]*\|\s*`setup`\s*\|$/m.test(router), "Router missing setup mode route");
+  assert(fs.existsSync(path.join(repoRoot, "modes", "setup.md")), "modes/setup.md is missing");
   assert(/both CV\/resume rendering and statement\s+packaging/.test(readme), "README must explain the program pipeline runs both CV/resume and statement packaging");
   assert(readme.includes("--write-drafts"), "README missing write-drafts pipeline flag");
   assert(readme.includes("npm run statement -- --student <student-id> --program <program-id>"), "README missing statement dry-run command");
@@ -188,7 +190,7 @@ function validateGithubMeta() {
 }
 
 function validateScriptLayout() {
-  assertDirFiles("scripts/cli", ["compare.js", "cv.js", "statement.js"]);
+  assertDirFiles("scripts/cli", ["check.js", "compare.js", "cv.js", "init.js", "statement.js"]);
   assertDirFiles("scripts/lib", ["consistency.js", "cv-writer.js", "language.js", "program-writer.js", "statement-writer.js", "workspace.js"]);
   assertDirFiles("scripts/verify", [
     "catalog.js",
@@ -225,6 +227,8 @@ function validatePackageScripts() {
   assert(packageJson.scripts.cv === "node scripts/cli/cv.js", "cv script should point to scripts/cli/cv.js");
   assert(packageJson.scripts.compare === "node scripts/cli/compare.js", "compare script should point to scripts/cli/compare.js");
   assert(packageJson.scripts.statement === "node scripts/cli/statement.js", "statement script should point to scripts/cli/statement.js");
+  assert(packageJson.scripts.init === "node scripts/cli/init.js", "init script should point to scripts/cli/init.js");
+  assert(packageJson.scripts.check === "node scripts/cli/check.js", "check script should point to scripts/cli/check.js");
   assert(!JSON.stringify(packageJson.scripts).includes("seed-live-real"), "seed-live-real must not be referenced by package scripts");
   assert(packageJson.scripts.test === "npm run verify", "package.json must alias test to the verify suite");
   assert(packageJson.engines && packageJson.engines.node === ">=20", "package.json must declare the Node engine floor (>=20)");

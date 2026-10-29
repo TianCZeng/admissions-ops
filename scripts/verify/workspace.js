@@ -1,10 +1,14 @@
 const crypto = require("crypto");
 const fs = require("fs");
 const path = require("path");
+const { spawnSync } = require("child_process");
 const yaml = require("js-yaml");
 const { REVIEW_STATUS } = require("../lib/cv-writer");
+const { STUDENT_INPUT_EXAMPLES } = require("../lib/workspace");
+const { runCheck } = require("../cli/check");
 const { runCompare } = require("../cli/compare");
 const { runLiveCv } = require("../cli/cv");
+const { runInit } = require("../cli/init");
 const {
   emptyTracker,
   renderReport,
@@ -16,6 +20,56 @@ const {
 const repoRoot = path.resolve(__dirname, "..", "..");
 const validationRoot = path.join(repoRoot, "validation-output", "verify", "workspace");
 const sourceRoot = path.join(validationRoot, "source");
+const initRoot = path.join(validationRoot, "init");
+const checkRoot = path.join(validationRoot, "check");
+const DEMO_WORKSPACES = ["nus-cs", "tsinghua-automation"];
+
+// Each case is one edit to a copy of the nus-cs inputs, and must produce exactly
+// the one problem it names, so a check that fires on everything cannot pass.
+const CHECK_CASES = [
+  {
+    id: "example-header",
+    edit: (inputs) => {
+      inputs["preferences.yml"] = `${exampleFirstLine("preferences.yml")}\n${inputs["preferences.yml"]}`;
+    },
+    expect: /^preferences\.yml: still begins with the example line/,
+  },
+  { id: "missing-file", edit: (inputs) => delete inputs["master-cv.md"], expect: /^master-cv\.md: missing$/ },
+  {
+    id: "missing-id",
+    evidence: (evidence) => delete evidence.courses[0].id,
+    expect: /^evidence\.yml: courses\[0\] has no id$/,
+  },
+  {
+    id: "duplicate-id",
+    evidence: (evidence) => {
+      evidence.projects[0].id = evidence.research[0].id;
+    },
+    expect: /^evidence\.yml: projects\[0\] repeats id "research-[^"]+" already used in research/,
+  },
+  {
+    id: "cjk-rendered-field",
+    evidence: (evidence) => {
+      evidence.awards[0].title = "优秀学生";
+    },
+    expect: /^evidence\.yml: evidence\.awards\[award-[^\]]+\]\.title contains Han/,
+  },
+  {
+    id: "cjk-profile-name",
+    profile: (profile) => {
+      profile.student.name = "陈书涵";
+    },
+    expect: /^profile\.yml: profile\.student\.name contains Han/,
+  },
+  // A field the renderer never reads may keep the original for a reviewer.
+  {
+    id: "cjk-original-title",
+    evidence: (evidence) => {
+      evidence.awards[0].original_title = "优秀学生";
+    },
+    expect: null,
+  },
+];
 const studentsPath = path.join(repoRoot, "examples", "stress-benchmark", "students.yml");
 const programsPath = path.join(repoRoot, "examples", "stress-benchmark", "programs.yml");
 
@@ -65,8 +119,160 @@ function main() {
   validateDistinctStudentOutputs(results);
   validateStudentCompareFlow();
   validateStudentRequiredFailure();
+  validateInit();
+  validateCheck();
+  validatePrivateBackupIgnore();
 
   console.log(`Student workspace layout verifies in ${path.relative(process.cwd(), validationRoot)}`);
+}
+
+function validateInit() {
+  const root = path.join(initRoot, "students", "fresh");
+  runInit({ workspace: initRoot, student: "fresh" });
+  for (const [name, example] of Object.entries(STUDENT_INPUT_EXAMPLES)) {
+    assert(
+      fs.readFileSync(path.join(root, name), "utf8") === fs.readFileSync(path.join(repoRoot, example), "utf8"),
+      `init did not copy ${example} into ${name}`
+    );
+  }
+  assert(fs.readFileSync(path.join(root, "tracker.md"), "utf8") === emptyTracker(), "init tracker is not the empty tracker");
+  // Inputs only: no statement brief (its existence turns statement drafting on)
+  // and none of the generated state the program pipeline owns.
+  const expected = [...Object.keys(STUDENT_INPUT_EXAMPLES), "tracker.md"].sort();
+  assert(
+    JSON.stringify(fs.readdirSync(root).sort()) === JSON.stringify(expected),
+    `init wrote unexpected entries: ${fs.readdirSync(root).join(", ")}`
+  );
+  const fresh = runCheck({ workspace: initRoot, student: "fresh" });
+  assert(
+    fresh.problems.length === Object.keys(STUDENT_INPUT_EXAMPLES).length &&
+      fresh.problems.every((problem) => /still begins with the example line/.test(problem)),
+    `check must refuse every input of a fresh init: ${fresh.problems.join("; ")}`
+  );
+
+  const rawRoot = path.join(initRoot, "students", "with-raw");
+  writeText(path.join(rawRoot, "raw", "cv.txt"), "Synthetic CV text.\n");
+  runInit({ workspace: initRoot, student: "with-raw" });
+  assert(fs.existsSync(path.join(rawRoot, "profile.yml")), "init should accept a workspace that holds only raw/");
+  assert(fs.readFileSync(path.join(rawRoot, "raw", "cv.txt"), "utf8") === "Synthetic CV text.\n", "init changed raw/");
+
+  // One existing input is enough to refuse, and a refusal writes nothing.
+  const partialRoot = path.join(initRoot, "students", "partial");
+  writeText(path.join(partialRoot, "evidence.yml"), "education: []\n");
+  expectFailure(
+    () => runInit({ workspace: initRoot, student: "partial" }),
+    /Refusing to overwrite existing evidence\.yml in /,
+    "init should refuse a workspace that already has evidence.yml"
+  );
+  assert(JSON.stringify(fs.readdirSync(partialRoot)) === JSON.stringify(["evidence.yml"]), "a refused init still wrote files");
+  assert(fs.readFileSync(path.join(partialRoot, "evidence.yml"), "utf8") === "education: []\n", "a refused init changed evidence.yml");
+  expectFailure(
+    () => runInit({ workspace: initRoot, student: "fresh" }),
+    /Refusing to overwrite existing profile\.yml, preferences\.yml, evidence\.yml, master-cv\.md, tracker\.md/,
+    "init should refuse to run twice on one workspace"
+  );
+
+  for (const id of ["../escape", "a/b", ".hidden", "-dash", "x..y"]) {
+    expectFailure(() => runInit({ workspace: initRoot, student: id }), /Invalid --student id/, `init accepted invalid id ${id}`);
+  }
+  expectFailure(() => runInit({ workspace: initRoot }), /Missing required --student/, "init should require --student");
+  assert(!fs.existsSync(path.join(initRoot, "escape")), "init wrote outside students/ for a traversal id");
+
+  const cliArgs = [path.join(repoRoot, "scripts", "cli", "init.js"), "--workspace", initRoot, "--student", "printed"];
+  const printed = spawnSync(process.execPath, cliArgs, { encoding: "utf8" });
+  assert(printed.status === 0, `init CLI failed: ${printed.stderr}`);
+  for (const step of [
+    "$admissions-ops setup for student printed",
+    "npm run check -- --student printed",
+    "$admissions-ops program for student printed:",
+  ]) {
+    assert(printed.stdout.includes(step), `init output missing next step: ${step}`);
+  }
+  const rerun = spawnSync(process.execPath, cliArgs, { encoding: "utf8" });
+  assert(rerun.status === 1 && /Refusing to overwrite/.test(rerun.stderr), "init CLI rerun should exit 1 with the refusal");
+
+  // A new workspace in the real tree stays ignored. The path is asked about,
+  // never created, so this cannot leave anything behind.
+  if (!gitAvailable(repoRoot)) {
+    console.log("Skipped the new-workspace ignore check: not a git checkout");
+    return;
+  }
+  for (const name of expected) {
+    assert(gitIgnored(repoRoot, `students/init-fixture/${name}`), `A new workspace file is not ignored: students/init-fixture/${name}`);
+  }
+}
+
+function validateCheck() {
+  const before = hashTree(path.join(repoRoot, "students"), DEMO_WORKSPACES);
+  for (const id of DEMO_WORKSPACES) {
+    const result = runCheck({ student: id });
+    assert(result.problems.length === 0, `check should pass on students/${id}/: ${result.problems.join("; ")}`);
+  }
+
+  const source = Object.fromEntries(
+    Object.keys(STUDENT_INPUT_EXAMPLES).map((name) => [
+      name,
+      fs.readFileSync(path.join(repoRoot, "students", DEMO_WORKSPACES[0], name), "utf8"),
+    ])
+  );
+  for (const checkCase of CHECK_CASES) {
+    const inputs = { ...source };
+    if (checkCase.edit) checkCase.edit(inputs);
+    if (checkCase.evidence) inputs["evidence.yml"] = editYaml(inputs["evidence.yml"], checkCase.evidence);
+    if (checkCase.profile) inputs["profile.yml"] = editYaml(inputs["profile.yml"], checkCase.profile);
+    for (const [name, text] of Object.entries(inputs)) {
+      writeText(path.join(checkRoot, "students", checkCase.id, name), text);
+    }
+  }
+  const casesBefore = hashTree(path.join(checkRoot, "students"));
+  for (const checkCase of CHECK_CASES) {
+    const { problems } = runCheck({ workspace: checkRoot, student: checkCase.id });
+    if (!checkCase.expect) {
+      assert(problems.length === 0, `check case ${checkCase.id} should pass: ${problems.join("; ")}`);
+      continue;
+    }
+    assert(
+      problems.length === 1 && checkCase.expect.test(problems[0]),
+      `check case ${checkCase.id} should report exactly ${checkCase.expect}; got: ${problems.join("; ") || "nothing"}`
+    );
+  }
+
+  const cli = spawnSync(
+    process.execPath,
+    [path.join(repoRoot, "scripts", "cli", "check.js"), "--workspace", checkRoot, "--student", "missing-id"],
+    { encoding: "utf8" }
+  );
+  assert(cli.status === 1 && /courses\[0\] has no id/.test(cli.stderr), "check CLI should exit 1 and name the problem");
+
+  assert(sameHashes(before, hashTree(path.join(repoRoot, "students"), DEMO_WORKSPACES)), "check wrote into a demo workspace");
+  assert(sameHashes(casesBefore, hashTree(path.join(checkRoot, "students"))), "check wrote into a checked workspace");
+}
+
+// The README's private-backup step appends `!/students/<your-id>/` to a private
+// copy's .gitignore. That has to track the workspace while every
+// `/students/*/<folder>/` rule (raw/ first, where setup keeps the user's CV and
+// transcript) and every other workspace stay ignored. Proven against the
+// shipped .gitignore so a change to it breaks here, not in someone's backup.
+function validatePrivateBackupIgnore() {
+  const backupRoot = path.join(validationRoot, "private-backup");
+  if (!gitAvailable()) {
+    console.log("Skipped the private-backup ignore check: git is not available");
+    return;
+  }
+  const gitignore = fs.readFileSync(path.join(repoRoot, ".gitignore"), "utf8");
+  const sensitive = [...gitignore.matchAll(/^\/students\/\*\/([^/\s]+)\/$/gm)].map((match) => match[1]);
+  assert(sensitive.includes("raw"), ".gitignore must keep /students/*/raw/ ignored; setup reads source documents from there");
+  writeText(path.join(backupRoot, ".gitignore"), `${gitignore}\n!/students/ada/\n`);
+  const init = spawnSync("git", ["init", "-q"], { cwd: backupRoot, stdio: "ignore" });
+  assert(init.status === 0, "git init failed for the private-backup check");
+
+  for (const tracked of ["students/ada/profile.yml", "students/ada/evaluations/example.yml", "students/ada/output/example/statement-draft.md"]) {
+    assert(!gitIgnored(backupRoot, tracked), `Private backup would not track ${tracked}`);
+  }
+  for (const folder of sensitive) {
+    assert(gitIgnored(backupRoot, `students/ada/${folder}/file.pdf`), `Private backup would track students/ada/${folder}/`);
+  }
+  assert(gitIgnored(backupRoot, "students/someone-else/profile.yml"), "Private backup would track another workspace");
 }
 
 function resetValidationRoot() {
@@ -296,6 +502,58 @@ function validateNoSourceMutation(before, label) {
   for (const [file, hash] of Object.entries(before)) {
     assert(after[file] === hash, `${label} mutated source file: ${file}`);
   }
+}
+
+function exampleFirstLine(name) {
+  return fs.readFileSync(path.join(repoRoot, STUDENT_INPUT_EXAMPLES[name]), "utf8").split("\n", 1)[0];
+}
+
+function editYaml(text, edit) {
+  const data = yaml.load(text);
+  edit(data);
+  return yaml.dump(data, { lineWidth: 100 });
+}
+
+// The user's global excludes file is switched off so only the repository's own
+// .gitignore decides.
+function gitIgnored(cwd, relative) {
+  const result = spawnSync("git", ["-c", "core.excludesFile=", "check-ignore", "-q", relative], { cwd });
+  if (result.status === 0) return true;
+  if (result.status === 1) return false;
+  throw new Error(`git check-ignore failed in ${cwd} for ${relative}`);
+}
+
+function gitAvailable(cwd) {
+  const args = cwd ? ["rev-parse", "--is-inside-work-tree"] : ["--version"];
+  const result = spawnSync("git", args, { cwd, encoding: "utf8" });
+  return result.status === 0 && (!cwd || result.stdout.trim() === "true");
+}
+
+function hashTree(root, only) {
+  const hashes = {};
+  for (const entry of only || fs.readdirSync(root).sort()) {
+    const full = path.join(root, entry);
+    if (fs.statSync(full).isDirectory()) {
+      for (const [file, hash] of Object.entries(hashTree(full))) hashes[`${entry}/${file}`] = hash;
+    } else {
+      hashes[entry] = hashFile(full);
+    }
+  }
+  return hashes;
+}
+
+function sameHashes(left, right) {
+  return JSON.stringify(left) === JSON.stringify(right);
+}
+
+function expectFailure(run, pattern, message) {
+  let error;
+  try {
+    run();
+  } catch (caught) {
+    error = caught;
+  }
+  assert(error && pattern.test(error.message), `${message}${error ? `: ${error.message}` : " (it succeeded)"}`);
 }
 
 function copyFile(source, target) {

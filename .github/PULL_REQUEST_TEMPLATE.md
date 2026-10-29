@@ -3,11 +3,9 @@
 fictional and labeled as such (see students/nus-cs/ and examples/).
 -->
 
-**What this changes**
-A short description of the change and the invariant or workflow it serves.
+**What this changes** A short description of the change and the invariant or workflow it serves.
 
-**Why**
-The motivation, or the linked issue (`Fixes #…`).
+**Why** The motivation, or the linked issue (`Fixes #…`).
 
 **Checklist**
 - [ ] `npm run verify` passes locally (the full deterministic suite).
